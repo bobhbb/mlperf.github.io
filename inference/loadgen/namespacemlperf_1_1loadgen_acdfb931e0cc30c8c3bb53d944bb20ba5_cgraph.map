@@ -1,0 +1,4 @@
+<map id="mlperf::loadgen::IssueQueries" name="mlperf::loadgen::IssueQueries">
+<area shape="rect" id="node2" href="$classmlperf_1_1SystemUnderTest.html#ad962f27eeff691c555abb0dc72b81104" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="260,5,440,47"/>
+<area shape="rect" id="node3" href="$classmlperf_1_1SystemUnderTest.html#a2c054c8bad0f06beaf2b550235df18f2" title="Called immediately after the last call to IssueQuery in a series is made. " alt="" coords="260,71,440,112"/>
+</map>
