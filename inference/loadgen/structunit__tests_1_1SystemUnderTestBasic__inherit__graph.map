@@ -1,0 +1,8 @@
+<map id="unit_tests::SystemUnderTestBasic" name="unit_tests::SystemUnderTestBasic">
+<area shape="rect" id="node4" href="$structunit__tests_1_1SystemUnderTestAccuracy.html" title="Provieds common test set up logic. " alt="" coords="215,696,417,788"/>
+<area shape="rect" id="node2" href="$classmlperf_1_1QuerySampleLibrary.html" title="The interface a client implements to coordinate with the loadgen which samples should be loaded..." alt="" coords="100,5,311,156"/>
+<area shape="rect" id="node3" href="$classmlperf_1_1SystemUnderTest.html" title="The interface a client implements for the loadgen to test. " alt="" coords="335,13,519,149"/>
+<area shape="rect" id="node5" href="$structunit__tests_1_1TestAccuracyIncludesAllSamples.html" title="Verifies all samples from the QSL are included at least once in accuracy mode. " alt="" coords="5,880,179,972"/>
+<area shape="rect" id="node6" href="$structunit__tests_1_1TestMultiStreamContiguousRemainderQuery.html" title="Verifies all queries only contain samples that are contiguous, even if the set size is not a multiple..." alt="" coords="203,836,429,1016"/>
+<area shape="rect" id="node7" href="$structunit__tests_1_1TestOfflineRemainderAccuracySet.html" title="Verifies offline + accuracy doesn&#39;t hang if the last set in the accuracy series is smaller than other..." alt="" coords="453,873,680,979"/>
+</map>

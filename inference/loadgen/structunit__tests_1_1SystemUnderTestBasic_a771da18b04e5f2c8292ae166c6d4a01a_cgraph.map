@@ -1,0 +1,4 @@
+<map id="unit_tests::SystemUnderTestBasic::IssueQuery" name="unit_tests::SystemUnderTestBasic::IssueQuery">
+<area shape="rect" id="node2" href="$classtesting_1_1Test.html#af7c5e52c18ee6be48f174f048fee89f7" title="Used by test macros to log an arbitrary list of args. " alt="" coords="300,5,428,32"/>
+<area shape="rect" id="node3" href="$group__LoadgenAPI.html#ga667014f68fd93de2ea485cd18c0b12f8" title="SUT calls this to notify loadgen of completed samples. " alt="" coords="255,56,473,83"/>
+</map>

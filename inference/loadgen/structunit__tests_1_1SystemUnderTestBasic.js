@@ -1,0 +1,28 @@
+var structunit__tests_1_1SystemUnderTestBasic =
+[
+    [ "EndTest", "structunit__tests_1_1SystemUnderTestBasic.html#a4bb1e1c20dc67bd077a19be71474b8fc", null ],
+    [ "FlushQueries", "structunit__tests_1_1SystemUnderTestBasic.html#a4cadd69fb90162ff09434ce6a1bd433e", null ],
+    [ "FlushQueriesExt", "structunit__tests_1_1SystemUnderTestBasic.html#aaba02264440575f1626a9ca266bd2de0", null ],
+    [ "IssueQuery", "structunit__tests_1_1SystemUnderTestBasic.html#a771da18b04e5f2c8292ae166c6d4a01a", null ],
+    [ "IssueQueryExt", "structunit__tests_1_1SystemUnderTestBasic.html#aea352888397bb47e9d41878122670cc8", null ],
+    [ "LoadSamplesToRam", "structunit__tests_1_1SystemUnderTestBasic.html#a889056451cb14f44fa9c907d59bc1d0d", null ],
+    [ "LoadSamplesToRamExt", "structunit__tests_1_1SystemUnderTestBasic.html#ae655d23db9d7efa4c5fadc230ecc04c0", null ],
+    [ "Name", "structunit__tests_1_1SystemUnderTestBasic.html#a056183ed2da0e07d0e65a715b8a5e49e", null ],
+    [ "PerformanceSampleCount", "structunit__tests_1_1SystemUnderTestBasic.html#a6ddd72ca307b6d892afd4357a3b44004", null ],
+    [ "ReportLatencyResults", "structunit__tests_1_1SystemUnderTestBasic.html#ae8cc4875d5ac5b266623138c2ade5ee0", null ],
+    [ "RunTest", "structunit__tests_1_1SystemUnderTestBasic.html#aacf3b5752f517ec272fa19b57d187d3a", null ],
+    [ "TotalSampleCount", "structunit__tests_1_1SystemUnderTestBasic.html#a9c2bd94d166efbf940117e3ebaa4099c", null ],
+    [ "UnloadSamplesFromRam", "structunit__tests_1_1SystemUnderTestBasic.html#afc2527145d8139b339d19427e42f7124", null ],
+    [ "UnloadSamplesFromRamExt", "structunit__tests_1_1SystemUnderTestBasic.html#a06b64d8b704cb5cad59065331467d576", null ],
+    [ "issued_samples_", "structunit__tests_1_1SystemUnderTestBasic.html#a197d8262527d7cf7a68e79657326bc94", null ],
+    [ "loaded_samples_", "structunit__tests_1_1SystemUnderTestBasic.html#a00b19a1d94d9a35c37af294b3f143bf1", null ],
+    [ "log_settings_", "structunit__tests_1_1SystemUnderTestBasic.html#a2750b8734b96ccf4d60a278a6f4a150f", null ],
+    [ "name_", "structunit__tests_1_1SystemUnderTestBasic.html#a306fe68fd00cb66a1d7b562a2594ccb8", null ],
+    [ "performance_sample_count_", "structunit__tests_1_1SystemUnderTestBasic.html#a2506b260a3eb44cebe8af9365a7efde3", null ],
+    [ "query_sizes_", "structunit__tests_1_1SystemUnderTestBasic.html#abee51185543e68991320daffb4fafbcc", null ],
+    [ "samples_between_flushes_", "structunit__tests_1_1SystemUnderTestBasic.html#a3dc7b1a42a504b8fed1d7373e6fe3baa", null ],
+    [ "samples_issue_count_", "structunit__tests_1_1SystemUnderTestBasic.html#a0e77bffdcf193a0f2f38d7133ada8daa", null ],
+    [ "samples_load_count_", "structunit__tests_1_1SystemUnderTestBasic.html#acd103470f98098341aec2bdc083e9754", null ],
+    [ "test_settings_", "structunit__tests_1_1SystemUnderTestBasic.html#a9d5e58efaf19ac88d832e1094151c4a1", null ],
+    [ "total_sample_count_", "structunit__tests_1_1SystemUnderTestBasic.html#adf81ac7db1c625df463781bbd19bb1ca", null ]
+];

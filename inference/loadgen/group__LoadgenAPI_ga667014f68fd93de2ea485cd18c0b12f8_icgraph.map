@@ -1,0 +1,5 @@
+<map id="mlperf::QuerySamplesComplete" name="mlperf::QuerySamplesComplete">
+<area shape="rect" id="node2" href="$structunit__tests_1_1SystemUnderTestBasic.html#a771da18b04e5f2c8292ae166c6d4a01a" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="273,5,475,47"/>
+<area shape="rect" id="node3" href="$classperf__tests_1_1SystemUnderTestNull.html#a6e8cf6360e172ef7651f6c76c96385e0" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="272,71,476,112"/>
+<area shape="rect" id="node4" href="$classperf__tests_1_1SystemUnderTestNullStdAsync.html#aa02ea8aedd0eb50c1a468f5f7b0dfbb9" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="272,136,476,177"/>
+</map>

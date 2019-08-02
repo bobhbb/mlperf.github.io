@@ -1,0 +1,10 @@
+<map id="mlperf::SystemUnderTest" name="mlperf::SystemUnderTest">
+<area shape="rect" id="node2" href="$classperf__tests_1_1SystemUnderTestNull.html" title="A simple SUT implemenatation that immediately completes issued queries sychronously ASAP..." alt="" coords="5,336,232,487"/>
+<area shape="rect" id="node3" href="$classperf__tests_1_1SystemUnderTestNullPool.html" title="A SUT implementation that completes queries asynchronously using an explicitly managed thread pool..." alt="" coords="257,255,474,567"/>
+<area shape="rect" id="node4" href="$classperf__tests_1_1SystemUnderTestNullStdAsync.html" title="A SUT implementation that completes queries asynchronously using std::async. " alt="" coords="499,321,747,501"/>
+<area shape="rect" id="node5" href="$structunit__tests_1_1SystemUnderTestBasic.html" title="Implements the client interfaces of the loadgen and has some basic sanity checks that are enabled for..." alt="" coords="770,189,995,633"/>
+<area shape="rect" id="node6" href="$structunit__tests_1_1SystemUnderTestAccuracy.html" title="Provieds common test set up logic. " alt="" coords="782,681,983,773"/>
+<area shape="rect" id="node7" href="$structunit__tests_1_1TestAccuracyIncludesAllSamples.html" title="Verifies all samples from the QSL are included at least once in accuracy mode. " alt="" coords="572,865,745,957"/>
+<area shape="rect" id="node8" href="$structunit__tests_1_1TestMultiStreamContiguousRemainderQuery.html" title="Verifies all queries only contain samples that are contiguous, even if the set size is not a multiple..." alt="" coords="770,821,995,1001"/>
+<area shape="rect" id="node9" href="$structunit__tests_1_1TestOfflineRemainderAccuracySet.html" title="Verifies offline + accuracy doesn&#39;t hang if the last set in the accuracy series is smaller than other..." alt="" coords="1020,858,1247,965"/>
+</map>

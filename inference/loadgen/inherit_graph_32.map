@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmlperf_1_1QuerySampleLibrary.html" title="The interface a client implements to coordinate with the loadgen which samples should be loaded..." alt="" coords="5,49,200,75"/>
+<area shape="rect" id="node2" href="$classperf__tests_1_1QuerySampleLibraryNull.html" title="A stub implementation of QuerySampleLibrary. " alt="" coords="248,19,491,46"/>
+<area shape="rect" id="node3" href="$structunit__tests_1_1SystemUnderTestBasic.html" title="Implements the client interfaces of the loadgen and has some basic sanity checks that are enabled for..." alt="" coords="269,71,470,112"/>
+<area shape="rect" id="node4" href="$structunit__tests_1_1SystemUnderTestAccuracy.html" title="Provieds common test set up logic. " alt="" coords="539,71,740,112"/>
+<area shape="rect" id="node5" href="$structunit__tests_1_1TestAccuracyIncludesAllSamples.html" title="Verifies all samples from the QSL are included at least once in accuracy mode. " alt="" coords="815,5,988,47"/>
+<area shape="rect" id="node6" href="$structunit__tests_1_1TestMultiStreamContiguousRemainderQuery.html" title="Verifies all queries only contain samples that are contiguous, even if the set size is not a multiple..." alt="" coords="802,71,1001,112"/>
+<area shape="rect" id="node7" href="$structunit__tests_1_1TestOfflineRemainderAccuracySet.html" title="Verifies offline + accuracy doesn&#39;t hang if the last set in the accuracy series is smaller than other..." alt="" coords="788,136,1015,177"/>
+<area shape="rect" id="node8" href="$classmlperf_1_1SystemUnderTest.html" title="The interface a client implements for the loadgen to test. " alt="" coords="13,166,193,193"/>
+<area shape="rect" id="node9" href="$classperf__tests_1_1SystemUnderTestNull.html" title="A simple SUT implemenatation that immediately completes issued queries sychronously ASAP..." alt="" coords="256,137,483,163"/>
+<area shape="rect" id="node10" href="$classperf__tests_1_1SystemUnderTestNullPool.html" title="A SUT implementation that completes queries asynchronously using an explicitly managed thread pool..." alt="" coords="267,188,471,229"/>
+<area shape="rect" id="node11" href="$classperf__tests_1_1SystemUnderTestNullStdAsync.html" title="A SUT implementation that completes queries asynchronously using std::async. " alt="" coords="267,253,471,295"/>
+</map>

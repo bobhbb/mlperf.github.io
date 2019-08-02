@@ -1,0 +1,5 @@
+<map id="mlperf::QuerySampleLibrary::UnloadSamplesFromRam" name="mlperf::QuerySampleLibrary::UnloadSamplesFromRam">
+<area shape="rect" id="node2" href="$namespacemlperf_1_1loadgen.html#a1700bad264e2d159c27a6e9bb1700a6f" title="Runs the performance mode, templated by scenario. " alt="" coords="248,5,515,32"/>
+<area shape="rect" id="node3" href="$namespacemlperf_1_1loadgen.html#a21794e60883b3ea92450030548aa001a" title="Runs the binary search mode, templated by scenario. " alt="" coords="290,57,473,98"/>
+<area shape="rect" id="node4" href="$namespacemlperf_1_1loadgen.html#a8478f30e88678d619185375f66632a56" title="Runs the accuracy mode, templated by scenario. " alt="" coords="260,123,503,149"/>
+</map>
