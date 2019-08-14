@@ -1,3 +1,4 @@
 <map id="bindings/c_api.h" name="bindings/c_api.h">
-<area shape="rect" id="node4" href="$query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="75,80,205,107"/>
+<area shape="rect" id="node4" href="$query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="38,80,165,107"/>
+<area shape="rect" id="node5" href="$test__settings_8h.html" title="Provides ways for a client to change the behavior and constraints of the load generator. " alt="" coords="240,80,360,107"/>
 </map>

@@ -1,13 +1,16 @@
 var menudata={children:[
 {text:"Overview",url:"index.html"},
-{text:"Building",url:"ReadmeBuild.html"},
+{text:"API and Usage",url:"usergroup0.html",children:[
 {text:"API",url:"group__LoadgenAPI.html"},
-{text:"Settings",url:"group__LoadgenAPITestSettings.html"},
-{text:"Development",url:"usergroup0.html",children:[
+{text:"Settings",url:"group__LoadgenAPITestSettings.html"}]},
+{text:"Development",url:"usergroup1.html",children:[
 {text:"Building",url:"ReadmeBuild.html"},
 {text:"Generating this Document",url:"ReadmeHtmlDocs.html"},
 {text:"TODOs",url:"todo.html"}]},
-{text:"The Code",url:"usergroup1.html",children:[
+{text:"Test Coverage",url:"usergroup2.html",children:[
+{text:"Basic",url:"group__LoadgenTestsBasic.html"},
+{text:"Performance",url:"group__LoadgenTestsPerformance.html"}]},
+{text:"The Code",url:"usergroup3.html",children:[
 {text:"Namespace List",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},
 {text:"Namespace Members",url:"namespacemembers.html",children:[
