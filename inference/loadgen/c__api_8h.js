@@ -10,5 +10,6 @@ var c__api_8h =
     [ "ConstructSUT", "c__api_8h.html#a0e3bff827462a72f1ce7f23a8aff3da5", null ],
     [ "DestroyQSL", "c__api_8h.html#a920f923e32992e6c0d7fb63215ee8470", null ],
     [ "DestroySUT", "c__api_8h.html#aaa6acb9f96f85e5426768bbd189531f3", null ],
+    [ "QuerySamplesComplete", "c__api_8h.html#a5254b03ea4e94c64222878ecf59f7b84", null ],
     [ "StartTest", "c__api_8h.html#a5b5a1b441df4c0bda9ea259fa7db830f", null ]
 ];

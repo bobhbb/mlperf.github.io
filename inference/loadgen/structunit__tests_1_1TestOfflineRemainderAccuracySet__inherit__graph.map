@@ -1,5 +1,5 @@
 <map id="unit_tests::TestOfflineRemainderAccuracySet" name="unit_tests::TestOfflineRemainderAccuracySet">
-<area shape="rect" id="node2" href="$structunit__tests_1_1SystemUnderTestAccuracy.html" title="Provieds common test set up logic. " alt="" coords="121,696,322,788"/>
+<area shape="rect" id="node2" href="$structunit__tests_1_1SystemUnderTestAccuracy.html" title="Provides common test set up logic. " alt="" coords="121,696,322,788"/>
 <area shape="rect" id="node3" href="$structunit__tests_1_1SystemUnderTestBasic.html" title="Implements the client interfaces of the loadgen and has some basic sanity checks that are enabled for..." alt="" coords="109,204,334,648"/>
 <area shape="rect" id="node4" href="$classmlperf_1_1QuerySampleLibrary.html" title="The interface a client implements to coordinate with the loadgen which samples should be loaded..." alt="" coords="5,5,216,156"/>
 <area shape="rect" id="node5" href="$classmlperf_1_1SystemUnderTest.html" title="The interface a client implements for the loadgen to test. " alt="" coords="240,13,424,149"/>

@@ -11,7 +11,7 @@ var structmlperf_1_1loadgen_1_1PerformanceSummary =
     [ "latency_max", "structmlperf_1_1loadgen_1_1PerformanceSummary.html#af399a91160728ee78c784f569a0e919a", null ],
     [ "latency_mean", "structmlperf_1_1loadgen_1_1PerformanceSummary.html#a3d727824ab2326057869c72014cfbd2e", null ],
     [ "latency_min", "structmlperf_1_1loadgen_1_1PerformanceSummary.html#a2646a3e1f8c066356b197a8bcffb0bd4", null ],
-    [ "latency_percentiles", "structmlperf_1_1loadgen_1_1PerformanceSummary.html#a5ad9b7d50a92cad8b309cbbe99e574b8", null ],
+    [ "latency_percentiles", "structmlperf_1_1loadgen_1_1PerformanceSummary.html#a170d5dea47554bf6f7ac226d349bec8b", null ],
     [ "latency_target", "structmlperf_1_1loadgen_1_1PerformanceSummary.html#ae4a1a141fbdf4ad7561cd9a07fda54bc", null ],
     [ "pr", "structmlperf_1_1loadgen_1_1PerformanceSummary.html#a522f7f7a37f615ca503ad4ef8a5a8d73", null ],
     [ "sample_count", "structmlperf_1_1loadgen_1_1PerformanceSummary.html#abbf743d5cc220920a38bcb3107f12670", null ],

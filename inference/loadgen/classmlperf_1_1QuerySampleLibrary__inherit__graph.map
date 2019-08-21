@@ -1,7 +1,7 @@
 <map id="mlperf::QuerySampleLibrary" name="mlperf::QuerySampleLibrary">
 <area shape="rect" id="node2" href="$classperf__tests_1_1QuerySampleLibraryNull.html" title="A stub implementation of QuerySampleLibrary. " alt="" coords="5,343,248,509"/>
 <area shape="rect" id="node3" href="$structunit__tests_1_1SystemUnderTestBasic.html" title="Implements the client interfaces of the loadgen and has some basic sanity checks that are enabled for..." alt="" coords="273,204,498,648"/>
-<area shape="rect" id="node4" href="$structunit__tests_1_1SystemUnderTestAccuracy.html" title="Provieds common test set up logic. " alt="" coords="285,696,486,788"/>
+<area shape="rect" id="node4" href="$structunit__tests_1_1SystemUnderTestAccuracy.html" title="Provides common test set up logic. " alt="" coords="285,696,486,788"/>
 <area shape="rect" id="node5" href="$structunit__tests_1_1TestAccuracyIncludesAllSamples.html" title="Verifies all samples from the QSL are included at least once in accuracy mode. " alt="" coords="75,880,248,972"/>
 <area shape="rect" id="node6" href="$structunit__tests_1_1TestMultiStreamContiguousRemainderQuery.html" title="Verifies all queries only contain samples that are contiguous, even if the set size is not a multiple..." alt="" coords="273,836,498,1016"/>
 <area shape="rect" id="node7" href="$structunit__tests_1_1TestOfflineRemainderAccuracySet.html" title="Verifies offline + accuracy doesn&#39;t hang if the last set in the accuracy series is smaller than other..." alt="" coords="523,873,749,979"/>
