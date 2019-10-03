@@ -1,5 +1,5 @@
 <map id="logging.cc" name="logging.cc">
-<area shape="rect" id="node2" href="$logging_8h.html" title="Internal logging implementation details. " alt="" coords="539,80,617,107"/>
-<area shape="rect" id="node23" href="$utils_8h.html" title="Various shared utility functions. " alt="" coords="1271,80,1328,107"/>
-<area shape="rect" id="node18" href="$query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="1239,155,1360,181"/>
+<area shape="rect" id="node2" href="$logging_8h.html" title="Internal logging implementation details. " alt="" coords="525,80,599,107"/>
+<area shape="rect" id="node24" href="$utils_8h.html" title="Various shared utility functions. " alt="" coords="1221,80,1279,107"/>
+<area shape="rect" id="node18" href="$query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="1193,155,1307,181"/>
 </map>

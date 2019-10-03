@@ -1,5 +1,4 @@
 <map id="mlperf::StartTest" name="mlperf::StartTest">
-<area shape="rect" id="node2" href="$namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="179,39,363,80"/>
-<area shape="rect" id="node3" href="$classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="411,5,605,47"/>
-<area shape="rect" id="node4" href="$classmlperf_1_1QuerySampleLibrary.html#a605d484a0e7ceef28f3eec0283551ee2" title="The number of samples that are guaranteed to fit in RAM. " alt="" coords="411,71,605,112"/>
+<area shape="rect" id="node2" href="$structmlperf_1_1TestSettings.html#adb1ce39f2fc342ad8a5f9cbe85451f96" title="Load mlperf parameter config from file. " alt="" coords="195,5,335,47"/>
+<area shape="rect" id="node3" href="$classmlperf_1_1QuerySampleLibrary.html#a605d484a0e7ceef28f3eec0283551ee2" title="The number of samples that are guaranteed to fit in RAM. " alt="" coords="173,71,357,112"/>
 </map>

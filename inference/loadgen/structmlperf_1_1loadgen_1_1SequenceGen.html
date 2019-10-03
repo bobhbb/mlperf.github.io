@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('structmlperf_1_1loadgen_1_1SequenceGen
 </div><!--header-->
 <div class="contents">
 
-<p>Every query and sample within a call to StartTest gets a unique sequence id for easy cross reference.  
+<p>Every query and sample within a call to StartTest gets a unique sequence id for easy cross reference, and a random number which is used to determine accuracy logging when it is enabled.  
  <a href="structmlperf_1_1loadgen_1_1SequenceGen.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for mlperf::loadgen::SequenceGen:</div>
@@ -94,6 +94,8 @@ $(document).ready(function(){initNavTree('structmlperf_1_1loadgen_1_1SequenceGen
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structmlperf_1_1loadgen_1_1SequenceGen__coll__graph.png" border="0" usemap="#mlperf_1_1loadgen_1_1SequenceGen_coll__map" alt="Collaboration graph"/></div>
+<map name="mlperf_1_1loadgen_1_1SequenceGen_coll__map" id="mlperf_1_1loadgen_1_1SequenceGen_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -107,6 +109,12 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>NextSampleId</b> 
 <tr class="memitem:a3d15dbbe9dda0376a1925bcce2d665f3"><td class="memItemLeft" align="right" valign="top"><a id="a3d15dbbe9dda0376a1925bcce2d665f3"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentSampleId</b> ()</td></tr>
 <tr class="separator:a3d15dbbe9dda0376a1925bcce2d665f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c1a2c8ce0287f5dc752facf8f0158d"><td class="memItemLeft" align="right" valign="top"><a id="ab7c1a2c8ce0287f5dc752facf8f0158d"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>NextAccLogRng</b> ()</td></tr>
+<tr class="separator:ab7c1a2c8ce0287f5dc752facf8f0158d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2308194d621f2e3ce7f9f13d6f68019"><td class="memItemLeft" align="right" valign="top"><a id="ad2308194d621f2e3ce7f9f13d6f68019"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitAccLogRng</b> (uint64_t accuracy_log_rng_seed)</td></tr>
+<tr class="separator:ad2308194d621f2e3ce7f9f13d6f68019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -116,12 +124,42 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>query_id</b> = 0<
 <tr class="memitem:a587688413467b3dfc9f9d4f534fa84c9"><td class="memItemLeft" align="right" valign="top"><a id="a587688413467b3dfc9f9d4f534fa84c9"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>sample_id</b> = 0</td></tr>
 <tr class="separator:a587688413467b3dfc9f9d4f534fa84c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63527ac897905f46a5a9bd9409e80bee"><td class="memItemLeft" align="right" valign="top"><a id="a63527ac897905f46a5a9bd9409e80bee"></a>
+std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><b>accuracy_log_rng</b></td></tr>
+<tr class="separator:a63527ac897905f46a5a9bd9409e80bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a36f25c56783d154dcb9c9fedfeecb"><td class="memItemLeft" align="right" valign="top">std::uniform_real_distribution&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>accuracy_log_dist</b></td></tr>
+<tr class="separator:ae4a36f25c56783d154dcb9c9fedfeecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Every query and sample within a call to StartTest gets a unique sequence id for easy cross reference. </p>
+<div class="textblock"><p>Every query and sample within a call to StartTest gets a unique sequence id for easy cross reference, and a random number which is used to determine accuracy logging when it is enabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00048">48</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00053">53</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae4a36f25c56783d154dcb9c9fedfeecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a36f25c56783d154dcb9c9fedfeecb">&#9670;&nbsp;</a></span>accuracy_log_dist</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uniform_real_distribution&lt;double&gt; mlperf::loadgen::SequenceGen::accuracy_log_dist</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      std::uniform_real_distribution&lt;double&gt;(0, 1)</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00066">66</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="loadgen_8cc_source.html">loadgen.cc</a></li>
 </ul>
 </div><!-- contents -->

@@ -95,6 +95,8 @@ $(document).ready(function(){initNavTree('classmlperf_1_1logging_1_1TlsLogger.ht
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmlperf_1_1logging_1_1TlsLogger__coll__graph.png" border="0" usemap="#mlperf_1_1logging_1_1TlsLogger_coll__map" alt="Collaboration graph"/></div>
+<map name="mlperf_1_1logging_1_1TlsLogger_coll__map" id="mlperf_1_1logging_1_1TlsLogger_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -120,12 +122,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FinishReadingEntries<
 <tr class="memitem:a26f0b81047a44e307cb5845efbff746a"><td class="memItemLeft" align="right" valign="top"><a id="a26f0b81047a44e307cb5845efbff746a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadBufferHasBeenConsumed</b> ()</td></tr>
 <tr class="separator:a26f0b81047a44e307cb5845efbff746a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb9a93394013a991f6b8e88ebc9ce6a5"><td class="memItemLeft" align="right" valign="top"><a id="adb9a93394013a991f6b8e88ebc9ce6a5"></a>
-const std::string *&#160;</td><td class="memItemRight" valign="bottom"><b>TracePidTidString</b> () const</td></tr>
-<tr class="separator:adb9a93394013a991f6b8e88ebc9ce6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a842050430d9affa200676d26ff9403f5"><td class="memItemLeft" align="right" valign="top"><a id="a842050430d9affa200676d26ff9403f5"></a>
-const std::string *&#160;</td><td class="memItemRight" valign="bottom"><b>TidAsString</b> () const</td></tr>
-<tr class="separator:a842050430d9affa200676d26ff9403f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8614da15118fa0cd31caf08b81c1914"><td class="memItemLeft" align="right" valign="top"><a id="aa8614da15118fa0cd31caf08b81c1914"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxEntryVectorSize</b> ()</td></tr>
+<tr class="separator:aa8614da15118fa0cd31caf08b81c1914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c3e7ea12b15a65a4cacd013ad1a077"><td class="memItemLeft" align="right" valign="top"><a id="aa3c3e7ea12b15a65a4cacd013ad1a077"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>Pid</b> () const</td></tr>
+<tr class="separator:aa3c3e7ea12b15a65a4cacd013ad1a077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eedf48002bfd1bd4bb923bbedc52144"><td class="memItemLeft" align="right" valign="top"><a id="a5eedf48002bfd1bd4bb923bbedc52144"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>Tid</b> () const</td></tr>
+<tr class="separator:a5eedf48002bfd1bd4bb923bbedc52144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60e003a7316e0fc00f97ddf7e88760f4"><td class="memItemLeft" align="right" valign="top"><a id="a60e003a7316e0fc00f97ddf7e88760f4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestSwapBuffersSlotRetried</b> ()</td></tr>
 <tr class="separator:a60e003a7316e0fc00f97ddf7e88760f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,12 +180,15 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>unread_swaps_</b> =
 <tr class="memitem:acc6a1f21b247a6a66a65d3c9d1bab895"><td class="memItemLeft" align="right" valign="top"><a id="acc6a1f21b247a6a66a65d3c9d1bab895"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>i_write_prev_</b> = 0</td></tr>
 <tr class="separator:acc6a1f21b247a6a66a65d3c9d1bab895"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9b677dc5c6b5ba2bb6d5ffeb100ef52"><td class="memItemLeft" align="right" valign="top"><a id="ad9b677dc5c6b5ba2bb6d5ffeb100ef52"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>trace_pid_tid_</b></td></tr>
-<tr class="separator:ad9b677dc5c6b5ba2bb6d5ffeb100ef52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac75bad298e4107d15554c870675609f0"><td class="memItemLeft" align="right" valign="top"><a id="ac75bad298e4107d15554c870675609f0"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>tid_as_string_</b></td></tr>
-<tr class="separator:ac75bad298e4107d15554c870675609f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df73bfe3b7d8195905f3e8eff69b477"><td class="memItemLeft" align="right" valign="top"><a id="a1df73bfe3b7d8195905f3e8eff69b477"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>pid_</b></td></tr>
+<tr class="separator:a1df73bfe3b7d8195905f3e8eff69b477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcd63b160cdbd50a53767f47d4758cb"><td class="memItemLeft" align="right" valign="top"><a id="afbcd63b160cdbd50a53767f47d4758cb"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>tid_</b></td></tr>
+<tr class="separator:afbcd63b160cdbd50a53767f47d4758cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a89fe24aef238cc58db617b6b81164"><td class="memItemLeft" align="right" valign="top"><a id="a61a89fe24aef238cc58db617b6b81164"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_entry_size_</b> = kTlsLogReservedEntryCount</td></tr>
+<tr class="separator:a61a89fe24aef238cc58db617b6b81164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa76c4e23d47a407b338ed51ab0dba97d"><td class="memItemLeft" align="right" valign="top"><a id="aa76c4e23d47a407b338ed51ab0dba97d"></a>
 std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>forced_detatch_</b></td></tr>
 <tr class="separator:aa76c4e23d47a407b338ed51ab0dba97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,11 +197,10 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
 <div class="textblock"><p>Records a single thread using thread-local storage and submits entries to the central <a class="el" href="classmlperf_1_1logging_1_1Logger.html" title="The central logger that logs all threads belonging to a run. ">Logger</a>. </p>
 <p>This setup allows for each log entry to be added:</p><ul>
 <li>With forward-progress guarantees. (i.e.: no locking or blocking operations even if other threads have stalled.)</li>
-<li>Without expensive syscalls or I/O operations, which are deferred to the central <a class="el" href="classmlperf_1_1logging_1_1Logger.html" title="The central logger that logs all threads belonging to a run. ">Logger</a>.</li>
+<li>Without expensive syscalls or I/O operations, which are deferred to the central <a class="el" href="classmlperf_1_1logging_1_1Logger.html" title="The central logger that logs all threads belonging to a run. ">Logger</a>. </li>
 </ul>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Pre-allocate entries_ with enough space so that allocation for logging doesn't need to occur at runtime. Maybe override allocator to print a warning if allocation is performed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8cc_source.html#l00320">320</a> of file <a class="el" href="logging_8cc_source.html">logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8cc_source.html#l00374">374</a> of file <a class="el" href="logging_8cc_source.html">logging.cc</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a6108ceb499fefcbd4fd5280a612073e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6108ceb499fefcbd4fd5280a612073e7">&#9670;&nbsp;</a></span>entry_states_</h2>
@@ -215,7 +222,7 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{{EntryState::ReadLock},</div><div class="line">                                           {EntryState::Unlocked}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8cc_source.html#l00364">364</a> of file <a class="el" href="logging_8cc_source.html">logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8cc_source.html#l00418">418</a> of file <a class="el" href="logging_8cc_source.html">logging.cc</a>.</p>
 
 </div>
 </div>

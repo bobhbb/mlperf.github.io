@@ -78,6 +78,7 @@ $(document).ready(function(){initNavTree('namespacemlperf_1_1loadgen.html','');}
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -89,6 +90,12 @@ $(document).ready(function(){initNavTree('namespacemlperf_1_1loadgen.html','');}
 <p>Loadgen implementation details.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemlperf_1_1loadgen_1_1find__peak__performance"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen_1_1find__peak__performance.html">find_peak_performance</a></td></tr>
+<tr class="memdesc:namespacemlperf_1_1loadgen_1_1find__peak__performance"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace of collections of FindPeakPerformance helper functions, mainly about binary search. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1loadgen_1_1DurationGeneratorNs.html">DurationGeneratorNs</a></td></tr>
@@ -140,7 +147,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by the loadgen to coordinate response data and completion.  <a href="structmlperf_1_1loadgen_1_1SampleMetadata.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every query and sample within a call to StartTest gets a unique sequence id for easy cross reference.  <a href="structmlperf_1_1loadgen_1_1SequenceGen.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every query and sample within a call to StartTest gets a unique sequence id for easy cross reference, and a random number which is used to determine accuracy logging when it is enabled.  <a href="structmlperf_1_1loadgen_1_1SequenceGen.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html">TestSettingsInternal</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">takes the user-friendly <a class="el" href="structmlperf_1_1TestSettings.html" title="Top-level struct specifing the modes and parameters of the test. ">TestSettings</a> and normalizes it for consumption by the loadgen.  <a href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html#details">More...</a><br /></td></tr>
@@ -181,21 +188,29 @@ Functions</h2></td></tr>
 <tr class="memitem:a94116a2f7df30d0257e3810b430b0279"><td class="memItemLeft" align="right" valign="top"><a id="a94116a2f7df30d0257e3810b430b0279"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadSamplesToRam</b> (<a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, const std::vector&lt; <a class="el" href="group__LoadgenAPI.html#ga652e52727f74919e985ec33c5fe9be4f">QuerySampleIndex</a> &gt; &amp;samples)</td></tr>
 <tr class="separator:a94116a2f7df30d0257e3810b430b0279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1700bad264e2d159c27a6e9bb1700a6f"><td class="memTemplParams" colspan="2">template&lt;TestScenario scenario&gt; </td></tr>
-<tr class="memitem:a1700bad264e2d159c27a6e9bb1700a6f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html#a1700bad264e2d159c27a6e9bb1700a6f">RunPerformanceMode</a> (<a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html">TestSettingsInternal</a> &amp;settings, const std::vector&lt; <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html">LoadableSampleSet</a> &gt; &amp;loadable_sets, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *sequence_gen)</td></tr>
-<tr class="memdesc:a1700bad264e2d159c27a6e9bb1700a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the performance mode, templated by scenario.  <a href="#a1700bad264e2d159c27a6e9bb1700a6f">More...</a><br /></td></tr>
-<tr class="separator:a1700bad264e2d159c27a6e9bb1700a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21794e60883b3ea92450030548aa001a"><td class="memTemplParams" colspan="2">template&lt;TestScenario scenario&gt; </td></tr>
-<tr class="memitem:a21794e60883b3ea92450030548aa001a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html#a21794e60883b3ea92450030548aa001a">FindPeakPerformanceMode</a> (<a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html">TestSettingsInternal</a> &amp;settings, const std::vector&lt; <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html">LoadableSampleSet</a> &gt; &amp;loadable_sets, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *sequence_gen)</td></tr>
-<tr class="memdesc:a21794e60883b3ea92450030548aa001a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the binary search mode, templated by scenario.  <a href="#a21794e60883b3ea92450030548aa001a">More...</a><br /></td></tr>
-<tr class="separator:a21794e60883b3ea92450030548aa001a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8478f30e88678d619185375f66632a56"><td class="memTemplParams" colspan="2">template&lt;TestScenario scenario&gt; </td></tr>
-<tr class="memitem:a8478f30e88678d619185375f66632a56"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html#a8478f30e88678d619185375f66632a56">RunAccuracyMode</a> (<a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html">TestSettingsInternal</a> &amp;settings, const std::vector&lt; <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html">LoadableSampleSet</a> &gt; &amp;loadable_sets, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *sequence_gen)</td></tr>
-<tr class="memdesc:a8478f30e88678d619185375f66632a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the accuracy mode, templated by scenario.  <a href="#a8478f30e88678d619185375f66632a56">More...</a><br /></td></tr>
-<tr class="separator:a8478f30e88678d619185375f66632a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a479affd05ed46c01b20a4ffa43c9661d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html">LoadableSampleSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d">GenerateLoadableSets</a> (<a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html">TestSettingsInternal</a> &amp;settings)</td></tr>
 <tr class="memdesc:a479affd05ed46c01b20a4ffa43c9661d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates random sets of samples in the QSL that we can load into RAM at the same time.  <a href="#a479affd05ed46c01b20a4ffa43c9661d">More...</a><br /></td></tr>
 <tr class="separator:a479affd05ed46c01b20a4ffa43c9661d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30fa007ad238a8a77f062f568a8d893a"><td class="memTemplParams" colspan="2">template&lt;TestScenario scenario&gt; </td></tr>
+<tr class="memitem:a30fa007ad238a8a77f062f568a8d893a"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a>, <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html#a30fa007ad238a8a77f062f568a8d893a">FindBoundaries</a> (<a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *sequence_gen, <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a> l_perf_summary)</td></tr>
+<tr class="memdesc:a30fa007ad238a8a77f062f568a8d893a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find boundaries of performance settings by widening bounds exponentially.  <a href="#a30fa007ad238a8a77f062f568a8d893a">More...</a><br /></td></tr>
+<tr class="separator:a30fa007ad238a8a77f062f568a8d893a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e88bf9f5fef94aedc1df3abf68a025"><td class="memTemplParams" colspan="2">template&lt;TestScenario scenario&gt; </td></tr>
+<tr class="memitem:a73e88bf9f5fef94aedc1df3abf68a025"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html#a73e88bf9f5fef94aedc1df3abf68a025">FindPeakPerformanceBinarySearch</a> (<a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *sequence_gen, const <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html">LoadableSampleSet</a> &amp;performance_set, <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a> l_perf_summary, <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a> u_perf_summary)</td></tr>
+<tr class="memdesc:a73e88bf9f5fef94aedc1df3abf68a025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find peak performance by binary search.  <a href="#a73e88bf9f5fef94aedc1df3abf68a025">More...</a><br /></td></tr>
+<tr class="separator:a73e88bf9f5fef94aedc1df3abf68a025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430ef8e4bc0f101fa68d13f7aa0e54fc"><td class="memTemplParams" colspan="2">template&lt;TestScenario scenario&gt; </td></tr>
+<tr class="memitem:a430ef8e4bc0f101fa68d13f7aa0e54fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html#a430ef8e4bc0f101fa68d13f7aa0e54fc">RunPerformanceMode</a> (<a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html">TestSettingsInternal</a> &amp;settings, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *sequence_gen)</td></tr>
+<tr class="memdesc:a430ef8e4bc0f101fa68d13f7aa0e54fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the performance mode, templated by scenario.  <a href="#a430ef8e4bc0f101fa68d13f7aa0e54fc">More...</a><br /></td></tr>
+<tr class="separator:a430ef8e4bc0f101fa68d13f7aa0e54fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6baf6146965cf57af6630c0abcac9c36"><td class="memTemplParams" colspan="2">template&lt;TestScenario scenario&gt; </td></tr>
+<tr class="memitem:a6baf6146965cf57af6630c0abcac9c36"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html#a6baf6146965cf57af6630c0abcac9c36">FindPeakPerformanceMode</a> (<a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html">TestSettingsInternal</a> &amp;base_settings, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *sequence_gen)</td></tr>
+<tr class="memdesc:a6baf6146965cf57af6630c0abcac9c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the binary search mode, templated by scenario.  <a href="#a6baf6146965cf57af6630c0abcac9c36">More...</a><br /></td></tr>
+<tr class="separator:a6baf6146965cf57af6630c0abcac9c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b15830132ce76627854c3a789bf81b"><td class="memTemplParams" colspan="2">template&lt;TestScenario scenario&gt; </td></tr>
+<tr class="memitem:a79b15830132ce76627854c3a789bf81b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html#a79b15830132ce76627854c3a789bf81b">RunAccuracyMode</a> (<a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html">TestSettingsInternal</a> &amp;settings, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *sequence_gen)</td></tr>
+<tr class="memdesc:a79b15830132ce76627854c3a789bf81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the accuracy mode, templated by scenario.  <a href="#a79b15830132ce76627854c3a789bf81b">More...</a><br /></td></tr>
+<tr class="separator:a79b15830132ce76627854c3a789bf81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6427005e8ab9192d77884bc7f2e6afa"><td class="memItemLeft" align="right" valign="top"><a id="ae6427005e8ab9192d77884bc7f2e6afa"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> (<a class="el" href="group__LoadgenAPITestSettings.html#ga7fedeb2084e2f956c6386ffce01d2016">TestScenario</a> scenario)</td></tr>
 <tr class="separator:ae6427005e8ab9192d77884bc7f2e6afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,8 +224,137 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>LogRequestedTestSetti
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Loadgen implementation details. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a21794e60883b3ea92450030548aa001a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21794e60883b3ea92450030548aa001a">&#9670;&nbsp;</a></span>FindPeakPerformanceMode()</h2>
+<a id="a30fa007ad238a8a77f062f568a8d893a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30fa007ad238a8a77f062f568a8d893a">&#9670;&nbsp;</a></span>FindBoundaries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestScenario scenario&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;<a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a>, <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a>&gt; mlperf::loadgen::FindBoundaries </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *&#160;</td>
+          <td class="paramname"><em>sut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *&#160;</td>
+          <td class="paramname"><em>qsl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *&#160;</td>
+          <td class="paramname"><em>sequence_gen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a>&#160;</td>
+          <td class="paramname"><em>l_perf_summary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find boundaries of performance settings by widening bounds exponentially. </p>
+<p>To find an upper bound of performance, widen an upper bound exponentially until finding a bound that can't satisfy performance constraints. i.e. [1, 2) -&gt; [2, 4) -&gt; [4, 8) -&gt; ... </p>
+
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01264">1264</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacemlperf_1_1loadgen_a30fa007ad238a8a77f062f568a8d893a_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a30fa007ad238a8a77f062f568a8d893a_cgraph" alt=""/></div>
+<map name="namespacemlperf_1_1loadgen_a30fa007ad238a8a77f062f568a8d893a_cgraph" id="namespacemlperf_1_1loadgen_a30fa007ad238a8a77f062f568a8d893a_cgraph">
+<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="269,5,441,47"/>
+<area shape="rect" id="node4" href="classmlperf_1_1SystemUnderTest.html#ad20aa0a23ea630d130e32564099d2974" title="A human&#45;readable string for logging purposes. " alt="" coords="269,71,441,112"/>
+<area shape="rect" id="node5" href="classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="263,136,447,177"/>
+<area shape="rect" id="node3" href="classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="495,5,679,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73e88bf9f5fef94aedc1df3abf68a025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e88bf9f5fef94aedc1df3abf68a025">&#9670;&nbsp;</a></span>FindPeakPerformanceBinarySearch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestScenario scenario&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a> mlperf::loadgen::FindPeakPerformanceBinarySearch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *&#160;</td>
+          <td class="paramname"><em>sut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *&#160;</td>
+          <td class="paramname"><em>qsl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *&#160;</td>
+          <td class="paramname"><em>sequence_gen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html">LoadableSampleSet</a> &amp;&#160;</td>
+          <td class="paramname"><em>performance_set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a>&#160;</td>
+          <td class="paramname"><em>l_perf_summary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">PerformanceSummary</a>&#160;</td>
+          <td class="paramname"><em>u_perf_summary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find peak performance by binary search. </p>
+<p>The found lower &amp; upper bounds by the function 'FindBoundaries' are used as initial bounds of binary search </p>
+
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01303">1303</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacemlperf_1_1loadgen_a73e88bf9f5fef94aedc1df3abf68a025_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a73e88bf9f5fef94aedc1df3abf68a025_cgraph" alt=""/></div>
+<map name="namespacemlperf_1_1loadgen_a73e88bf9f5fef94aedc1df3abf68a025_cgraph" id="namespacemlperf_1_1loadgen_a73e88bf9f5fef94aedc1df3abf68a025_cgraph">
+<area shape="rect" id="node2" href="classmlperf_1_1SystemUnderTest.html#ad20aa0a23ea630d130e32564099d2974" title="A human&#45;readable string for logging purposes. " alt="" coords="228,5,400,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6baf6146965cf57af6630c0abcac9c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6baf6146965cf57af6630c0abcac9c36">&#9670;&nbsp;</a></span>FindPeakPerformanceMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,13 +377,7 @@ template&lt;TestScenario scenario&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html">TestSettingsInternal</a> &amp;&#160;</td>
-          <td class="paramname"><em>settings</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html">LoadableSampleSet</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>loadable_sets</em>, </td>
+          <td class="paramname"><em>base_settings</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -256,20 +394,23 @@ template&lt;TestScenario scenario&gt; </div>
 </div><div class="memdoc">
 
 <p>Runs the binary search mode, templated by scenario. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd><p class="startdd">Make binary search work for the multi-stream scenario. </p>
-<p class="enddd">Make binary search work for the server scenario. </p>
-</dd></dl>
+<ol type="1">
+<li>Check whether lower bound from user satisfies the performance constraints, 2. Find an upper bound using the function 'FindBoundaries' based on the lower bound, 3. Find peak performance settings using the function 'FindPeakPerformanceBinarySearch'. note: Since we can't find a lower bound programmatically because of the monotonicity issue of Server scenario, rely on user's settings. After resolving this issue, we can make the function 'FindBoundaries' find a lower bound as well from some random initial settings. </li>
+</ol>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00998">998</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01429">1429</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="namespacemlperf_1_1loadgen_a21794e60883b3ea92450030548aa001a_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a21794e60883b3ea92450030548aa001a_cgraph" alt=""/></div>
-<map name="namespacemlperf_1_1loadgen_a21794e60883b3ea92450030548aa001a_cgraph" id="namespacemlperf_1_1loadgen_a21794e60883b3ea92450030548aa001a_cgraph">
-<area shape="rect" id="node2" href="classmlperf_1_1SystemUnderTest.html#ad20aa0a23ea630d130e32564099d2974" title="A human&#45;readable string for logging purposes. " alt="" coords="243,5,423,47"/>
-<area shape="rect" id="node3" href="classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="236,71,431,112"/>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacemlperf_1_1loadgen_a6baf6146965cf57af6630c0abcac9c36_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a6baf6146965cf57af6630c0abcac9c36_cgraph" alt=""/></div>
+<map name="namespacemlperf_1_1loadgen_a6baf6146965cf57af6630c0abcac9c36_cgraph" id="namespacemlperf_1_1loadgen_a6baf6146965cf57af6630c0abcac9c36_cgraph">
+<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="234,5,406,47"/>
+<area shape="rect" id="node4" href="classmlperf_1_1SystemUnderTest.html#ad20aa0a23ea630d130e32564099d2974" title="A human&#45;readable string for logging purposes. " alt="" coords="234,71,406,112"/>
+<area shape="rect" id="node5" href="classmlperf_1_1SystemUnderTest.html#a339dee5696b6fb6687b2b90310e81903" title="Reports the raw latency results to the SUT of each sample issued as recorded by the load generator..." alt="" coords="234,136,406,177"/>
+<area shape="rect" id="node6" href="classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="228,201,412,243"/>
+<area shape="rect" id="node3" href="classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="460,5,644,47"/>
 </map>
 </div>
 
@@ -303,29 +444,28 @@ template&lt;TestScenario scenario&gt; </div>
 
 <p>Generates random sets of samples in the QSL that we can load into RAM at the same time. </p>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01091">1091</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01152">1152</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacemlperf_1_1loadgen_a479affd05ed46c01b20a4ffa43c9661d_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a479affd05ed46c01b20a4ffa43c9661d_cgraph" alt=""/></div>
 <map name="namespacemlperf_1_1loadgen_a479affd05ed46c01b20a4ffa43c9661d_cgraph" id="namespacemlperf_1_1loadgen_a479affd05ed46c01b20a4ffa43c9661d_cgraph">
-<area shape="rect" id="node2" href="classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="237,5,432,47"/>
-<area shape="rect" id="node3" href="classmlperf_1_1QuerySampleLibrary.html#a605d484a0e7ceef28f3eec0283551ee2" title="The number of samples that are guaranteed to fit in RAM. " alt="" coords="237,71,432,112"/>
+<area shape="rect" id="node2" href="classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="225,5,409,47"/>
 </map>
 </div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacemlperf_1_1loadgen_a479affd05ed46c01b20a4ffa43c9661d_icgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a479affd05ed46c01b20a4ffa43c9661d_icgraph" alt=""/></div>
 <map name="namespacemlperf_1_1loadgen_a479affd05ed46c01b20a4ffa43c9661d_icgraph" id="namespacemlperf_1_1loadgen_a479affd05ed46c01b20a4ffa43c9661d_icgraph">
-<area shape="rect" id="node2" href="group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea" title="Starts the test against SUT with the specified settings. " alt="" coords="237,64,363,91"/>
-<area shape="rect" id="node3" href="group__LoadgenTestsPerformance.html#ga1cccd99a3ea0c9ffee63a8074a86131c" title="Runs single stream traffic. " alt="" coords="411,5,613,32"/>
-<area shape="rect" id="node4" href="group__LoadgenTestsPerformance.html#gadaca2a18c227ed1a0100f999c899ca4e" title="Tests server traffic using SystemUnderTestNullStdAsync. " alt="" coords="421,57,603,98"/>
-<area shape="rect" id="node5" href="group__LoadgenTestsPerformance.html#ga4a9e0474f76b9e5246ad5ad5620b4f53" title="Tests server traffic using SystemUnderTestNullPool. " alt="" coords="417,123,607,149"/>
+<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a30fa007ad238a8a77f062f568a8d893a" title="Find boundaries of performance settings by widening bounds exponentially. " alt="" coords="245,5,455,32"/>
+<area shape="rect" id="node3" href="namespacemlperf_1_1loadgen.html#a430ef8e4bc0f101fa68d13f7aa0e54fc" title="Runs the performance mode, templated by scenario. " alt="" coords="225,56,475,83"/>
+<area shape="rect" id="node4" href="namespacemlperf_1_1loadgen.html#a6baf6146965cf57af6630c0abcac9c36" title="Runs the binary search mode, templated by scenario. " alt="" coords="263,107,437,149"/>
+<area shape="rect" id="node5" href="namespacemlperf_1_1loadgen.html#a79b15830132ce76627854c3a789bf81b" title="Runs the accuracy mode, templated by scenario. " alt="" coords="235,173,465,200"/>
 </map>
 </div>
 
@@ -372,11 +512,21 @@ template&lt;TestScenario scenario, TestMode mode&gt; </div>
 </div><div class="memdoc">
 
 <p>Generates queries for the requested settings, templated by scenario and mode. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd><p class="startdd">Make GenerateQueries faster. <a class="el" href="classmlperf_1_1loadgen_1_1QueryMetadata.html" title="Maintains data and timing info for a query and all its samples. ">QueryMetadata</a> is expensive to move; either reserve queries in advance so the queries vector doesn't need to grow. And/or parent samples to their queries only after all queries have been generated. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd><p class="startdd">Make GenerateQueries faster. <a class="el" href="classmlperf_1_1loadgen_1_1QueryMetadata.html" title="Maintains data and timing info for a query and all its samples. ">QueryMetadata</a> is expensive to move; either reserve queries in advance so the queries vector doesn't need to grow. And/or parent samples to their queries only after all queries have been generated. </p>
 <p class="enddd">For the server scenario only, scale the query timeline at the end so the QPS as scheduled is equal to the QPS as requested. </p>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00288">288</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00306">306</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacemlperf_1_1loadgen_aea9b5a4e74a251f520d4e86f339d7626_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_aea9b5a4e74a251f520d4e86f339d7626_cgraph" alt=""/></div>
+<map name="namespacemlperf_1_1loadgen_aea9b5a4e74a251f520d4e86f339d7626_cgraph" id="namespacemlperf_1_1loadgen_aea9b5a4e74a251f520d4e86f339d7626_cgraph">
+<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a22d7fd788815a21b64bfa721f0196d24" title="Selects samples for the accuracy mode. " alt="" coords="225,13,455,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -422,23 +572,23 @@ template&lt;TestScenario scenario, TestMode mode&gt; </div>
 
 <p>Issues a series of pre-generated queries. </p>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00569">569</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00617">617</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacemlperf_1_1loadgen_acdfb931e0cc30c8c3bb53d944bb20ba5_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_acdfb931e0cc30c8c3bb53d944bb20ba5_cgraph" alt=""/></div>
 <map name="namespacemlperf_1_1loadgen_acdfb931e0cc30c8c3bb53d944bb20ba5_cgraph" id="namespacemlperf_1_1loadgen_acdfb931e0cc30c8c3bb53d944bb20ba5_cgraph">
-<area shape="rect" id="node2" href="classmlperf_1_1SystemUnderTest.html#ad962f27eeff691c555abb0dc72b81104" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="260,5,440,47"/>
-<area shape="rect" id="node3" href="classmlperf_1_1SystemUnderTest.html#a2c054c8bad0f06beaf2b550235df18f2" title="Called immediately after the last call to IssueQuery in a series is made. " alt="" coords="260,71,440,112"/>
+<area shape="rect" id="node2" href="classmlperf_1_1SystemUnderTest.html#ad962f27eeff691c555abb0dc72b81104" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="249,5,421,47"/>
+<area shape="rect" id="node3" href="classmlperf_1_1SystemUnderTest.html#a2c054c8bad0f06beaf2b550235df18f2" title="Called immediately after the last call to IssueQuery in a series is made. " alt="" coords="249,71,421,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a8478f30e88678d619185375f66632a56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8478f30e88678d619185375f66632a56">&#9670;&nbsp;</a></span>RunAccuracyMode()</h2>
+<a id="a79b15830132ce76627854c3a789bf81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b15830132ce76627854c3a789bf81b">&#9670;&nbsp;</a></span>RunAccuracyMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,12 +616,6 @@ template&lt;TestScenario scenario&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html">LoadableSampleSet</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>loadable_sets</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *&#160;</td>
           <td class="paramname"><em>sequence_gen</em>&#160;</td>
         </tr>
@@ -485,22 +629,24 @@ template&lt;TestScenario scenario&gt; </div>
 
 <p>Runs the accuracy mode, templated by scenario. </p>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01027">1027</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01534">1534</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="namespacemlperf_1_1loadgen_a8478f30e88678d619185375f66632a56_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a8478f30e88678d619185375f66632a56_cgraph" alt=""/></div>
-<map name="namespacemlperf_1_1loadgen_a8478f30e88678d619185375f66632a56_cgraph" id="namespacemlperf_1_1loadgen_a8478f30e88678d619185375f66632a56_cgraph">
-<area shape="rect" id="node2" href="classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="296,5,491,47"/>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacemlperf_1_1loadgen_a79b15830132ce76627854c3a789bf81b_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a79b15830132ce76627854c3a789bf81b_cgraph" alt=""/></div>
+<map name="namespacemlperf_1_1loadgen_a79b15830132ce76627854c3a789bf81b_cgraph" id="namespacemlperf_1_1loadgen_a79b15830132ce76627854c3a789bf81b_cgraph">
+<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="290,5,462,47"/>
+<area shape="rect" id="node4" href="classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="284,71,468,112"/>
+<area shape="rect" id="node3" href="classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="516,5,700,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a1700bad264e2d159c27a6e9bb1700a6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1700bad264e2d159c27a6e9bb1700a6f">&#9670;&nbsp;</a></span>RunPerformanceMode()</h2>
+<a id="a430ef8e4bc0f101fa68d13f7aa0e54fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430ef8e4bc0f101fa68d13f7aa0e54fc">&#9670;&nbsp;</a></span>RunPerformanceMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,12 +674,6 @@ template&lt;TestScenario scenario&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html">LoadableSampleSet</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>loadable_sets</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html">SequenceGen</a> *&#160;</td>
           <td class="paramname"><em>sequence_gen</em>&#160;</td>
         </tr>
@@ -547,17 +687,18 @@ template&lt;TestScenario scenario&gt; </div>
 
 <p>Runs the performance mode, templated by scenario. </p>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00972">972</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01348">1348</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="namespacemlperf_1_1loadgen_a1700bad264e2d159c27a6e9bb1700a6f_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a1700bad264e2d159c27a6e9bb1700a6f_cgraph" alt=""/></div>
-<map name="namespacemlperf_1_1loadgen_a1700bad264e2d159c27a6e9bb1700a6f_cgraph" id="namespacemlperf_1_1loadgen_a1700bad264e2d159c27a6e9bb1700a6f_cgraph">
-<area shape="rect" id="node2" href="classmlperf_1_1SystemUnderTest.html#a339dee5696b6fb6687b2b90310e81903" title="Reports the raw latency results to the SUT of each sample issued as recorded by the load generator..." alt="" coords="333,5,513,47"/>
-<area shape="rect" id="node3" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html#ad1cdc17ee1ffc0d09713e59724b6a945" title="mlperf::loadgen::Performance\lSummary::Log" alt="" coords="320,71,525,112"/>
-<area shape="rect" id="node4" href="classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="325,136,520,177"/>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacemlperf_1_1loadgen_a430ef8e4bc0f101fa68d13f7aa0e54fc_cgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a430ef8e4bc0f101fa68d13f7aa0e54fc_cgraph" alt=""/></div>
+<map name="namespacemlperf_1_1loadgen_a430ef8e4bc0f101fa68d13f7aa0e54fc_cgraph" id="namespacemlperf_1_1loadgen_a430ef8e4bc0f101fa68d13f7aa0e54fc_cgraph">
+<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="309,5,481,47"/>
+<area shape="rect" id="node4" href="classmlperf_1_1SystemUnderTest.html#a339dee5696b6fb6687b2b90310e81903" title="Reports the raw latency results to the SUT of each sample issued as recorded by the load generator..." alt="" coords="309,71,481,112"/>
+<area shape="rect" id="node5" href="classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="303,136,487,177"/>
+<area shape="rect" id="node3" href="classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="535,5,719,47"/>
 </map>
 </div>
 
@@ -599,7 +740,17 @@ template&lt;TestMode mode&gt; </div>
 
 <p>Selects samples for the accuracy mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00255">255</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00277">277</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacemlperf_1_1loadgen_a22d7fd788815a21b64bfa721f0196d24_icgraph.png" border="0" usemap="#namespacemlperf_1_1loadgen_a22d7fd788815a21b64bfa721f0196d24_icgraph" alt=""/></div>
+<map name="namespacemlperf_1_1loadgen_a22d7fd788815a21b64bfa721f0196d24_icgraph" id="namespacemlperf_1_1loadgen_a22d7fd788815a21b64bfa721f0196d24_icgraph">
+<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#aea9b5a4e74a251f520d4e86f339d7626" title="Generates queries for the requested settings, templated by scenario and mode. " alt="" coords="283,5,455,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -638,9 +789,8 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 
 <p>Selects samples for the performance mode. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Contiguous samples for the offline scenario. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00270">270</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00290">290</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
 
 </div>
 </div>
@@ -664,7 +814,7 @@ template&lt;TestScenario scenario&gt; </div>
 
 <p>Selects the query timestamps for all scenarios except Server. </p>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00235">235</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00257">257</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
 
 </div>
 </div>
@@ -688,7 +838,7 @@ template&lt;&gt; </div>
 
 <p>Selects the query timestamps for the Server scenario. </p>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00244">244</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l00266">266</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
 
 </div>
 </div>

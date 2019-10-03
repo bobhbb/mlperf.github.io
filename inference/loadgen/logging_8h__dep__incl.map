@@ -1,6 +1,8 @@
 <map id="logging.h" name="logging.h">
-<area shape="rect" id="node2" href="$loadgen_8cc_source.html" title="loadgen.cc" alt="" coords="5,80,96,107"/>
-<area shape="rect" id="node3" href="$logging_8cc.html" title="Implements a logging system with a central IO thread that handles all stringification and IO..." alt="" coords="120,80,205,107"/>
-<area shape="rect" id="node4" href="$test__settings__internal_8cc_source.html" title="test_settings_internal.cc" alt="" coords="230,80,405,107"/>
-<area shape="rect" id="node5" href="$version_8cc.html" title="Non&#45;generated version logic. " alt="" coords="429,80,515,107"/>
+<area shape="rect" id="node2" href="$loadgen_8cc_source.html" title="loadgen.cc" alt="" coords="5,155,91,181"/>
+<area shape="rect" id="node3" href="$test__settings__internal_8h.html" title="The internal representation of user&#45;provided settings. " alt="" coords="44,80,201,107"/>
+<area shape="rect" id="node4" href="$test__settings__internal_8cc_source.html" title="test_settings_internal.cc" alt="" coords="135,155,299,181"/>
+<area shape="rect" id="node5" href="$logging_8cc.html" title="Implements a logging system with a central IO thread that handles all stringification and IO..." alt="" coords="277,80,358,107"/>
+<area shape="rect" id="node6" href="$utils_8cc_source.html" title="utils.cc" alt="" coords="383,80,447,107"/>
+<area shape="rect" id="node7" href="$version_8cc.html" title="Non&#45;generated version logic. " alt="" coords="471,80,553,107"/>
 </map>

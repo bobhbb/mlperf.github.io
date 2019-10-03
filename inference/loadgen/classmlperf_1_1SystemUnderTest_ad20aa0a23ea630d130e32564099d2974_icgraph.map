@@ -1,3 +1,5 @@
 <map id="mlperf::SystemUnderTest::Name" name="mlperf::SystemUnderTest::Name">
-<area shape="rect" id="node2" href="$namespacemlperf_1_1loadgen.html#a21794e60883b3ea92450030548aa001a" title="Runs the binary search mode, templated by scenario. " alt="" coords="233,5,416,47"/>
+<area shape="rect" id="node2" href="$namespacemlperf_1_1loadgen.html#a30fa007ad238a8a77f062f568a8d893a" title="Find boundaries of performance settings by widening bounds exponentially. " alt="" coords="225,5,435,32"/>
+<area shape="rect" id="node3" href="$namespacemlperf_1_1loadgen.html#a73e88bf9f5fef94aedc1df3abf68a025" title="Find peak performance by binary search. " alt="" coords="243,57,417,98"/>
+<area shape="rect" id="node4" href="$namespacemlperf_1_1loadgen.html#a6baf6146965cf57af6630c0abcac9c36" title="Runs the binary search mode, templated by scenario. " alt="" coords="243,122,417,163"/>
 </map>

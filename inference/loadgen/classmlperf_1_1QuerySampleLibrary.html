@@ -96,12 +96,13 @@ $(document).ready(function(){initNavTree('classmlperf_1_1QuerySampleLibrary.html
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmlperf_1_1QuerySampleLibrary__inherit__graph.png" border="0" usemap="#mlperf_1_1QuerySampleLibrary_inherit__map" alt="Inheritance graph"/></div>
 <map name="mlperf_1_1QuerySampleLibrary_inherit__map" id="mlperf_1_1QuerySampleLibrary_inherit__map">
-<area shape="rect" id="node2" href="classperf__tests_1_1QuerySampleLibraryNull.html" title="A stub implementation of QuerySampleLibrary. " alt="" coords="5,343,248,509"/>
-<area shape="rect" id="node3" href="structunit__tests_1_1SystemUnderTestBasic.html" title="Implements the client interfaces of the loadgen and has some basic sanity checks that are enabled for..." alt="" coords="273,204,498,648"/>
-<area shape="rect" id="node4" href="structunit__tests_1_1SystemUnderTestAccuracy.html" title="Provides common test set up logic. " alt="" coords="285,696,486,788"/>
-<area shape="rect" id="node5" href="structunit__tests_1_1TestAccuracyIncludesAllSamples.html" title="Verifies all samples from the QSL are included at least once in accuracy mode. " alt="" coords="75,880,248,972"/>
-<area shape="rect" id="node6" href="structunit__tests_1_1TestMultiStreamContiguousRemainderQuery.html" title="Verifies all queries only contain samples that are contiguous, even if the set size is not a multiple..." alt="" coords="273,836,498,1016"/>
-<area shape="rect" id="node7" href="structunit__tests_1_1TestOfflineRemainderAccuracySet.html" title="Verifies offline + accuracy doesn&#39;t hang if the last set in the accuracy series is smaller than other..." alt="" coords="523,873,749,979"/>
+<area shape="rect" id="node2" href="classperf__tests_1_1QuerySampleLibraryNull.html" title="A stub implementation of QuerySampleLibrary. " alt="" coords="28,343,257,509"/>
+<area shape="rect" id="node3" href="structunit__tests_1_1SystemUnderTestBasic.html" title="Implements the client interfaces of the loadgen and has some basic sanity checks that are enabled for..." alt="" coords="282,204,494,648"/>
+<area shape="rect" id="node4" href="structunit__tests_1_1SystemUnderTestAccuracy.html" title="Provides common test set up logic. " alt="" coords="291,696,485,788"/>
+<area shape="rect" id="node5" href="structunit__tests_1_1TestAccuracyDupesAreLimitted.html" title="Verifies samples from the QSL aren&#39;t included too many times. " alt="" coords="5,873,173,979"/>
+<area shape="rect" id="node6" href="structunit__tests_1_1TestAccuracyIncludesAllSamples.html" title="Verifies all samples from the QSL are included at least once in accuracy mode. " alt="" coords="197,880,365,972"/>
+<area shape="rect" id="node7" href="structunit__tests_1_1TestMultiStreamContiguousRemainderQuery.html" title="Verifies all queries only contain samples that are contiguous, even if the set size is not a multiple..." alt="" coords="390,836,602,1016"/>
+<area shape="rect" id="node8" href="structunit__tests_1_1TestOfflineRemainderAccuracySet.html" title="Verifies offline + accuracy doesn&#39;t hang if the last set in the accuracy series is smaller than other..." alt="" coords="626,873,841,979"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -110,6 +111,8 @@ $(document).ready(function(){initNavTree('classmlperf_1_1QuerySampleLibrary.html
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmlperf_1_1QuerySampleLibrary__coll__graph.png" border="0" usemap="#mlperf_1_1QuerySampleLibrary_coll__map" alt="Collaboration graph"/></div>
+<map name="mlperf_1_1QuerySampleLibrary_coll__map" id="mlperf_1_1QuerySampleLibrary_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -230,11 +233,10 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmlperf_1_1QuerySampleLibrary_a605d484a0e7ceef28f3eec0283551ee2_icgraph.png" border="0" usemap="#classmlperf_1_1QuerySampleLibrary_a605d484a0e7ceef28f3eec0283551ee2_icgraph" alt=""/></div>
 <map name="classmlperf_1_1QuerySampleLibrary_a605d484a0e7ceef28f3eec0283551ee2_icgraph" id="classmlperf_1_1QuerySampleLibrary_a605d484a0e7ceef28f3eec0283551ee2_icgraph">
-<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="248,57,432,98"/>
-<area shape="rect" id="node3" href="group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea" title="Starts the test against SUT with the specified settings. " alt="" coords="480,64,605,91"/>
-<area shape="rect" id="node4" href="group__LoadgenTestsPerformance.html#ga1cccd99a3ea0c9ffee63a8074a86131c" title="Runs single stream traffic. " alt="" coords="653,5,856,32"/>
-<area shape="rect" id="node5" href="group__LoadgenTestsPerformance.html#gadaca2a18c227ed1a0100f999c899ca4e" title="Tests server traffic using SystemUnderTestNullStdAsync. " alt="" coords="663,57,846,98"/>
-<area shape="rect" id="node6" href="group__LoadgenTestsPerformance.html#ga4a9e0474f76b9e5246ad5ad5620b4f53" title="Tests server traffic using SystemUnderTestNullPool. " alt="" coords="660,123,849,149"/>
+<area shape="rect" id="node2" href="group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea" title="Starts the test against SUT with the specified settings. " alt="" coords="237,64,357,91"/>
+<area shape="rect" id="node3" href="group__LoadgenTestsPerformance.html#ga1cccd99a3ea0c9ffee63a8074a86131c" title="Runs single stream traffic. " alt="" coords="405,5,597,32"/>
+<area shape="rect" id="node4" href="group__LoadgenTestsPerformance.html#gadaca2a18c227ed1a0100f999c899ca4e" title="Tests server traffic using SystemUnderTestNullStdAsync. " alt="" coords="415,57,587,98"/>
+<area shape="rect" id="node5" href="group__LoadgenTestsPerformance.html#ga4a9e0474f76b9e5246ad5ad5620b4f53" title="Tests server traffic using SystemUnderTestNullPool. " alt="" coords="412,123,591,149"/>
 </map>
 </div>
 
@@ -273,11 +275,11 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmlperf_1_1QuerySampleLibrary_a4cf3778dd7b869c8b44ee6659a252d29_icgraph.png" border="0" usemap="#classmlperf_1_1QuerySampleLibrary_a4cf3778dd7b869c8b44ee6659a252d29_icgraph" alt=""/></div>
 <map name="classmlperf_1_1QuerySampleLibrary_a4cf3778dd7b869c8b44ee6659a252d29_icgraph" id="classmlperf_1_1QuerySampleLibrary_a4cf3778dd7b869c8b44ee6659a252d29_icgraph">
-<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="248,57,432,98"/>
-<area shape="rect" id="node3" href="group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea" title="Starts the test against SUT with the specified settings. " alt="" coords="480,64,605,91"/>
-<area shape="rect" id="node4" href="group__LoadgenTestsPerformance.html#ga1cccd99a3ea0c9ffee63a8074a86131c" title="Runs single stream traffic. " alt="" coords="653,5,856,32"/>
-<area shape="rect" id="node5" href="group__LoadgenTestsPerformance.html#gadaca2a18c227ed1a0100f999c899ca4e" title="Tests server traffic using SystemUnderTestNullStdAsync. " alt="" coords="663,57,846,98"/>
-<area shape="rect" id="node6" href="group__LoadgenTestsPerformance.html#ga4a9e0474f76b9e5246ad5ad5620b4f53" title="Tests server traffic using SystemUnderTestNullPool. " alt="" coords="660,123,849,149"/>
+<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="237,78,409,119"/>
+<area shape="rect" id="node3" href="namespacemlperf_1_1loadgen.html#a30fa007ad238a8a77f062f568a8d893a" title="Find boundaries of performance settings by widening bounds exponentially. " alt="" coords="477,5,687,32"/>
+<area shape="rect" id="node4" href="namespacemlperf_1_1loadgen.html#a430ef8e4bc0f101fa68d13f7aa0e54fc" title="Runs the performance mode, templated by scenario. " alt="" coords="457,56,707,83"/>
+<area shape="rect" id="node5" href="namespacemlperf_1_1loadgen.html#a6baf6146965cf57af6630c0abcac9c36" title="Runs the binary search mode, templated by scenario. " alt="" coords="495,107,669,149"/>
+<area shape="rect" id="node6" href="namespacemlperf_1_1loadgen.html#a79b15830132ce76627854c3a789bf81b" title="Runs the accuracy mode, templated by scenario. " alt="" coords="467,173,697,200"/>
 </map>
 </div>
 
@@ -319,9 +321,10 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmlperf_1_1QuerySampleLibrary_a3951160324d868a01b6335523bcd1ea8_icgraph.png" border="0" usemap="#classmlperf_1_1QuerySampleLibrary_a3951160324d868a01b6335523bcd1ea8_icgraph" alt=""/></div>
 <map name="classmlperf_1_1QuerySampleLibrary_a3951160324d868a01b6335523bcd1ea8_icgraph" id="classmlperf_1_1QuerySampleLibrary_a3951160324d868a01b6335523bcd1ea8_icgraph">
-<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a1700bad264e2d159c27a6e9bb1700a6f" title="Runs the performance mode, templated by scenario. " alt="" coords="248,5,515,32"/>
-<area shape="rect" id="node3" href="namespacemlperf_1_1loadgen.html#a21794e60883b3ea92450030548aa001a" title="Runs the binary search mode, templated by scenario. " alt="" coords="290,57,473,98"/>
-<area shape="rect" id="node4" href="namespacemlperf_1_1loadgen.html#a8478f30e88678d619185375f66632a56" title="Runs the accuracy mode, templated by scenario. " alt="" coords="260,123,503,149"/>
+<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a30fa007ad238a8a77f062f568a8d893a" title="Find boundaries of performance settings by widening bounds exponentially. " alt="" coords="257,5,467,32"/>
+<area shape="rect" id="node3" href="namespacemlperf_1_1loadgen.html#a430ef8e4bc0f101fa68d13f7aa0e54fc" title="Runs the performance mode, templated by scenario. " alt="" coords="237,56,487,83"/>
+<area shape="rect" id="node4" href="namespacemlperf_1_1loadgen.html#a6baf6146965cf57af6630c0abcac9c36" title="Runs the binary search mode, templated by scenario. " alt="" coords="275,107,449,149"/>
+<area shape="rect" id="node5" href="namespacemlperf_1_1loadgen.html#a79b15830132ce76627854c3a789bf81b" title="Runs the accuracy mode, templated by scenario. " alt="" coords="247,173,477,200"/>
 </map>
 </div>
 

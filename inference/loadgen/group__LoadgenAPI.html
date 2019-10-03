@@ -81,7 +81,8 @@ $(document).ready(function(){initNavTree('group__LoadgenAPI.html','');});
 <a href="#groups">Modules</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Loadgen API</div>  </div>
 </div><!--header-->
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('group__LoadgenAPI.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <center><table><tr><td><img src="group__LoadgenAPI.png" border="0" alt="" usemap="#group____LoadgenAPI"/>
 <map name="group____LoadgenAPI" id="group____LoadgenAPI">
-<area shape="rect" id="node1" href="group__LoadgenAPITestSettings.html" title="This page contains a description of all the scenarios, modes, and log settings as implemented by the ..." alt="" coords="157,5,263,32"/>
+<area shape="rect" id="node1" href="group__LoadgenAPITestSettings.html" title="This page contains a description of all the scenarios, modes, and log settings as implemented by the ..." alt="" coords="151,5,251,32"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -139,6 +140,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga87595ea769914ba5bf37e401410ebfea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea">mlperf::StartTest</a> (<a class="el" href="classmlperf_1_1SystemUnderTest.html">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html">QuerySampleLibrary</a> *qsl, const <a class="el" href="structmlperf_1_1TestSettings.html">TestSettings</a> &amp;requested_settings, const <a class="el" href="structmlperf_1_1LogSettings.html">LogSettings</a> &amp;log_settings)</td></tr>
 <tr class="memdesc:ga87595ea769914ba5bf37e401410ebfea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the test against SUT with the specified settings.  <a href="group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea">More...</a><br /></td></tr>
 <tr class="separator:ga87595ea769914ba5bf37e401410ebfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga43c242ce5b2a935594271bd2e876d614"><td class="memItemLeft" align="right" valign="top"><a id="ga43c242ce5b2a935594271bd2e876d614"></a>
+constexpr <a class="el" href="group__LoadgenAPI.html#gac224283dfbf6e0261ad7778346464782">ResponseId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::kResponseIdReserved</b> = 0</td></tr>
+<tr class="separator:ga43c242ce5b2a935594271bd2e876d614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -156,7 +163,7 @@ Functions</h2></td></tr>
 
 <p>An index into the <a class="el" href="classmlperf_1_1QuerySampleLibrary.html" title="The interface a client implements to coordinate with the loadgen which samples should be loaded...">QuerySampleLibrary</a> corresponding to a single sample. </p>
 
-<p class="definition">Definition at line <a class="el" href="query__sample_8h_source.html#l00037">37</a> of file <a class="el" href="query__sample_8h_source.html">query_sample.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="query__sample_8h_source.html#l00038">38</a> of file <a class="el" href="query__sample_8h_source.html">query_sample.h</a>.</p>
 
 </div>
 </div>
@@ -174,7 +181,7 @@ Functions</h2></td></tr>
 
 <p>A latency in nanoseconds, as recorded by the loadgen. </p>
 
-<p class="definition">Definition at line <a class="el" href="query__sample_8h_source.html#l00054">54</a> of file <a class="el" href="query__sample_8h_source.html">query_sample.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="query__sample_8h_source.html#l00055">55</a> of file <a class="el" href="query__sample_8h_source.html">query_sample.h</a>.</p>
 
 </div>
 </div>
@@ -191,7 +198,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Represents a unique identifier for a sample of an issued query. </p>
-<p>As currently implemented, the id is a pointer to an internal loadgen struct. </p>
+<p>As currently implemented, the id is a pointer to an internal loadgen struct whose value will never be zero/null. </p>
 
 <p class="definition">Definition at line <a class="el" href="query__sample_8h_source.html#l00033">33</a> of file <a class="el" href="query__sample_8h_source.html">query_sample.h</a>.</p>
 
@@ -238,7 +245,7 @@ Functions</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01261">1261</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01682">1682</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -246,9 +253,9 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__LoadgenAPI_ga667014f68fd93de2ea485cd18c0b12f8_icgraph.png" border="0" usemap="#group__LoadgenAPI_ga667014f68fd93de2ea485cd18c0b12f8_icgraph" alt=""/></div>
 <map name="group__LoadgenAPI_ga667014f68fd93de2ea485cd18c0b12f8_icgraph" id="group__LoadgenAPI_ga667014f68fd93de2ea485cd18c0b12f8_icgraph">
-<area shape="rect" id="node2" href="structunit__tests_1_1SystemUnderTestBasic.html#a771da18b04e5f2c8292ae166c6d4a01a" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="273,5,475,47"/>
-<area shape="rect" id="node3" href="classperf__tests_1_1SystemUnderTestNull.html#a6e8cf6360e172ef7651f6c76c96385e0" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="272,71,476,112"/>
-<area shape="rect" id="node4" href="classperf__tests_1_1SystemUnderTestNullStdAsync.html#aa02ea8aedd0eb50c1a468f5f7b0dfbb9" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="272,136,476,177"/>
+<area shape="rect" id="node2" href="structunit__tests_1_1SystemUnderTestBasic.html#a771da18b04e5f2c8292ae166c6d4a01a" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="262,5,455,47"/>
+<area shape="rect" id="node3" href="classperf__tests_1_1SystemUnderTestNull.html#a6e8cf6360e172ef7651f6c76c96385e0" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="261,71,456,112"/>
+<area shape="rect" id="node4" href="classperf__tests_1_1SystemUnderTestNullStdAsync.html#aa02ea8aedd0eb50c1a468f5f7b0dfbb9" title="Lets the loadgen issue N samples to the SUT. " alt="" coords="261,136,456,177"/>
 </map>
 </div>
 
@@ -295,7 +302,7 @@ Functions</h2></td></tr>
 <p>Starts the test against SUT with the specified settings. </p>
 <p>This is the C++ entry point. See mlperf::c::StartTest for the C entry point. </p>
 
-<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01199">1199</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="loadgen_8cc_source.html#l01603">1603</a> of file <a class="el" href="loadgen_8cc_source.html">loadgen.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -303,9 +310,8 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__LoadgenAPI_ga87595ea769914ba5bf37e401410ebfea_cgraph.png" border="0" usemap="#group__LoadgenAPI_ga87595ea769914ba5bf37e401410ebfea_cgraph" alt=""/></div>
 <map name="group__LoadgenAPI_ga87595ea769914ba5bf37e401410ebfea_cgraph" id="group__LoadgenAPI_ga87595ea769914ba5bf37e401410ebfea_cgraph">
-<area shape="rect" id="node2" href="namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="179,39,363,80"/>
-<area shape="rect" id="node3" href="classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="411,5,605,47"/>
-<area shape="rect" id="node4" href="classmlperf_1_1QuerySampleLibrary.html#a605d484a0e7ceef28f3eec0283551ee2" title="The number of samples that are guaranteed to fit in RAM. " alt="" coords="411,71,605,112"/>
+<area shape="rect" id="node2" href="structmlperf_1_1TestSettings.html#adb1ce39f2fc342ad8a5f9cbe85451f96" title="Load mlperf parameter config from file. " alt="" coords="195,5,335,47"/>
+<area shape="rect" id="node3" href="classmlperf_1_1QuerySampleLibrary.html#a605d484a0e7ceef28f3eec0283551ee2" title="The number of samples that are guaranteed to fit in RAM. " alt="" coords="173,71,357,112"/>
 </map>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -315,9 +321,9 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__LoadgenAPI_ga87595ea769914ba5bf37e401410ebfea_icgraph.png" border="0" usemap="#group__LoadgenAPI_ga87595ea769914ba5bf37e401410ebfea_icgraph" alt=""/></div>
 <map name="group__LoadgenAPI_ga87595ea769914ba5bf37e401410ebfea_icgraph" id="group__LoadgenAPI_ga87595ea769914ba5bf37e401410ebfea_icgraph">
-<area shape="rect" id="node2" href="group__LoadgenTestsPerformance.html#ga1cccd99a3ea0c9ffee63a8074a86131c" title="Runs single stream traffic. " alt="" coords="179,5,381,32"/>
-<area shape="rect" id="node3" href="group__LoadgenTestsPerformance.html#gadaca2a18c227ed1a0100f999c899ca4e" title="Tests server traffic using SystemUnderTestNullStdAsync. " alt="" coords="189,57,371,98"/>
-<area shape="rect" id="node4" href="group__LoadgenTestsPerformance.html#ga4a9e0474f76b9e5246ad5ad5620b4f53" title="Tests server traffic using SystemUnderTestNullPool. " alt="" coords="185,123,375,149"/>
+<area shape="rect" id="node2" href="group__LoadgenTestsPerformance.html#ga1cccd99a3ea0c9ffee63a8074a86131c" title="Runs single stream traffic. " alt="" coords="173,5,365,32"/>
+<area shape="rect" id="node3" href="group__LoadgenTestsPerformance.html#gadaca2a18c227ed1a0100f999c899ca4e" title="Tests server traffic using SystemUnderTestNullStdAsync. " alt="" coords="183,57,355,98"/>
+<area shape="rect" id="node4" href="group__LoadgenTestsPerformance.html#ga4a9e0474f76b9e5246ad5ad5620b4f53" title="Tests server traffic using SystemUnderTestNullPool. " alt="" coords="180,123,359,149"/>
 </map>
 </div>
 

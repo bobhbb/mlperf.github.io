@@ -81,7 +81,11 @@ $(document).ready(function(){initNavTree('ReadmeBuild.html','');});
 <div class="title">Building the LoadGen </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Quick Start</h2>
+<div class="textblock"><h2>Prerequisites</h2>
+<pre class="fragment">sudo apt-get install libglib2.0-dev python-pip python3-pip
+pip2 install absl-py numpy
+pip3 install absl-py numpy
+</pre><h2>Quick Start</h2>
 <pre class="fragment">pip install absl-py numpy
 git clone --recurse-submodules https://github.com/mlperf/inference.git mlperf_inference
 cd mlperf_inference/loadgen

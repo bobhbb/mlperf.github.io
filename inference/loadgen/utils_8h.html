@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('utils_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="utils_8h__incl.png" border="0" usemap="#utils_8h" alt=""/></div>
 <map name="utils_8h" id="utils_8h">
-<area shape="rect" id="node5" href="query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="282,80,403,107"/>
+<area shape="rect" id="node5" href="query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="269,80,384,107"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -108,10 +108,10 @@ $(document).ready(function(){initNavTree('utils_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="utils_8h__dep__incl.png" border="0" usemap="#utils_8hdep" alt=""/></div>
 <map name="utils_8hdep" id="utils_8hdep">
-<area shape="rect" id="node2" href="loadgen_8cc_source.html" title="loadgen.cc" alt="" coords="5,80,96,107"/>
-<area shape="rect" id="node3" href="logging_8cc.html" title="Implements a logging system with a central IO thread that handles all stringification and IO..." alt="" coords="120,80,205,107"/>
-<area shape="rect" id="node4" href="test__settings__internal_8cc_source.html" title="test_settings_internal.cc" alt="" coords="230,80,405,107"/>
-<area shape="rect" id="node5" href="utils_8cc_source.html" title="utils.cc" alt="" coords="429,80,491,107"/>
+<area shape="rect" id="node2" href="loadgen_8cc_source.html" title="loadgen.cc" alt="" coords="5,80,91,107"/>
+<area shape="rect" id="node3" href="logging_8cc.html" title="Implements a logging system with a central IO thread that handles all stringification and IO..." alt="" coords="115,80,197,107"/>
+<area shape="rect" id="node4" href="test__settings__internal_8cc_source.html" title="test_settings_internal.cc" alt="" coords="221,80,385,107"/>
+<area shape="rect" id="node5" href="utils_8cc_source.html" title="utils.cc" alt="" coords="409,80,473,107"/>
 </map>
 </div>
 </div>
@@ -143,9 +143,15 @@ template&lt;typename DurationT &gt; </td></tr>
 <tr class="memitem:ab81e3cf264be301d89cda816ec3fb469"><td class="memItemLeft" align="right" valign="top"><a id="ab81e3cf264be301d89cda816ec3fb469"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::CurrentDateTimeISO8601</b> ()</td></tr>
 <tr class="separator:ab81e3cf264be301d89cda816ec3fb469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41cf1351b6ed1475fcd46b18ad559c04"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlperf.html#a41cf1351b6ed1475fcd46b18ad559c04">mlperf::DateTimeStringForPower</a> (std::chrono::system_clock::time_point tp)</td></tr>
+<tr class="memdesc:a41cf1351b6ed1475fcd46b18ad559c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses a format that matches the one used by SPEC power measurement logging.  <a href="namespacemlperf.html#a41cf1351b6ed1475fcd46b18ad559c04">More...</a><br /></td></tr>
+<tr class="separator:a41cf1351b6ed1475fcd46b18ad559c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4dd41b825a1b19bf4f0baa6e914b9d7"><td class="memItemLeft" align="right" valign="top"><a id="aa4dd41b825a1b19bf4f0baa6e914b9d7"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::DoubleToString</b> (double value, int precision=2)</td></tr>
 <tr class="separator:aa4dd41b825a1b19bf4f0baa6e914b9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64afc1ea5a004b2c17322ccd24c34566"><td class="memItemLeft" align="right" valign="top"><a id="a64afc1ea5a004b2c17322ccd24c34566"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::FileExists</b> (const std::string filename)</td></tr>
+<tr class="separator:a64afc1ea5a004b2c17322ccd24c34566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Various shared utility functions. </p>

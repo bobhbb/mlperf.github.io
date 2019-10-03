@@ -147,7 +147,7 @@ LoadGen outputs logs for analysis.<br />
 <ul>
 <li>Since the LoadGen is oblivious to the model, it can't enforce the MLPerf requirements for submission. <em>e.g.:</em> target percentiles and latencies.</li>
 <li>For verification, the values in TestSettings are logged.</li>
-<li><em>Note:</em> There is an effort to load TestSettings from a config file to make it easier to respect submission requirements, but it is a work in progress.</li>
+<li>To help make sure your settings are spec compliant, use TestSettings::FromConfig in conjunction with the relevant config file provided with the reference models.</li>
 </ul>
 <h2>Responsibilities of a LoadGen User</h2>
 <h3>Implement the Iterfaces</h3>

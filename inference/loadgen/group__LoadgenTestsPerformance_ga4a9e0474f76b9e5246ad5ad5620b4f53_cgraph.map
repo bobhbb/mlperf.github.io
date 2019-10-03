@@ -1,6 +1,5 @@
 <map id="perf_tests::TestServerPool" name="perf_tests::TestServerPool">
-<area shape="rect" id="node2" href="$group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea" title="Starts the test against SUT with the specified settings. " alt="" coords="243,46,368,73"/>
-<area shape="rect" id="node3" href="$namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="416,39,600,80"/>
-<area shape="rect" id="node4" href="$classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="648,5,843,47"/>
-<area shape="rect" id="node5" href="$classmlperf_1_1QuerySampleLibrary.html#a605d484a0e7ceef28f3eec0283551ee2" title="The number of samples that are guaranteed to fit in RAM. " alt="" coords="648,71,843,112"/>
+<area shape="rect" id="node2" href="$group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea" title="Starts the test against SUT with the specified settings. " alt="" coords="232,46,352,73"/>
+<area shape="rect" id="node3" href="$structmlperf_1_1TestSettings.html#adb1ce39f2fc342ad8a5f9cbe85451f96" title="Load mlperf parameter config from file. " alt="" coords="422,5,562,47"/>
+<area shape="rect" id="node4" href="$classmlperf_1_1QuerySampleLibrary.html#a605d484a0e7ceef28f3eec0283551ee2" title="The number of samples that are guaranteed to fit in RAM. " alt="" coords="400,71,584,112"/>
 </map>

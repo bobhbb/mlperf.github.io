@@ -4,6 +4,7 @@ var hierarchy =
     [ "mlperf::logging::AsyncLog", "classmlperf_1_1logging_1_1AsyncLog.html", null ],
     [ "mlperf::logging::AsyncSummary", "classmlperf_1_1logging_1_1AsyncSummary.html", null ],
     [ "mlperf::logging::AsyncTrace", "classmlperf_1_1logging_1_1AsyncTrace.html", null ],
+    [ "mlperf::logging::ChromeTracer", "classmlperf_1_1logging_1_1ChromeTracer.html", null ],
     [ "mlperf::loadgen::DurationGeneratorNs", "structmlperf_1_1loadgen_1_1DurationGeneratorNs.html", null ],
     [ "mlperf::loadgen::LoadableSampleSet", "structmlperf_1_1loadgen_1_1LoadableSampleSet.html", null ],
     [ "mlperf::logging::LogBinaryAsHexString", "structmlperf_1_1logging_1_1LogBinaryAsHexString.html", null ],
@@ -20,6 +21,7 @@ var hierarchy =
       [ "perf_tests::QuerySampleLibraryNull", "classperf__tests_1_1QuerySampleLibraryNull.html", null ],
       [ "unit_tests::SystemUnderTestBasic", "structunit__tests_1_1SystemUnderTestBasic.html", [
         [ "unit_tests::SystemUnderTestAccuracy", "structunit__tests_1_1SystemUnderTestAccuracy.html", [
+          [ "unit_tests::TestAccuracyDupesAreLimitted", "structunit__tests_1_1TestAccuracyDupesAreLimitted.html", null ],
           [ "unit_tests::TestAccuracyIncludesAllSamples", "structunit__tests_1_1TestAccuracyIncludesAllSamples.html", null ],
           [ "unit_tests::TestMultiStreamContiguousRemainderQuery", "structunit__tests_1_1TestMultiStreamContiguousRemainderQuery.html", null ],
           [ "unit_tests::TestOfflineRemainderAccuracySet", "structunit__tests_1_1TestOfflineRemainderAccuracySet.html", null ]

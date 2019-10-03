@@ -1,3 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structtesting_1_1TestProxy.html" title="Wraps a test class as a functor for easy registration. Forwards registration args to a SetUpTest meth..." alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node1" href="$structtesting_1_1Test_1_1StaticRegistrant.html" title="Registers a test before main() starts during static initialization. " alt="" coords="5,5,203,32"/>
 </map>

@@ -1,6 +1,7 @@
 var logging_8h =
 [
     [ "LogBinaryAsHexString", "structmlperf_1_1logging_1_1LogBinaryAsHexString.html", "structmlperf_1_1logging_1_1LogBinaryAsHexString" ],
+    [ "ChromeTracer", "classmlperf_1_1logging_1_1ChromeTracer.html", "classmlperf_1_1logging_1_1ChromeTracer" ],
     [ "AsyncLog", "classmlperf_1_1logging_1_1AsyncLog.html", "classmlperf_1_1logging_1_1AsyncLog" ],
     [ "Logger", "classmlperf_1_1logging_1_1Logger.html", "classmlperf_1_1logging_1_1Logger" ],
     [ "SlotRetry", "structmlperf_1_1logging_1_1Logger_1_1SlotRetry.html", "structmlperf_1_1logging_1_1Logger_1_1SlotRetry" ],

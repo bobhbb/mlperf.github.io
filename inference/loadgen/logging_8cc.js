@@ -3,6 +3,7 @@ var logging_8cc =
     [ "TlsLogger", "classmlperf_1_1logging_1_1TlsLogger.html", "classmlperf_1_1logging_1_1TlsLogger" ],
     [ "TlsLoggerWrapper", "structmlperf_1_1logging_1_1TlsLoggerWrapper.html", "structmlperf_1_1logging_1_1TlsLoggerWrapper" ],
     [ "MLPERF_GET_PID", "logging_8cc.html#a740af775748a9032acba7b64655185ff", null ],
+    [ "MLPERF_GET_TID", "logging_8cc.html#af2b97f3285366bfef5c9a01fe2c7ccc3", null ],
     [ "ArgValueTransform", "logging_8cc.html#a62d2d70efbc3352bef1afda9adf9f6e7", null ],
     [ "ArgValueTransform", "logging_8cc.html#a94a5871727910607fb6218e2a21970c4", null ],
     [ "Bin2Hex", "logging_8cc.html#a82bcf8dae9459d440dc08f2ea21db05c", null ],

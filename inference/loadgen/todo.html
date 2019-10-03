@@ -82,46 +82,36 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="namespacemlperf_1_1loadgen.html#a21794e60883b3ea92450030548aa001a">mlperf::loadgen::FindPeakPerformanceMode</a>  (<a class="el" href="classmlperf_1_1SystemUnderTest.html" title="The interface a client implements for the loadgen to test. ">SystemUnderTest</a> *sut, <a class="el" href="classmlperf_1_1QuerySampleLibrary.html" title="The interface a client implements to coordinate with the loadgen which samples should be loaded...">QuerySampleLibrary</a> *qsl, const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html" title="takes the user-friendly TestSettings and normalizes it for consumption by the loadgen. ">TestSettingsInternal</a> &amp;settings, const std::vector&lt; LoadableSampleSet &gt; &amp;loadable_sets, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html" title="Every query and sample within a call to StartTest gets a unique sequence id for easy cross reference...">SequenceGen</a> *sequence_gen)</dt>
-<dd><p class="startdd">Make binary search work for the multi-stream scenario. </p>
-<p class="enddd">Make binary search work for the server scenario.  </p>
-</dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="namespacemlperf_1_1loadgen.html#aea9b5a4e74a251f520d4e86f339d7626">mlperf::loadgen::GenerateQueries</a>  (const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html" title="takes the user-friendly TestSettings and normalizes it for consumption by the loadgen. ">TestSettingsInternal</a> &amp;settings, const <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html" title="A random set of samples in the QSL that should fit in RAM when loaded together. ">LoadableSampleSet</a> &amp;loaded_sample_set, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html" title="Every query and sample within a call to StartTest gets a unique sequence id for easy cross reference...">SequenceGen</a> *sequence_gen, <a class="el" href="structmlperf_1_1loadgen_1_1ResponseDelegate.html" title="An interface for a particular scenario + mode to implement for extended hanlding of sample completion...">ResponseDelegate</a> *response_delegate)</dt>
+<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="namespacemlperf_1_1loadgen.html#aea9b5a4e74a251f520d4e86f339d7626">mlperf::loadgen::GenerateQueries</a>  (const <a class="el" href="structmlperf_1_1loadgen_1_1TestSettingsInternal.html" title="takes the user-friendly TestSettings and normalizes it for consumption by the loadgen. ">TestSettingsInternal</a> &amp;settings, const <a class="el" href="structmlperf_1_1loadgen_1_1LoadableSampleSet.html" title="A random set of samples in the QSL that should fit in RAM when loaded together. ">LoadableSampleSet</a> &amp;loaded_sample_set, <a class="el" href="structmlperf_1_1loadgen_1_1SequenceGen.html" title="Every query and sample within a call to StartTest gets a unique sequence id for easy cross reference...">SequenceGen</a> *sequence_gen, <a class="el" href="structmlperf_1_1loadgen_1_1ResponseDelegate.html" title="An interface for a particular scenario + mode to implement for extended hanlding of sample completion...">ResponseDelegate</a> *response_delegate)</dt>
 <dd><p class="startdd">Make GenerateQueries faster. <a class="el" href="classmlperf_1_1loadgen_1_1QueryMetadata.html" title="Maintains data and timing info for a query and all its samples. ">QueryMetadata</a> is expensive to move; either reserve queries in advance so the queries vector doesn't need to grow. And/or parent samples to their queries only after all queries have been generated. </p>
 <p class="enddd">For the server scenario only, scale the query timeline at the end so the QPS as scheduled is equal to the QPS as requested.  </p>
 </dd>
-<dt><a class="anchor" id="_todo000003"></a>Class <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceResult.html">mlperf::loadgen::PerformanceResult</a>  </dt>
+<dt><a class="anchor" id="_todo000002"></a>Class <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceResult.html">mlperf::loadgen::PerformanceResult</a>  </dt>
 <dd>Move to results.h/cc  </dd>
-<dt><a class="anchor" id="_todo000004"></a>Class <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">mlperf::loadgen::PerformanceSummary</a>  </dt>
+<dt><a class="anchor" id="_todo000003"></a>Class <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html">mlperf::loadgen::PerformanceSummary</a>  </dt>
 <dd>Move to results.h/cc  </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html#ae4a1a141fbdf4ad7561cd9a07fda54bc">mlperf::loadgen::PerformanceSummary::latency_target</a>  </dt>
-<dd>Make .90 a TestSetting and update relevant hard-coded strings.  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="structmlperf_1_1loadgen_1_1PerformanceSummary.html#ad1cdc17ee1ffc0d09713e59724b6a945">mlperf::loadgen::PerformanceSummary::Log</a>  (AsyncSummary &amp;summary)</dt>
-<dd>qps_wo_log should use latency_mean  </dd>
-<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="namespacemlperf_1_1loadgen.html#aab6c2b5f925454d0f9f6f851c7b7cc26">mlperf::loadgen::SampleDistribution&lt; TestMode::PerformanceOnly &gt;</a>  (size_t sample_count, size_t, std::mt19937 *)</dt>
-<dd>Contiguous samples for the offline scenario.  </dd>
-<dt><a class="anchor" id="_todo000009"></a>Class <a class="el" href="classmlperf_1_1logging_1_1AsyncLog.html">mlperf::logging::AsyncLog</a>  </dt>
-<dd><p class="startdd">Pre-allocate the latency results vector (latencies_) so the IOThread doesn't need to grow it during the performance run. </p>
-<p class="enddd">Make summary_out_, detail_out_, accuracy_out_, and trace_out_ instances of a new LogOutput interface that the client may override.  </p>
-</dd>
-<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="namespacemlperf_1_1logging.html#acfa05ada25e016921e2d5bdbd95fa505">mlperf::logging::AsyncLogEntry</a>  </dt>
+<dt><a class="anchor" id="_todo000005"></a>Class <a class="el" href="classmlperf_1_1logging_1_1AsyncLog.html">mlperf::logging::AsyncLog</a>  </dt>
+<dd>Make summary_out_, detail_out_, accuracy_out_, and trace_out_ instances of a new LogOutput interface that the client may override.  </dd>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="namespacemlperf_1_1logging.html#acfa05ada25e016921e2d5bdbd95fa505">mlperf::logging::AsyncLogEntry</a>  </dt>
 <dd>Verify lambas are not allocating when bounded to a std::function.  </dd>
-<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="classmlperf_1_1logging_1_1Logger.html#ae491de567b4645cb21c7e411acb730b5">mlperf::logging::Logger::IOThread</a>  ()</dt>
-<dd>Provide client hook to set logging thead affinity and priority.  </dd>
-<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="classmlperf_1_1logging_1_1Logger.html#a17102709821ac4f232c66ef633a877ee">mlperf::logging::Logger::LogErrorSync</a>  (const std::string &amp;message, Args &amp;&amp;... args)</dt>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="namespacemlperf_1_1logging.html#ab53ce93ea70e542fbb235b248cab296d">mlperf::logging::InitializeMyTlsLoggerWrapper</a>  ()</dt>
+<dd>There is a race where the same <a class="el" href="structmlperf_1_1logging_1_1TlsLoggerWrapper.html" title="Moves ownership of the TlsLogger to Logger on thread exit so no round-trip synchronization with the I...">TlsLoggerWrapper</a> might be destroyed both naturally and via forced_detatch. Destruction of the <a class="el" href="structmlperf_1_1logging_1_1TlsLoggerWrapper.html" title="Moves ownership of the TlsLogger to Logger on thread exit so no round-trip synchronization with the I...">TlsLoggerWrapper</a> should be locked.  </dd>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="classmlperf_1_1logging_1_1Logger.html#ae491de567b4645cb21c7e411acb730b5">mlperf::logging::Logger::IOThread</a>  ()</dt>
+<dd><p class="startdd">Provide client hook to set logging thead affinity and priority. </p>
+<p class="enddd">Determine if explicitly flushing logs every wake up is better than relying on implicit flushing.  </p>
+</dd>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="classmlperf_1_1logging_1_1Logger.html#a17102709821ac4f232c66ef633a877ee">mlperf::logging::Logger::LogErrorSync</a>  (const std::string &amp;message, Args &amp;&amp;... args)</dt>
 <dd>Acquire mutex once for FlagError + LogDetail to avoid races. Better yet, switch to a non-stateful error API.  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="namespacemlperf_1_1logging.html#af7999c3fe0ef5f7e822edb5fcd5ebe7b">mlperf::logging::MakeScopedTracer</a>  (LambdaT &amp;&amp;lambda) -&gt; ScopedTracer&lt; LambdaT &gt;</dt>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="namespacemlperf_1_1logging.html#af7999c3fe0ef5f7e822edb5fcd5ebe7b">mlperf::logging::MakeScopedTracer</a>  (LambdaT &amp;&amp;lambda) -&gt; ScopedTracer&lt; LambdaT &gt;</dt>
 <dd>Determine which traces to keep for submission purposes.  </dd>
-<dt><a class="anchor" id="_todo000015"></a>Class <a class="el" href="classmlperf_1_1logging_1_1TlsLogger.html">mlperf::logging::TlsLogger</a>  </dt>
-<dd>Pre-allocate entries_ with enough space so that allocation for logging doesn't need to occur at runtime. Maybe override allocator to print a warning if allocation is performed.  </dd>
-<dt><a class="anchor" id="_todo000013"></a>Class <a class="el" href="classmlperf_1_1SystemUnderTest.html">mlperf::SystemUnderTest</a>  </dt>
+<dt><a class="anchor" id="_todo000009"></a>Class <a class="el" href="classmlperf_1_1SystemUnderTest.html">mlperf::SystemUnderTest</a>  </dt>
 <dd><p class="startdd">Add hook for an untimed warm up period for the SUT. </p>
 <p>Add hook for an untimed warm up period for the loadgen logic. </p>
 <p>Support power hooks for cool-down period before runing performance traffic. </p>
 <p class="enddd">Support power hooks for correlating test timeline with power measurment timeline.  </p>
 </dd>
-<dt><a class="anchor" id="_todo000014"></a>Class <a class="el" href="structmlperf_1_1TestSettings.html">mlperf::TestSettings</a>  </dt>
-<dd>Create TestSetting from a config file. </dd>
+<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="structmlperf_1_1TestSettings.html#adb1ce39f2fc342ad8a5f9cbe85451f96">mlperf::TestSettings::FromConfig</a>  (const std::string &amp;path, const std::string &amp;model, const std::string &amp;scenario)</dt>
+<dd>The <a class="el" href="structmlperf_1_1TestSettings.html#adb1ce39f2fc342ad8a5f9cbe85451f96" title="Load mlperf parameter config from file. ">TestSettings::FromConfig</a> definition belongs in a test_settings.cc file which doesn't yet exist. To avoid churn so close to the submission deadline, adding a test_settings.cc file has been deferred to v0.6. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
