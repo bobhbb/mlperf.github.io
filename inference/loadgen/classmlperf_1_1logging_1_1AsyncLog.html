@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('classmlperf_1_1logging_1_1AsyncLog.htm
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmlperf_1_1logging_1_1AsyncLog__coll__graph.png" border="0" usemap="#mlperf_1_1logging_1_1AsyncLog_coll__map" alt="Collaboration graph"/></div>
+<map name="mlperf_1_1logging_1_1AsyncLog_coll__map" id="mlperf_1_1logging_1_1AsyncLog_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -107,12 +109,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLogFiles</b> (std:
 <tr class="memitem:a3a11b6819c8a29042f223b5f1c532eb0"><td class="memItemLeft" align="right" valign="top"><a id="a3a11b6819c8a29042f223b5f1c532eb0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StartNewTrace</b> (std::ostream *trace_out, PerfClock::time_point origin)</td></tr>
 <tr class="separator:a3a11b6819c8a29042f223b5f1c532eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cabc4e58dcd6f4c683415acfe89dfd"><td class="memItemLeft" align="right" valign="top"><a id="a64cabc4e58dcd6f4c683415acfe89dfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StopTrace</b> ()</td></tr>
+<tr class="separator:a64cabc4e58dcd6f4c683415acfe89dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205195e2b8e23897663b1189892cf944"><td class="memItemLeft" align="right" valign="top"><a id="a205195e2b8e23897663b1189892cf944"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Flush</b> ()</td></tr>
 <tr class="separator:a205195e2b8e23897663b1189892cf944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dfa4dd49fcdced2a1249f5f5ee39d57"><td class="memItemLeft" align="right" valign="top"><a id="a1dfa4dd49fcdced2a1249f5f5ee39d57"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCurrentTracePidTidString</b> (const std::string *pid_tid)</td></tr>
-<tr class="separator:a1dfa4dd49fcdced2a1249f5f5ee39d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecd0ba0b148fa288ef23c7cecf1b0fa"><td class="memItemLeft" align="right" valign="top"><a id="a7ecd0ba0b148fa288ef23c7cecf1b0fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCurrentPidTid</b> (uint64_t pid, uint64_t tid)</td></tr>
+<tr class="separator:a7ecd0ba0b148fa288ef23c7cecf1b0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4f15191b114fa3d8fd1cedaa3051f0c"><td class="memItemLeft" align="right" valign="top"><a id="af4f15191b114fa3d8fd1cedaa3051f0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogAccuracy</b> (uint64_t seq_id, const <a class="el" href="group__LoadgenAPI.html#ga652e52727f74919e985ec33c5fe9be4f">QuerySampleIndex</a> qsl_idx, const <a class="el" href="structmlperf_1_1logging_1_1LogBinaryAsHexString.html">LogBinaryAsHexString</a> &amp;response)</td></tr>
 <tr class="separator:af4f15191b114fa3d8fd1cedaa3051f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +131,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLogDetailTime</b> 
 <tr class="memitem:a64fac21247aaf3f944cf8b28147a2ae8"><td class="memItemLeft" align="right" valign="top"><a id="a64fac21247aaf3f944cf8b28147a2ae8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FlagError</b> ()</td></tr>
 <tr class="separator:a64fac21247aaf3f944cf8b28147a2ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a369e6eb59fb75e9fbff75df61de1c"><td class="memItemLeft" align="right" valign="top"><a id="a43a369e6eb59fb75e9fbff75df61de1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FlagWarning</b> ()</td></tr>
+<tr class="separator:a43a369e6eb59fb75e9fbff75df61de1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366418ddea04fda253211bea954932ca"><td class="memTemplParams" colspan="2"><a id="a366418ddea04fda253211bea954932ca"></a>
 template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a366418ddea04fda253211bea954932ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>LogDetail</b> (const std::string &amp;message, const Args... args)</td></tr>
@@ -153,15 +161,18 @@ template&lt;typename... Args&gt; </td></tr>
 template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a4c779f8eccfe5da69a525209039f9c14"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TraceCounterEvent</b> (const std::string &amp;trace_name, PerfClock::time_point time, const Args... args)</td></tr>
 <tr class="separator:a4c779f8eccfe5da69a525209039f9c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f1b0aef7a05bc256d8157eb3818fb0"><td class="memItemLeft" align="right" valign="top"><a id="a64f1b0aef7a05bc256d8157eb3818fb0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RestartLatencyRecording</b> (uint64_t first_sample_sequence_id)</td></tr>
-<tr class="separator:a64f1b0aef7a05bc256d8157eb3818fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02ef62d3668ac93f1636cd24a782a6b8"><td class="memItemLeft" align="right" valign="top"><a id="a02ef62d3668ac93f1636cd24a782a6b8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordLatency</b> (uint64_t sample_sequence_id, <a class="el" href="group__LoadgenAPI.html#ga81e7daacd93c1d7d46fd06d6ed11ecce">QuerySampleLatency</a> latency)</td></tr>
-<tr class="separator:a02ef62d3668ac93f1636cd24a782a6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e318b5deca2aabc84ba89f98d21bbbc"><td class="memItemLeft" align="right" valign="top"><a id="a6e318b5deca2aabc84ba89f98d21bbbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RestartLatencyRecording</b> (uint64_t first_sample_sequence_id, size_t latencies_to_reserve)</td></tr>
+<tr class="separator:a6e318b5deca2aabc84ba89f98d21bbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8510a6ab29987a6e32b41dfc66c9dec"><td class="memItemLeft" align="right" valign="top"><a id="ad8510a6ab29987a6e32b41dfc66c9dec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordSampleCompletion</b> (uint64_t sample_sequence_id, PerfClock::time_point completion_time, <a class="el" href="group__LoadgenAPI.html#ga81e7daacd93c1d7d46fd06d6ed11ecce">QuerySampleLatency</a> latency)</td></tr>
+<tr class="separator:ad8510a6ab29987a6e32b41dfc66c9dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae46d71ff800f71f984dec9bf39150474"><td class="memItemLeft" align="right" valign="top"><a id="ae46d71ff800f71f984dec9bf39150474"></a>
 std::vector&lt; <a class="el" href="group__LoadgenAPI.html#ga81e7daacd93c1d7d46fd06d6ed11ecce">QuerySampleLatency</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLatenciesBlocking</b> (size_t expected_count)</td></tr>
 <tr class="separator:ae46d71ff800f71f984dec9bf39150474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d83652c1a775e2983705d968e81dfd1"><td class="memItemLeft" align="right" valign="top"><a id="a0d83652c1a775e2983705d968e81dfd1"></a>
+PerfClock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxCompletionTime</b> ()</td></tr>
+<tr class="separator:a0d83652c1a775e2983705d968e81dfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52a11ecc435cd159ae29591cb7d8fc51"><td class="memItemLeft" align="right" valign="top"><a id="a52a11ecc435cd159ae29591cb7d8fc51"></a>
 <a class="el" href="group__LoadgenAPI.html#ga81e7daacd93c1d7d46fd06d6ed11ecce">QuerySampleLatency</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxLatencySoFar</b> ()</td></tr>
 <tr class="separator:a52a11ecc435cd159ae29591cb7d8fc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,12 +185,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteAccuracyHeaderLo
 <tr class="memitem:a604df589b4313ffb825474fb6844a6a3"><td class="memItemLeft" align="right" valign="top"><a id="a604df589b4313ffb825474fb6844a6a3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteAccuracyFooterLocked</b> ()</td></tr>
 <tr class="separator:a604df589b4313ffb825474fb6844a6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4a2bc3a41855b17144cabd66ea63cf"><td class="memItemLeft" align="right" valign="top"><a id="a4d4a2bc3a41855b17144cabd66ea63cf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteTraceEventHeaderLocked</b> ()</td></tr>
-<tr class="separator:a4d4a2bc3a41855b17144cabd66ea63cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad175a05a885fc3b5a0ef4f150363ff62"><td class="memItemLeft" align="right" valign="top"><a id="ad175a05a885fc3b5a0ef4f150363ff62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteTraceEventFooterLocked</b> ()</td></tr>
-<tr class="separator:ad175a05a885fc3b5a0ef4f150363ff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a948a46d1299a2ea29b14b54a9752f950"><td class="memItemLeft" align="right" valign="top"><a id="a948a46d1299a2ea29b14b54a9752f950"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogArgs</b> (std::ostream *)</td></tr>
 <tr class="separator:a948a46d1299a2ea29b14b54a9752f950"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,24 +230,30 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>accuracy_needs_comma_
 <tr class="memitem:ad6c99e6200d0aff639941b341c89db2d"><td class="memItemLeft" align="right" valign="top"><a id="ad6c99e6200d0aff639941b341c89db2d"></a>
 PerfClock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>log_origin_</b></td></tr>
 <tr class="separator:ad6c99e6200d0aff639941b341c89db2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6c1c20c781fadadef9e0caaab10cb97"><td class="memItemLeft" align="right" valign="top"><a id="ac6c1c20c781fadadef9e0caaab10cb97"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>log_error_count_</b> = 0</td></tr>
-<tr class="separator:ac6c1c20c781fadadef9e0caaab10cb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2fd332579fb855ce1c4ff9c4b44a1e0"><td class="memItemLeft" align="right" valign="top"><a id="ad2fd332579fb855ce1c4ff9c4b44a1e0"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>log_error_count_</b> = 0</td></tr>
+<tr class="separator:ad2fd332579fb855ce1c4ff9c4b44a1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ee2b716d36dc3b84fc01104d7ff9e47"><td class="memItemLeft" align="right" valign="top"><a id="a7ee2b716d36dc3b84fc01104d7ff9e47"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>error_flagged_</b> = false</td></tr>
 <tr class="separator:a7ee2b716d36dc3b84fc01104d7ff9e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dbae383e483a2ad1f705031a3a38c2b"><td class="memItemLeft" align="right" valign="top"><a id="a1dbae383e483a2ad1f705031a3a38c2b"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>log_warning_count_</b> = 0</td></tr>
+<tr class="separator:a1dbae383e483a2ad1f705031a3a38c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01ae0e2f3400c961c5dd8b9e50e1126"><td class="memItemLeft" align="right" valign="top"><a id="ae01ae0e2f3400c961c5dd8b9e50e1126"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>warning_flagged_</b> = false</td></tr>
+<tr class="separator:ae01ae0e2f3400c961c5dd8b9e50e1126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1be94344bc7b9718f113f9ef155558b"><td class="memItemLeft" align="right" valign="top"><a id="af1be94344bc7b9718f113f9ef155558b"></a>
 std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>trace_mutex_</b></td></tr>
 <tr class="separator:af1be94344bc7b9718f113f9ef155558b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a814ff5ceeabc912a09a65254e38cc85a"><td class="memItemLeft" align="right" valign="top"><a id="a814ff5ceeabc912a09a65254e38cc85a"></a>
-std::ostream *&#160;</td><td class="memItemRight" valign="bottom"><b>trace_out_</b> = nullptr</td></tr>
-<tr class="separator:a814ff5ceeabc912a09a65254e38cc85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6706fa2ed3912690f02fc7fc69dfc6c"><td class="memItemLeft" align="right" valign="top"><a id="ab6706fa2ed3912690f02fc7fc69dfc6c"></a>
-PerfClock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>trace_origin_</b></td></tr>
-<tr class="separator:ab6706fa2ed3912690f02fc7fc69dfc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa85c9e0977a57d1776691123ce93cba9"><td class="memItemLeft" align="right" valign="top"><a id="aa85c9e0977a57d1776691123ce93cba9"></a>
-const std::string *&#160;</td><td class="memItemRight" valign="bottom"><b>current_pid_tid_</b> = nullptr</td></tr>
-<tr class="separator:aa85c9e0977a57d1776691123ce93cba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75941387a1ef52d8c2b38e9a67a88b87"><td class="memItemLeft" align="right" valign="top"><a id="a75941387a1ef52d8c2b38e9a67a88b87"></a>
+std::unique_ptr&lt; <a class="el" href="classmlperf_1_1logging_1_1ChromeTracer.html">ChromeTracer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tracer_</b></td></tr>
+<tr class="separator:a75941387a1ef52d8c2b38e9a67a88b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193207fdb76b771bdee4414967e1f18e"><td class="memItemLeft" align="right" valign="top"><a id="a193207fdb76b771bdee4414967e1f18e"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_pid_</b></td></tr>
+<tr class="separator:a193207fdb76b771bdee4414967e1f18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c22a413bd51f9c024bb5bdd8df7bca3"><td class="memItemLeft" align="right" valign="top"><a id="a3c22a413bd51f9c024bb5bdd8df7bca3"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_tid_</b></td></tr>
+<tr class="separator:a3c22a413bd51f9c024bb5bdd8df7bca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a281d938657df9ee4e1c43ec4f5476969"><td class="memItemLeft" align="right" valign="top"><a id="a281d938657df9ee4e1c43ec4f5476969"></a>
 PerfClock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>log_detail_time_</b></td></tr>
 <tr class="separator:a281d938657df9ee4e1c43ec4f5476969"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,6 +278,9 @@ std::vector&lt; <a class="el" href="group__LoadgenAPI.html#ga81e7daacd93c1d7d46f
 <tr class="memitem:ac31bf211262d3adf65693bc2c9aea224"><td class="memItemLeft" align="right" valign="top"><a id="ac31bf211262d3adf65693bc2c9aea224"></a>
 std::atomic&lt; <a class="el" href="group__LoadgenAPI.html#ga81e7daacd93c1d7d46fd06d6ed11ecce">QuerySampleLatency</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>max_latency_</b> {0}</td></tr>
 <tr class="separator:ac31bf211262d3adf65693bc2c9aea224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a5ece31c740805dae27f87c061768d"><td class="memItemLeft" align="right" valign="top"><a id="a98a5ece31c740805dae27f87c061768d"></a>
+PerfClock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>max_completion_timstamp_</b></td></tr>
+<tr class="separator:a98a5ece31c740805dae27f87c061768d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac43f6d763e2833cfb7dc91fae84a594"><td class="memItemLeft" align="right" valign="top"><a id="aac43f6d763e2833cfb7dc91fae84a594"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>latencies_recorded_</b> = 0</td></tr>
 <tr class="separator:aac43f6d763e2833cfb7dc91fae84a594"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,11 +290,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>latencies_expected_
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The proxy all logging lambdas ultimately use to write any log type. </p>
-<p>Passed as an argument to the log lambda on the recording thread to serialize the data captured by the lambda and forward it to the output stream. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd><p class="startdd">Pre-allocate the latency results vector (latencies_) so the IOThread doesn't need to grow it during the performance run. </p>
-<p class="enddd">Make summary_out_, detail_out_, accuracy_out_, and trace_out_ instances of a new LogOutput interface that the client may override. </p>
-</dd></dl>
+<p>Passed as an argument to the log lambda on the recording thread to serialize the data captured by the lambda and forward it to the output stream. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Make summary_out_, detail_out_, accuracy_out_, and trace_out_ instances of a new LogOutput interface that the client may override. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00073">73</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00172">172</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="logging_8h_source.html">logging.h</a></li>
 <li><a class="el" href="logging_8cc_source.html">logging.cc</a></li>

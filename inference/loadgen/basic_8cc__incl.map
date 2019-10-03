@@ -1,8 +1,8 @@
 <map id="tests/basic.cc" name="tests/basic.cc">
-<area shape="rect" id="node9" href="$loadgen_8h.html" title="Provides the entry points for a SUT to start a test and respond to issued queries. " alt="" coords="5,80,100,107"/>
-<area shape="rect" id="node11" href="$query__sample__library_8h.html" title="Defines the QuerySampleLibrary interface. " alt="" coords="568,80,745,107"/>
-<area shape="rect" id="node16" href="$system__under__test_8h.html" title="Defines the SystemUnderTest interface. " alt="" coords="821,80,983,107"/>
-<area shape="rect" id="node18" href="$test__settings_8h.html" title="Provides ways for a client to change the behavior and constraints of the load generator. " alt="" coords="1226,80,1349,107"/>
-<area shape="rect" id="node20" href="$loadgen__test_8h.html" title="A minimal test framework. " alt="" coords="1058,80,1173,107"/>
-<area shape="rect" id="node13" href="$query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="608,155,729,181"/>
+<area shape="rect" id="node9" href="$loadgen_8h.html" title="Provides the entry points for a SUT to start a test and respond to issued queries. " alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node11" href="$query__sample__library_8h.html" title="Defines the QuerySampleLibrary interface. " alt="" coords="543,80,711,107"/>
+<area shape="rect" id="node16" href="$system__under__test_8h.html" title="Defines the SystemUnderTest interface. " alt="" coords="786,80,942,107"/>
+<area shape="rect" id="node18" href="$test__settings_8h.html" title="Provides ways for a client to change the behavior and constraints of the load generator. " alt="" coords="1172,80,1292,107"/>
+<area shape="rect" id="node20" href="$loadgen__test_8h.html" title="A minimal test framework. " alt="" coords="1017,80,1124,107"/>
+<area shape="rect" id="node13" href="$query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="583,155,697,181"/>
 </map>

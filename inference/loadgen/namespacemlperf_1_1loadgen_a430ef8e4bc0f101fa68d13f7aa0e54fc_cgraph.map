@@ -1,0 +1,6 @@
+<map id="mlperf::loadgen::RunPerformanceMode" name="mlperf::loadgen::RunPerformanceMode">
+<area shape="rect" id="node2" href="$namespacemlperf_1_1loadgen.html#a479affd05ed46c01b20a4ffa43c9661d" title="Generates random sets of samples in the QSL that we can load into RAM at the same time..." alt="" coords="309,5,481,47"/>
+<area shape="rect" id="node4" href="$classmlperf_1_1SystemUnderTest.html#a339dee5696b6fb6687b2b90310e81903" title="Reports the raw latency results to the SUT of each sample issued as recorded by the load generator..." alt="" coords="309,71,481,112"/>
+<area shape="rect" id="node5" href="$classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="303,136,487,177"/>
+<area shape="rect" id="node3" href="$classmlperf_1_1QuerySampleLibrary.html#a4cf3778dd7b869c8b44ee6659a252d29" title="Total number of samples in library. " alt="" coords="535,5,719,47"/>
+</map>

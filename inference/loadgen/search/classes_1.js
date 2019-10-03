@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['durationgeneratorns',['DurationGeneratorNs',['../structmlperf_1_1loadgen_1_1DurationGeneratorNs.html',1,'mlperf::loadgen']]]
+  ['chrometracer',['ChromeTracer',['../classmlperf_1_1logging_1_1ChromeTracer.html',1,'mlperf::logging']]]
 ];

@@ -97,15 +97,15 @@ $(document).ready(function(){initNavTree('structmlperf_1_1loadgen_1_1TestSetting
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structmlperf_1_1loadgen_1_1TestSettingsInternal__coll__graph.png" border="0" usemap="#mlperf_1_1loadgen_1_1TestSettingsInternal_coll__map" alt="Collaboration graph"/></div>
 <map name="mlperf_1_1loadgen_1_1TestSettingsInternal_coll__map" id="mlperf_1_1loadgen_1_1TestSettingsInternal_coll__map">
-<area shape="rect" id="node2" href="structmlperf_1_1TestSettings.html" title="Top&#45;level struct specifing the modes and parameters of the test. " alt="" coords="9,5,205,669"/>
+<area shape="rect" id="node2" href="structmlperf_1_1TestSettings.html" title="Top&#45;level struct specifing the modes and parameters of the test. " alt="" coords="5,5,199,1197"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c8c2dc4547c7eb054f64405b0d1129f"><td class="memItemLeft" align="right" valign="top"><a id="a7c8c2dc4547c7eb054f64405b0d1129f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TestSettingsInternal</b> (const <a class="el" href="structmlperf_1_1TestSettings.html">TestSettings</a> &amp;requested_settings)</td></tr>
-<tr class="separator:a7c8c2dc4547c7eb054f64405b0d1129f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bef815689fcbf3cc9edd7f47090601"><td class="memItemLeft" align="right" valign="top"><a id="a96bef815689fcbf3cc9edd7f47090601"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TestSettingsInternal</b> (const <a class="el" href="structmlperf_1_1TestSettings.html">TestSettings</a> &amp;requested_settings, size_t qsl_performance_sample_count)</td></tr>
+<tr class="separator:a96bef815689fcbf3cc9edd7f47090601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5dd0f1d77e251b26a7ad6b071acb038"><td class="memItemLeft" align="right" valign="top"><a id="aa5dd0f1d77e251b26a7ad6b071acb038"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogEffectiveSettings</b> () const</td></tr>
 <tr class="separator:aa5dd0f1d77e251b26a7ad6b071acb038"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,9 +136,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>target_qps</b></td>
 <tr class="memitem:adc1adf83d15d806664f021493d58de8e"><td class="memItemLeft" align="right" valign="top"><a id="adc1adf83d15d806664f021493d58de8e"></a>
 std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><b>target_latency</b> {0}</td></tr>
 <tr class="separator:adc1adf83d15d806664f021493d58de8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33861291866337d530290e33b36a269c"><td class="memItemLeft" align="right" valign="top"><a id="a33861291866337d530290e33b36a269c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>max_async_queries</b></td></tr>
-<tr class="separator:a33861291866337d530290e33b36a269c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac507a7ded162947d9df70b0dfa36a9dc"><td class="memItemLeft" align="right" valign="top"><a id="ac507a7ded162947d9df70b0dfa36a9dc"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>target_latency_percentile</b></td></tr>
+<tr class="separator:ac507a7ded162947d9df70b0dfa36a9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e2a63debba3c8d92b380e5363dfb07"><td class="memItemLeft" align="right" valign="top"><a id="ae9e2a63debba3c8d92b380e5363dfb07"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_async_queries</b></td></tr>
+<tr class="separator:ae9e2a63debba3c8d92b380e5363dfb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c652537d092eae3ea609a8c0e50f27f"><td class="memItemLeft" align="right" valign="top"><a id="a0c652537d092eae3ea609a8c0e50f27f"></a>
 std::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><b>target_duration</b> {0}</td></tr>
 <tr class="separator:a0c652537d092eae3ea609a8c0e50f27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,12 +169,33 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>sample_index_rng_
 <tr class="memitem:a1e8db978ef27a392bca98604f77ad132"><td class="memItemLeft" align="right" valign="top"><a id="a1e8db978ef27a392bca98604f77ad132"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>schedule_rng_seed</b></td></tr>
 <tr class="separator:a1e8db978ef27a392bca98604f77ad132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56da963f19b70ad4d3b4e6309429e84c"><td class="memItemLeft" align="right" valign="top"><a id="a56da963f19b70ad4d3b4e6309429e84c"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>accuracy_log_rng_seed</b></td></tr>
+<tr class="separator:a56da963f19b70ad4d3b4e6309429e84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e85c19d28df54f9c29ca72aad4a5c46"><td class="memItemLeft" align="right" valign="top"><a id="a4e85c19d28df54f9c29ca72aad4a5c46"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>accuracy_log_probability</b></td></tr>
+<tr class="separator:a4e85c19d28df54f9c29ca72aad4a5c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d07cf1e9a017e5183a6a4a285881430"><td class="memItemLeft" align="right" valign="top"><a id="a4d07cf1e9a017e5183a6a4a285881430"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>print_timestamps</b></td></tr>
+<tr class="separator:a4d07cf1e9a017e5183a6a4a285881430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f512258c829948677d964bb35a1fa24"><td class="memItemLeft" align="right" valign="top"><a id="a4f512258c829948677d964bb35a1fa24"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>performance_issue_unique</b></td></tr>
+<tr class="separator:a4f512258c829948677d964bb35a1fa24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1a614fe88add23fe23ff506070ae89"><td class="memItemLeft" align="right" valign="top"><a id="a5b1a614fe88add23fe23ff506070ae89"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>performance_issue_same</b></td></tr>
+<tr class="separator:a5b1a614fe88add23fe23ff506070ae89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bacda1006809be6806975396ee95a81"><td class="memItemLeft" align="right" valign="top"><a id="a1bacda1006809be6806975396ee95a81"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>performance_issue_same_index</b></td></tr>
+<tr class="separator:a1bacda1006809be6806975396ee95a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae051f6982a56c453a99cdc6d3c624fc"><td class="memItemLeft" align="right" valign="top"><a id="aae051f6982a56c453a99cdc6d3c624fc"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>performance_sample_count</b></td></tr>
+<tr class="separator:aae051f6982a56c453a99cdc6d3c624fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>takes the user-friendly <a class="el" href="structmlperf_1_1TestSettings.html" title="Top-level struct specifing the modes and parameters of the test. ">TestSettings</a> and normalizes it for consumption by the loadgen. </p>
 <p>It does things like remove scenario-specific naming and introduce the concept of target_duration used to pre-generate queries. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings__internal_8h_source.html#l00041">41</a> of file <a class="el" href="test__settings__internal_8h_source.html">test_settings_internal.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings__internal_8h_source.html#l00043">43</a> of file <a class="el" href="test__settings__internal_8h_source.html">test_settings_internal.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="test__settings__internal_8h_source.html">test_settings_internal.h</a></li>
 <li><a class="el" href="test__settings__internal_8cc_source.html">test_settings_internal.cc</a></li>

@@ -5,6 +5,7 @@ var files =
     [ "docs", "dir_49e56c817e5e54854c35e136979f97ca.html", "dir_49e56c817e5e54854c35e136979f97ca" ],
     [ "generated", "dir_84fc5dba3506812825191c0c043e3c97.html", "dir_84fc5dba3506812825191c0c043e3c97" ],
     [ "tests", "dir_59425e443f801f1f2fd8bbe4959a3ccf.html", "dir_59425e443f801f1f2fd8bbe4959a3ccf" ],
+    [ "version_generated.cc", "version__generated_8cc_source.html", null ],
     [ "loadgen.cc", "loadgen_8cc_source.html", null ],
     [ "loadgen.h", "loadgen_8h.html", "loadgen_8h" ],
     [ "logging.cc", "logging_8cc.html", "logging_8cc" ],

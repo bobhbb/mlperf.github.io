@@ -1,5 +1,0 @@
-<map id="mlperf::loadgen::RunPerformanceMode" name="mlperf::loadgen::RunPerformanceMode">
-<area shape="rect" id="node2" href="$classmlperf_1_1SystemUnderTest.html#a339dee5696b6fb6687b2b90310e81903" title="Reports the raw latency results to the SUT of each sample issued as recorded by the load generator..." alt="" coords="333,5,513,47"/>
-<area shape="rect" id="node3" href="$structmlperf_1_1loadgen_1_1PerformanceSummary.html#ad1cdc17ee1ffc0d09713e59724b6a945" title="mlperf::loadgen::Performance\lSummary::Log" alt="" coords="320,71,525,112"/>
-<area shape="rect" id="node4" href="$classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="325,136,520,177"/>
-</map>

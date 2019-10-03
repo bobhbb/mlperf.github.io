@@ -1,4 +1,4 @@
 <map id="mlperf::loadgen::SampleMetadata" name="mlperf::loadgen::SampleMetadata">
-<area shape="rect" id="node2" href="$classmlperf_1_1loadgen_1_1QueryMetadata.html" title="Maintains data and timing info for a query and all its samples. " alt="" coords="5,189,236,472"/>
-<area shape="rect" id="node3" href="$structmlperf_1_1loadgen_1_1ResponseDelegate.html" title="An interface for a particular scenario + mode to implement for extended hanlding of sample completion..." alt="" coords="27,5,215,127"/>
+<area shape="rect" id="node2" href="$classmlperf_1_1loadgen_1_1QueryMetadata.html" title="Maintains data and timing info for a query and all its samples. " alt="" coords="5,189,223,472"/>
+<area shape="rect" id="node3" href="$structmlperf_1_1loadgen_1_1ResponseDelegate.html" title="An interface for a particular scenario + mode to implement for extended hanlding of sample completion..." alt="" coords="25,5,203,127"/>
 </map>

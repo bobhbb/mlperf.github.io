@@ -248,9 +248,15 @@ template&lt;typename DurationT &gt; </td></tr>
 <tr class="memitem:ab81e3cf264be301d89cda816ec3fb469"><td class="memItemLeft" align="right" valign="top"><a id="ab81e3cf264be301d89cda816ec3fb469"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentDateTimeISO8601</b> ()</td></tr>
 <tr class="separator:ab81e3cf264be301d89cda816ec3fb469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41cf1351b6ed1475fcd46b18ad559c04"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlperf.html#a41cf1351b6ed1475fcd46b18ad559c04">DateTimeStringForPower</a> (std::chrono::system_clock::time_point tp)</td></tr>
+<tr class="memdesc:a41cf1351b6ed1475fcd46b18ad559c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses a format that matches the one used by SPEC power measurement logging.  <a href="#a41cf1351b6ed1475fcd46b18ad559c04">More...</a><br /></td></tr>
+<tr class="separator:a41cf1351b6ed1475fcd46b18ad559c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4dd41b825a1b19bf4f0baa6e914b9d7"><td class="memItemLeft" align="right" valign="top"><a id="aa4dd41b825a1b19bf4f0baa6e914b9d7"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleToString</b> (double value, int precision=2)</td></tr>
 <tr class="separator:aa4dd41b825a1b19bf4f0baa6e914b9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64afc1ea5a004b2c17322ccd24c34566"><td class="memItemLeft" align="right" valign="top"><a id="a64afc1ea5a004b2c17322ccd24c34566"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>FileExists</b> (const std::string filename)</td></tr>
+<tr class="separator:a64afc1ea5a004b2c17322ccd24c34566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eba66b2be605127fdb90d99ad718774"><td class="memItemLeft" align="right" valign="top"><a id="a7eba66b2be605127fdb90d99ad718774"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogLoadgenVersion</b> ()</td></tr>
 <tr class="separator:a7eba66b2be605127fdb90d99ad718774"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,10 +269,36 @@ const auto&#160;</td><td class="memItemRight" valign="bottom"><b>GlobalLogger</b
 <tr class="memitem:a825ca029e9110531ee666c5fc8c146e6"><td class="memItemLeft" align="right" valign="top"><a id="a825ca029e9110531ee666c5fc8c146e6"></a>
 const auto&#160;</td><td class="memItemRight" valign="bottom"><b>Log</b> = logging::Log</td></tr>
 <tr class="separator:a825ca029e9110531ee666c5fc8c146e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43c242ce5b2a935594271bd2e876d614"><td class="memItemLeft" align="right" valign="top">
+constexpr <a class="el" href="group__LoadgenAPI.html#gac224283dfbf6e0261ad7778346464782">ResponseId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>kResponseIdReserved</b> = 0</td></tr>
+<tr class="separator:ga43c242ce5b2a935594271bd2e876d614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains the loadgen API. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a41cf1351b6ed1475fcd46b18ad559c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41cf1351b6ed1475fcd46b18ad559c04">&#9670;&nbsp;</a></span>DateTimeStringForPower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string mlperf::DateTimeStringForPower </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::system_clock::time_point&#160;</td>
+          <td class="paramname"><em>tp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uses a format that matches the one used by SPEC power measurement logging. </p>
+
+<p class="definition">Definition at line <a class="el" href="utils_8cc_source.html#l00073">73</a> of file <a class="el" href="utils_8cc_source.html">utils.cc</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->

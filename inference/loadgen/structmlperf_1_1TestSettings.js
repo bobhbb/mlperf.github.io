@@ -1,5 +1,8 @@
 var structmlperf_1_1TestSettings =
 [
+    [ "FromConfig", "structmlperf_1_1TestSettings.html#adb1ce39f2fc342ad8a5f9cbe85451f96", null ],
+    [ "accuracy_log_probability", "structmlperf_1_1TestSettings.html#abcaad9064a9c69fbc0355678155761e0", null ],
+    [ "accuracy_log_rng_seed", "structmlperf_1_1TestSettings.html#ae6f4eb2fe9a71cffabb67b75e5b18a24", null ],
     [ "max_duration_ms", "structmlperf_1_1TestSettings.html#abcb885c31a03e69127b0940dae3e5795", null ],
     [ "max_query_count", "structmlperf_1_1TestSettings.html#aa4b0909df23429d155b8e554b4b5c668", null ],
     [ "min_duration_ms", "structmlperf_1_1TestSettings.html#ae0245a4353f113ddc3078154660e2869", null ],
@@ -8,14 +11,25 @@ var structmlperf_1_1TestSettings =
     [ "multi_stream_max_async_queries", "structmlperf_1_1TestSettings.html#adbdd98db3a881d3720623bfb03bd5bfa", null ],
     [ "multi_stream_samples_per_query", "structmlperf_1_1TestSettings.html#aa6f21cb8169bc0eb80214cfd9ac46663", null ],
     [ "multi_stream_target_latency_ns", "structmlperf_1_1TestSettings.html#a14cc63f023c5af26eb75c10fb82b4e47", null ],
+    [ "multi_stream_target_latency_percentile", "structmlperf_1_1TestSettings.html#aaaf2f8dd0ddb8302b3c75b5995375dd8", null ],
     [ "multi_stream_target_qps", "structmlperf_1_1TestSettings.html#acb0c321e3442ee6bd241cf24f5088205", null ],
     [ "offline_expected_qps", "structmlperf_1_1TestSettings.html#a3db697292637f6c3594c3c8ed86d2f39", null ],
+    [ "performance_issue_same", "structmlperf_1_1TestSettings.html#a93bb9de340aa0e829f1b9dfb5b6be2bf", null ],
+    [ "performance_issue_same_index", "structmlperf_1_1TestSettings.html#a0d747bd0566f53dfeedf14b59e11def2", null ],
+    [ "performance_issue_unique", "structmlperf_1_1TestSettings.html#afc019ccbf4a25d42ac18fd63fc4009f5", null ],
+    [ "performance_sample_count_override", "structmlperf_1_1TestSettings.html#ae039ca6e6245652a13667be92f7a39c7", null ],
+    [ "print_timestamps", "structmlperf_1_1TestSettings.html#a7c88324e009905be2a1f9f5fb4a7afbb", null ],
     [ "qsl_rng_seed", "structmlperf_1_1TestSettings.html#aea8a7a9458721ecb96a8cdd56e148a6e", null ],
     [ "sample_index_rng_seed", "structmlperf_1_1TestSettings.html#a6a6e6cbe30cf3c27dd5e52e2282dc5fc", null ],
     [ "scenario", "structmlperf_1_1TestSettings.html#aed48768bb3709efcb4979d2cbb60c046", null ],
     [ "schedule_rng_seed", "structmlperf_1_1TestSettings.html#a7f5428a2acebc1aab3afa7a033fcfabf", null ],
     [ "server_coalesce_queries", "structmlperf_1_1TestSettings.html#afcf9b876f4325c786accc143c429ca29", null ],
+    [ "server_find_peak_qps_boundary_step_size", "structmlperf_1_1TestSettings.html#ac7e3a821b0e82c3037eb168a1fa417ab", null ],
+    [ "server_find_peak_qps_decimals_of_precision", "structmlperf_1_1TestSettings.html#acf9e8c42716f36ba7f34f704f2d01ca2", null ],
+    [ "server_max_async_queries", "structmlperf_1_1TestSettings.html#a5e66072fa4639951ff0237abac66f51d", null ],
     [ "server_target_latency_ns", "structmlperf_1_1TestSettings.html#abed28cce618cb926ca94971b4a9c0171", null ],
+    [ "server_target_latency_percentile", "structmlperf_1_1TestSettings.html#a88dbc8a6c523ede6a007b94263b99cfa", null ],
     [ "server_target_qps", "structmlperf_1_1TestSettings.html#a8998e8ac31f49bfe28448649c7a69505", null ],
-    [ "single_stream_expected_latency_ns", "structmlperf_1_1TestSettings.html#a5c0f0ef1ca28d073a64aad57a6f6aa93", null ]
+    [ "single_stream_expected_latency_ns", "structmlperf_1_1TestSettings.html#a5c0f0ef1ca28d073a64aad57a6f6aa93", null ],
+    [ "single_stream_target_latency_percentile", "structmlperf_1_1TestSettings.html#a926579c58fe4df0fbecd39138b941531", null ]
 ];

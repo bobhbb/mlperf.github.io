@@ -12,7 +12,7 @@ var classmlperf_1_1loadgen_1_1QueryMetadata =
     [ "response_delegate", "classmlperf_1_1loadgen_1_1QueryMetadata.html#a7dea95c7bc37b1659b86d4837d321278", null ],
     [ "samples_", "classmlperf_1_1loadgen_1_1QueryMetadata.html#a22427f8ef784f4e2590e3015fbf5cf27", null ],
     [ "scheduled_delta", "classmlperf_1_1loadgen_1_1QueryMetadata.html#ac7becec4851ad3ae5d8fd9e7d9e62077", null ],
-    [ "scheduled_intervals", "classmlperf_1_1loadgen_1_1QueryMetadata.html#ac4c74b7a38005f13479474880943c060", null ],
+    [ "scheduled_intervals", "classmlperf_1_1loadgen_1_1QueryMetadata.html#a673db815fac3c66ec61ed39459132910", null ],
     [ "scheduled_time", "classmlperf_1_1loadgen_1_1QueryMetadata.html#aa3792ba20232ba1595eff7453b48a39c", null ],
     [ "sequence_id", "classmlperf_1_1loadgen_1_1QueryMetadata.html#aae9a6d63628623fbd654121b128b6e70", null ],
     [ "wait_count_", "classmlperf_1_1loadgen_1_1QueryMetadata.html#a67091e566456a77201ec233096d9c67b", null ]

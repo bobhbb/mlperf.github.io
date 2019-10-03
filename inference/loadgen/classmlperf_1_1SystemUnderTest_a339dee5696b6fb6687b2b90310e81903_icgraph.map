@@ -1,3 +1,4 @@
 <map id="mlperf::SystemUnderTest::ReportLatencyResults" name="mlperf::SystemUnderTest::ReportLatencyResults">
-<area shape="rect" id="node2" href="$namespacemlperf_1_1loadgen.html#a1700bad264e2d159c27a6e9bb1700a6f" title="Runs the performance mode, templated by scenario. " alt="" coords="233,13,500,39"/>
+<area shape="rect" id="node2" href="$namespacemlperf_1_1loadgen.html#a430ef8e4bc0f101fa68d13f7aa0e54fc" title="Runs the performance mode, templated by scenario. " alt="" coords="225,5,475,32"/>
+<area shape="rect" id="node3" href="$namespacemlperf_1_1loadgen.html#a6baf6146965cf57af6630c0abcac9c36" title="Runs the binary search mode, templated by scenario. " alt="" coords="263,57,437,98"/>
 </map>

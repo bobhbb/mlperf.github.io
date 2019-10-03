@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('logging_8cc.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="logging_8h_source.html">logging.h</a>&quot;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;future&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
@@ -103,9 +104,9 @@ $(document).ready(function(){initNavTree('logging_8cc.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="logging_8cc__incl.png" border="0" usemap="#logging_8cc" alt=""/></div>
 <map name="logging_8cc" id="logging_8cc">
-<area shape="rect" id="node2" href="logging_8h.html" title="Internal logging implementation details. " alt="" coords="539,80,617,107"/>
-<area shape="rect" id="node23" href="utils_8h.html" title="Various shared utility functions. " alt="" coords="1271,80,1328,107"/>
-<area shape="rect" id="node18" href="query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="1239,155,1360,181"/>
+<area shape="rect" id="node2" href="logging_8h.html" title="Internal logging implementation details. " alt="" coords="525,80,599,107"/>
+<area shape="rect" id="node24" href="utils_8h.html" title="Various shared utility functions. " alt="" coords="1221,80,1279,107"/>
+<area shape="rect" id="node18" href="query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="1193,155,1307,181"/>
 </map>
 </div>
 </div>
@@ -134,6 +135,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a740af775748a9032acba7b64655185ff"><td class="memItemLeft" align="right" valign="top"><a id="a740af775748a9032acba7b64655185ff"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MLPERF_GET_PID</b>()&#160;&#160;&#160;getpid()</td></tr>
 <tr class="separator:a740af775748a9032acba7b64655185ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b97f3285366bfef5c9a01fe2c7ccc3"><td class="memItemLeft" align="right" valign="top"><a id="af2b97f3285366bfef5c9a01fe2c7ccc3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MLPERF_GET_TID</b>()&#160;&#160;&#160;std::this_thread::get_id()</td></tr>
+<tr class="separator:af2b97f3285366bfef5c9a01fe2c7ccc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -149,8 +153,7 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::
 <tr class="memitem:a53c1e4a6f658f885a0228b37280c9485"><td class="memItemLeft" align="right" valign="top"><a id="a53c1e4a6f658f885a0228b37280c9485"></a>
 Logger &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::logging::GlobalLogger</b> ()</td></tr>
 <tr class="separator:a53c1e4a6f658f885a0228b37280c9485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab53ce93ea70e542fbb235b248cab296d"><td class="memItemLeft" align="right" valign="top"><a id="ab53ce93ea70e542fbb235b248cab296d"></a>
-TlsLoggerWrapper *&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::logging::InitializeMyTlsLoggerWrapper</b> ()</td></tr>
+<tr class="memitem:ab53ce93ea70e542fbb235b248cab296d"><td class="memItemLeft" align="right" valign="top">TlsLoggerWrapper *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1logging.html#ab53ce93ea70e542fbb235b248cab296d">mlperf::logging::InitializeMyTlsLoggerWrapper</a> ()</td></tr>
 <tr class="separator:ab53ce93ea70e542fbb235b248cab296d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d54b7e6c0d50722179f5860724472e1"><td class="memItemLeft" align="right" valign="top"><a id="a7d54b7e6c0d50722179f5860724472e1"></a>
 TlsLogger *&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::logging::InitializeMyTlsLogger</b> ()</td></tr>

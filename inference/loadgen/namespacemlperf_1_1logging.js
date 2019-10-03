@@ -4,6 +4,7 @@ var namespacemlperf_1_1logging =
     [ "AsyncLog", "classmlperf_1_1logging_1_1AsyncLog.html", "classmlperf_1_1logging_1_1AsyncLog" ],
     [ "AsyncSummary", "classmlperf_1_1logging_1_1AsyncSummary.html", "classmlperf_1_1logging_1_1AsyncSummary" ],
     [ "AsyncTrace", "classmlperf_1_1logging_1_1AsyncTrace.html", "classmlperf_1_1logging_1_1AsyncTrace" ],
+    [ "ChromeTracer", "classmlperf_1_1logging_1_1ChromeTracer.html", "classmlperf_1_1logging_1_1ChromeTracer" ],
     [ "LogBinaryAsHexString", "structmlperf_1_1logging_1_1LogBinaryAsHexString.html", "structmlperf_1_1logging_1_1LogBinaryAsHexString" ],
     [ "Logger", "classmlperf_1_1logging_1_1Logger.html", "classmlperf_1_1logging_1_1Logger" ],
     [ "ScopedTracer", "classmlperf_1_1logging_1_1ScopedTracer.html", "classmlperf_1_1logging_1_1ScopedTracer" ],

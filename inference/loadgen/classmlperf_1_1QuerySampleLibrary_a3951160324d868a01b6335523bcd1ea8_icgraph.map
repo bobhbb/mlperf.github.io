@@ -1,5 +1,6 @@
 <map id="mlperf::QuerySampleLibrary::UnloadSamplesFromRam" name="mlperf::QuerySampleLibrary::UnloadSamplesFromRam">
-<area shape="rect" id="node2" href="$namespacemlperf_1_1loadgen.html#a1700bad264e2d159c27a6e9bb1700a6f" title="Runs the performance mode, templated by scenario. " alt="" coords="248,5,515,32"/>
-<area shape="rect" id="node3" href="$namespacemlperf_1_1loadgen.html#a21794e60883b3ea92450030548aa001a" title="Runs the binary search mode, templated by scenario. " alt="" coords="290,57,473,98"/>
-<area shape="rect" id="node4" href="$namespacemlperf_1_1loadgen.html#a8478f30e88678d619185375f66632a56" title="Runs the accuracy mode, templated by scenario. " alt="" coords="260,123,503,149"/>
+<area shape="rect" id="node2" href="$namespacemlperf_1_1loadgen.html#a30fa007ad238a8a77f062f568a8d893a" title="Find boundaries of performance settings by widening bounds exponentially. " alt="" coords="257,5,467,32"/>
+<area shape="rect" id="node3" href="$namespacemlperf_1_1loadgen.html#a430ef8e4bc0f101fa68d13f7aa0e54fc" title="Runs the performance mode, templated by scenario. " alt="" coords="237,56,487,83"/>
+<area shape="rect" id="node4" href="$namespacemlperf_1_1loadgen.html#a6baf6146965cf57af6630c0abcac9c36" title="Runs the binary search mode, templated by scenario. " alt="" coords="275,107,449,149"/>
+<area shape="rect" id="node5" href="$namespacemlperf_1_1loadgen.html#a79b15830132ce76627854c3a789bf81b" title="Runs the accuracy mode, templated by scenario. " alt="" coords="247,173,477,200"/>
 </map>

@@ -103,6 +103,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlperf_1_1logging_1_1AsyncTrace.html">AsyncTrace</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The convenience proxy a <a class="el" href="classmlperf_1_1logging_1_1ScopedTracer.html" title="ScopedTracer is an RAII object that traces the start and end of its lifetime. ">ScopedTracer</a> lambda uses to write to the detail log.  <a href="classmlperf_1_1logging_1_1AsyncTrace.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmlperf_1_1logging_1_1ChromeTracer.html">ChromeTracer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a trace that can be uploaded to chrome://tracing for visualization.  <a href="classmlperf_1_1logging_1_1ChromeTracer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1logging_1_1LogBinaryAsHexString.html">LogBinaryAsHexString</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the raw bytes as a hexadecimal ascii string.  <a href="structmlperf_1_1logging_1_1LogBinaryAsHexString.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,8 +163,7 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a82bcf8dae9459d440dc08f2ea21db05c"><td class="memItemLeft" align="right" valign="top"><a id="a82bcf8dae9459d440dc08f2ea21db05c"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>Bin2Hex</b> (uint8_t four_bits)</td></tr>
 <tr class="separator:a82bcf8dae9459d440dc08f2ea21db05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab53ce93ea70e542fbb235b248cab296d"><td class="memItemLeft" align="right" valign="top"><a id="ab53ce93ea70e542fbb235b248cab296d"></a>
-<a class="el" href="structmlperf_1_1logging_1_1TlsLoggerWrapper.html">TlsLoggerWrapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeMyTlsLoggerWrapper</b> ()</td></tr>
+<tr class="memitem:ab53ce93ea70e542fbb235b248cab296d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmlperf_1_1logging_1_1TlsLoggerWrapper.html">TlsLoggerWrapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1logging.html#ab53ce93ea70e542fbb235b248cab296d">InitializeMyTlsLoggerWrapper</a> ()</td></tr>
 <tr class="separator:ab53ce93ea70e542fbb235b248cab296d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d54b7e6c0d50722179f5860724472e1"><td class="memItemLeft" align="right" valign="top"><a id="a7d54b7e6c0d50722179f5860724472e1"></a>
 <a class="el" href="classmlperf_1_1logging_1_1TlsLogger.html">TlsLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeMyTlsLogger</b> ()</td></tr>
@@ -181,13 +183,33 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>Bin2Hex</b> (uint8_t 
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Verify lambas are not allocating when bounded to a std::function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Verify lambas are not allocating when bounded to a std::function. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00049">49</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ab53ce93ea70e542fbb235b248cab296d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53ce93ea70e542fbb235b248cab296d">&#9670;&nbsp;</a></span>InitializeMyTlsLoggerWrapper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmlperf_1_1logging_1_1TlsLoggerWrapper.html">TlsLoggerWrapper</a>* mlperf::logging::InitializeMyTlsLoggerWrapper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>There is a race where the same <a class="el" href="structmlperf_1_1logging_1_1TlsLoggerWrapper.html" title="Moves ownership of the TlsLogger to Logger on thread exit so no round-trip synchronization with the I...">TlsLoggerWrapper</a> might be destroyed both naturally and via forced_detatch. Destruction of the <a class="el" href="structmlperf_1_1logging_1_1TlsLoggerWrapper.html" title="Moves ownership of the TlsLogger to Logger on thread exit so no round-trip synchronization with the I...">TlsLoggerWrapper</a> should be locked. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="logging_8cc_source.html#l00924">924</a> of file <a class="el" href="logging_8cc_source.html">logging.cc</a>.</p>
+
+</div>
+</div>
 <a id="aada0c4c287efff9a44ce9e8a6f390c5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aada0c4c287efff9a44ce9e8a6f390c5a">&#9670;&nbsp;</a></span>Log()</h2>
 
@@ -207,7 +229,7 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>Bin2Hex</b> (uint8_t 
 <p>The generic way to add a log entry. </p>
 <p>Supports all types of logs, which is useful for complex lambdas that may wish to log in multiple places or log something other than a simple summary, detail, or trace entry. </p>
 
-<p class="definition">Definition at line <a class="el" href="logging_8cc_source.html#l00855">855</a> of file <a class="el" href="logging_8cc_source.html">logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8cc_source.html#l00948">948</a> of file <a class="el" href="logging_8cc_source.html">logging.cc</a>.</p>
 
 </div>
 </div>
@@ -231,7 +253,7 @@ template&lt;typename LambdaT &gt; </div>
 
 <p>A helper to simplify adding a detail log entry. </p>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00429">429</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00505">505</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +277,7 @@ template&lt;typename LambdaT &gt; </div>
 
 <p>A helper to simplify adding a summary log entry. </p>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00396">396</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00465">465</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -278,9 +300,9 @@ template&lt;typename LambdaT &gt; </div>
 </div><div class="memdoc">
 
 <p>Helper that creates a ScopeTracer with automatic type deduction. </p>
-<p>Helps with automatic template type deduction, which has been supported for functions for a long time. C++17 will support deduction for classes, which will neutralize the utility of a helper function like this. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Determine which traces to keep for submission purposes. </dd></dl>
+<p>Helps with automatic template type deduction, which has been supported for functions for a long time. C++17 will support deduction for classes, which will neutralize the utility of a helper function like this. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Determine which traces to keep for submission purposes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00484">484</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00560">560</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -288,7 +310,7 @@ template&lt;typename LambdaT &gt; </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacemlperf_1_1logging_af7999c3fe0ef5f7e822edb5fcd5ebe7b_icgraph.png" border="0" usemap="#namespacemlperf_1_1logging_af7999c3fe0ef5f7e822edb5fcd5ebe7b_icgraph" alt=""/></div>
 <map name="namespacemlperf_1_1logging_af7999c3fe0ef5f7e822edb5fcd5ebe7b_icgraph" id="namespacemlperf_1_1logging_af7999c3fe0ef5f7e822edb5fcd5ebe7b_icgraph">
-<area shape="rect" id="node2" href="classmlperf_1_1logging_1_1Logger.html#ae491de567b4645cb21c7e411acb730b5" title="The main logging thread function that handles the serialization and I/O to the stream or file..." alt="" coords="256,5,420,47"/>
+<area shape="rect" id="node2" href="classmlperf_1_1logging_1_1Logger.html#ae491de567b4645cb21c7e411acb730b5" title="The main logging thread function that handles the serialization and I/O to the stream or file..." alt="" coords="244,5,399,47"/>
 </map>
 </div>
 

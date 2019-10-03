@@ -1,16 +1,23 @@
 var structmlperf_1_1loadgen_1_1TestSettingsInternal =
 [
-    [ "TestSettingsInternal", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a7c8c2dc4547c7eb054f64405b0d1129f", null ],
+    [ "TestSettingsInternal", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a96bef815689fcbf3cc9edd7f47090601", null ],
     [ "LogAllSettings", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a08d3cb9313b7671efdb9761cd2e5208b", null ],
     [ "LogEffectiveSettings", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#aa5dd0f1d77e251b26a7ad6b071acb038", null ],
     [ "LogSummary", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#af01a3f1574168907a813bd9e192728da", null ],
-    [ "max_async_queries", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a33861291866337d530290e33b36a269c", null ],
+    [ "accuracy_log_probability", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a4e85c19d28df54f9c29ca72aad4a5c46", null ],
+    [ "accuracy_log_rng_seed", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a56da963f19b70ad4d3b4e6309429e84c", null ],
+    [ "max_async_queries", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#ae9e2a63debba3c8d92b380e5363dfb07", null ],
     [ "max_duration", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a2daa50f04769a92dcb5e73c4db94d742", null ],
     [ "max_query_count", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a4fcf341e67036bc5e5188bf15b0dfe79", null ],
     [ "min_duration", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a6a8267d6c6e30cd7eb3aa1001b2dc00a", null ],
     [ "min_query_count", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#ac06b294c2cd37d5db3994a7438dc1aa2", null ],
     [ "min_sample_count", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#afdcaad3f0cc60efbc30a606255344003", null ],
     [ "mode", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a2092acc3633037275c15f720d919d53d", null ],
+    [ "performance_issue_same", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a5b1a614fe88add23fe23ff506070ae89", null ],
+    [ "performance_issue_same_index", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a1bacda1006809be6806975396ee95a81", null ],
+    [ "performance_issue_unique", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a4f512258c829948677d964bb35a1fa24", null ],
+    [ "performance_sample_count", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#aae051f6982a56c453a99cdc6d3c624fc", null ],
+    [ "print_timestamps", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a4d07cf1e9a017e5183a6a4a285881430", null ],
     [ "qsl_rng_seed", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#aa664dfff7f34392fdc91cf2df8375aca", null ],
     [ "requested", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a1b1d57ab42cdfdcb580927c7b668d5af", null ],
     [ "sample_index_rng_seed", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#ae413bdd709a29fe4fb8931dfbb5319ec", null ],
@@ -19,5 +26,6 @@ var structmlperf_1_1loadgen_1_1TestSettingsInternal =
     [ "schedule_rng_seed", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a1e8db978ef27a392bca98604f77ad132", null ],
     [ "target_duration", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a0c652537d092eae3ea609a8c0e50f27f", null ],
     [ "target_latency", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#adc1adf83d15d806664f021493d58de8e", null ],
+    [ "target_latency_percentile", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#ac507a7ded162947d9df70b0dfa36a9dc", null ],
     [ "target_qps", "structmlperf_1_1loadgen_1_1TestSettingsInternal.html#ad64ac96743a9cc9e5f2936a64e0b543f", null ]
 ];

@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('classmlperf_1_1logging_1_1Logger.html'
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmlperf_1_1logging_1_1Logger__coll__graph.png" border="0" usemap="#mlperf_1_1logging_1_1Logger_coll__map" alt="Collaboration graph"/></div>
 <map name="mlperf_1_1logging_1_1Logger_coll__map" id="mlperf_1_1logging_1_1Logger_coll__map">
-<area shape="rect" id="node2" href="classmlperf_1_1logging_1_1AsyncLog.html" title="The proxy all logging lambdas ultimately use to write any log type. " alt="" coords="15,5,254,508"/>
+<area shape="rect" id="node2" href="classmlperf_1_1logging_1_1AsyncLog.html" title="The proxy all logging lambdas ultimately use to write any log type. " alt="" coords="21,5,229,479"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -132,15 +132,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>StartNewTrace</b> (st
 <tr class="memitem:abd6264444539fd31ae5eab1e2ca08438"><td class="memItemLeft" align="right" valign="top"><a id="abd6264444539fd31ae5eab1e2ca08438"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StopTracing</b> ()</td></tr>
 <tr class="separator:abd6264444539fd31ae5eab1e2ca08438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e16f0857b9ed18e3780a769a5c5ea81"><td class="memItemLeft" align="right" valign="top"><a id="a3e16f0857b9ed18e3780a769a5c5ea81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LogContentionCounters</b> ()</td></tr>
-<tr class="separator:a3e16f0857b9ed18e3780a769a5c5ea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaacc9ff16bfaa300e333e0e8894aaf0"><td class="memItemLeft" align="right" valign="top"><a id="aeaacc9ff16bfaa300e333e0e8894aaf0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RestartLatencyRecording</b> (uint64_t first_sample_sequence_id)</td></tr>
-<tr class="separator:aeaacc9ff16bfaa300e333e0e8894aaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c57575cce5f5a550b2428eac368be5d"><td class="memItemLeft" align="right" valign="top"><a id="a4c57575cce5f5a550b2428eac368be5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LogContentionAndAllocations</b> ()</td></tr>
+<tr class="separator:a4c57575cce5f5a550b2428eac368be5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af135f2e7b26eeaa97a5723e930699830"><td class="memItemLeft" align="right" valign="top"><a id="af135f2e7b26eeaa97a5723e930699830"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RestartLatencyRecording</b> (uint64_t first_sample_sequence_id, size_t latencies_to_reserve)</td></tr>
+<tr class="separator:af135f2e7b26eeaa97a5723e930699830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf4805df89fdc2c167b03e18084ccda"><td class="memItemLeft" align="right" valign="top"><a id="a0cf4805df89fdc2c167b03e18084ccda"></a>
 std::vector&lt; <a class="el" href="group__LoadgenAPI.html#ga81e7daacd93c1d7d46fd06d6ed11ecce">QuerySampleLatency</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLatenciesBlocking</b> (size_t expected_count)</td></tr>
 <tr class="separator:a0cf4805df89fdc2c167b03e18084ccda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945fffe2f9ad3104befb7dfba9cbe89a"><td class="memItemLeft" align="right" valign="top"><a id="a945fffe2f9ad3104befb7dfba9cbe89a"></a>
+PerfClock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxCompletionTime</b> ()</td></tr>
+<tr class="separator:a945fffe2f9ad3104befb7dfba9cbe89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a5ddeee271ba30d151a027db979d0c0"><td class="memItemLeft" align="right" valign="top"><a id="a9a5ddeee271ba30d151a027db979d0c0"></a>
 <a class="el" href="group__LoadgenAPI.html#ga81e7daacd93c1d7d46fd06d6ed11ecce">QuerySampleLatency</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxLatencySoFar</b> ()</td></tr>
 <tr class="separator:a9a5ddeee271ba30d151a027db979d0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,7 +271,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>tls_total_swap_buff
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The central logger that logs all threads belonging to a run. </p>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00267">267</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00334">334</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae491de567b4645cb21c7e411acb730b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae491de567b4645cb21c7e411acb730b5">&#9670;&nbsp;</a></span>IOThread()</h2>
@@ -294,9 +297,10 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>tls_total_swap_buff
 </div><div class="memdoc">
 
 <p>The main logging thread function that handles the serialization and I/O to the stream or file. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>Provide client hook to set logging thead affinity and priority. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Provide client hook to set logging thead affinity and priority. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Determine if explicitly flushing logs every wake up is better than relying on implicit flushing. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8cc_source.html#l00642">642</a> of file <a class="el" href="logging_8cc_source.html">logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8cc_source.html#l00712">712</a> of file <a class="el" href="logging_8cc_source.html">logging.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -304,7 +308,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>tls_total_swap_buff
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmlperf_1_1logging_1_1Logger_ae491de567b4645cb21c7e411acb730b5_cgraph.png" border="0" usemap="#classmlperf_1_1logging_1_1Logger_ae491de567b4645cb21c7e411acb730b5_cgraph" alt=""/></div>
 <map name="classmlperf_1_1logging_1_1Logger_ae491de567b4645cb21c7e411acb730b5_cgraph" id="classmlperf_1_1logging_1_1Logger_ae491de567b4645cb21c7e411acb730b5_cgraph">
-<area shape="rect" id="node2" href="namespacemlperf_1_1logging.html#af7999c3fe0ef5f7e822edb5fcd5ebe7b" title="Helper that creates a ScopeTracer with automatic type deduction. " alt="" coords="217,5,420,47"/>
+<area shape="rect" id="node2" href="namespacemlperf_1_1logging.html#af7999c3fe0ef5f7e822edb5fcd5ebe7b" title="Helper that creates a ScopeTracer with automatic type deduction. " alt="" coords="208,5,399,47"/>
 </map>
 </div>
 
@@ -345,9 +349,9 @@ template&lt;typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Acquire mutex once for FlagError + LogDetail to avoid races. Better yet, switch to a non-stateful error API. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Acquire mutex once for FlagError + LogDetail to avoid races. Better yet, switch to a non-stateful error API. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00312">312</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00381">381</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>

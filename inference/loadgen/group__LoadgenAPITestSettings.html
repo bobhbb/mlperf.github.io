@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('group__LoadgenAPITestSettings.html',''
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <center><table><tr><td><img src="group__LoadgenAPITestSettings.png" border="0" alt="" usemap="#group____LoadgenAPITestSettings"/>
 <map name="group____LoadgenAPITestSettings" id="group____LoadgenAPITestSettings">
-<area shape="rect" id="node2" href="group__LoadgenAPI.html" title="Loadgen API" alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node2" href="group__LoadgenAPI.html" title="Loadgen API" alt="" coords="5,5,103,32"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -172,7 +172,7 @@ Enumerations</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00221">221</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00301">301</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -211,7 +211,6 @@ Enumerations</h2></td></tr>
 </ul>
 </li>
 <li><b>FindPeakPerformance</b><ul>
-<li>TODO: Not implemented yet.</li>
 <li>Determines the maximumum QPS for the Server scenario.</li>
 <li>Determines the maximum samples per query for the MultiStream and MultiStreamFree scenarios.</li>
 <li>Not applicable for SingleStream or Offline scenarios. </li>
@@ -219,7 +218,7 @@ Enumerations</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00121">121</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00135">135</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -247,10 +246,7 @@ Enumerations</h2></td></tr>
 <li>Issues queries containing a single sample.</li>
 <li>The next query is only issued once the previous one has completed.</li>
 <li>Internal LoadGen latency between queries is not included in the latency results.</li>
-<li><b>Final performance result is:</b> a percentile of the latency.<ul>
-<li>Percentile will be programmable via <a class="el" href="structmlperf_1_1TestSettings.html" title="Top-level struct specifing the modes and parameters of the test. ">TestSettings</a> soon.</li>
-</ul>
-</li>
+<li><b>Final performance result is:</b> a percentile of the latency.</li>
 </ul>
 </li>
 <li><b>MultiStream</b><ul>
@@ -261,11 +257,16 @@ Enumerations</h2></td></tr>
 </li>
 <li>The loadgen will skip sending for one interval if the SUT falls behind too much.</li>
 <li>By default, only a single query may be outstanding at a time.</li>
-<li>Latency is tracked on a per-sample basis, as opposed to per-query.</li>
 <li>The samples of each query are guaranteed to be contiguous with respect to the order they were loaded in the <a class="el" href="classmlperf_1_1QuerySampleLibrary.html" title="The interface a client implements to coordinate with the loadgen which samples should be loaded...">QuerySampleLibrary</a>.</li>
-<li><b>Final performance result is:</b> PASS if a percentile of the latency is under a given threshold. FAIL otherwise.<ul>
-<li>Percentile will be programmable via <a class="el" href="structmlperf_1_1TestSettings.html" title="Top-level struct specifing the modes and parameters of the test. ">TestSettings</a> soon.</li>
-<li>Threshold is specified by <a class="el" href="structmlperf_1_1TestSettings.html#a14cc63f023c5af26eb75c10fb82b4e47">multi_stream_target_latency_ns </a>.</li>
+<li>Latency is tracked and reported on a per-query and per-sample basis.</li>
+<li>The latency of a query is the maximum latency of its samples, including any cross-thread communication within the loadgen.<ul>
+<li>If the loadgen has to skip producing for an interval because it couldn't detect that all samples were completed in time, then the query will not be considered meeting the latency constraint.</li>
+<li>This is fair since the loadgen skipping production will reduce pressure on the SUT and should be reflected negatively in the latency percentiles.</li>
+<li>The last query is special cased since there isn't a subsequent query to delay. For the last query, the query latency without cross-thread communication is used.</li>
+</ul>
+</li>
+<li><b>Final performance result is:</b> PASS if a percentile of the qer-query latencies is under a given threshold. FAIL otherwise.<ul>
+<li>The latency constraint is specified by the function ( <a class="el" href="structmlperf_1_1TestSettings.html#adbdd98db3a881d3720623bfb03bd5bfa">multi_stream_max_async_queries </a> / <a class="el" href="structmlperf_1_1TestSettings.html#acb0c321e3442ee6bd241cf24f5088205">multi_stream_target_qps </a>).</li>
 </ul>
 </li>
 </ul>
@@ -278,14 +279,17 @@ Enumerations</h2></td></tr>
 </li>
 <li>Not an official MLPerf scenario, but is maintained for evaluation and testing purposes.</li>
 <li>Compared to MultiStream, there is no frequency quantization, which allows the results to reflect small performance improvements.</li>
-<li><b>Final performance result is:</b> samples per second.</li>
+<li><b>Final performance result is:</b> PASS if a percentile of the per-query latencies is under a given threhsold. FAIL otherwise.<ul>
+<li>The latency constraint is specified by <a class="el" href="structmlperf_1_1TestSettings.html#a14cc63f023c5af26eb75c10fb82b4e47">multi_stream_target_latency_ns </a>.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><b>Server</b><ul>
 <li>Sends queries with a single sample.</li>
 <li>Queries have a random poisson (non-uniform) arrival rate that, when averaged, hits the target QPS.</li>
+<li>There is no limit on the number of outstanding queries, as long as the latency constraints are met.</li>
 <li><b>Final performance result is:</b> PASS if the a percentile of the latency is under a given threshold. FAIL otherwise.<ul>
-<li>Percentile will be programmable via <a class="el" href="structmlperf_1_1TestSettings.html" title="Top-level struct specifing the modes and parameters of the test. ">TestSettings</a> soon.</li>
 <li>Threshold is specified by <a class="el" href="structmlperf_1_1TestSettings.html#abed28cce618cb926ca94971b4a9c0171">server_target_latency_ns </a>.</li>
 </ul>
 </li>
@@ -293,13 +297,13 @@ Enumerations</h2></td></tr>
 </li>
 <li><b>Offline</b><ul>
 <li>Sends all N samples to the SUT inside of a single query.</li>
-<li>The samples of the query are guaranteed to be contiguous with respect to the order they were loaded in the <a class="el" href="classmlperf_1_1QuerySampleLibrary.html" title="The interface a client implements to coordinate with the loadgen which samples should be loaded...">QuerySampleLibrary</a>. (WIP. Not true yet.)</li>
+<li>The samples of the query are guaranteed to be contiguous with respect to the order they were loaded in the <a class="el" href="classmlperf_1_1QuerySampleLibrary.html" title="The interface a client implements to coordinate with the loadgen which samples should be loaded...">QuerySampleLibrary</a>.</li>
 <li><b>Final performance result is:</b> samples per second. </li>
 </ul>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00094">94</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00109">109</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>

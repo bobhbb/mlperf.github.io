@@ -12,6 +12,7 @@ var NAVTREE =
       [ "TODOs", "todo.html", null ]
     ] ],
     [ "Test Coverage", "usergroup2.html", [
+      [ "Build and Run", "ReadmeTests.html", null ],
       [ "Basic", "group__LoadgenTestsBasic.html", null ],
       [ "Performance", "group__LoadgenTestsPerformance.html", null ]
     ] ],
@@ -47,8 +48,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "ReadmeBuild.html",
-"classtesting_1_1Test.html#a9a1ad73c2d9a7e27603f1c6f48936d06",
-"structmlperf_1_1loadgen_1_1TestSettingsInternal.html#a4fcf341e67036bc5e5188bf15b0dfe79"
+"classperf__tests_1_1SystemUnderTestNullPool.html#a6b0f2df36506e297766d362ec3387d70",
+"structmlperf_1_1loadgen_1_1ResponseDelegate.html#a73077cf027e3105bf7bb35ba3569a909"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

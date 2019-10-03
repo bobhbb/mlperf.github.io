@@ -95,6 +95,8 @@ $(document).ready(function(){initNavTree('structmlperf_1_1TestSettings.html','')
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structmlperf_1_1TestSettings__coll__graph.png" border="0" usemap="#mlperf_1_1TestSettings_coll__map" alt="Collaboration graph"/></div>
+<map name="mlperf_1_1TestSettings_coll__map" id="mlperf_1_1TestSettings_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -109,13 +111,19 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a5c0f0ef1ca28d073a64aad57a6f6aa93"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a5c0f0ef1ca28d073a64aad57a6f6aa93">single_stream_expected_latency_ns</a> = 1000000</td></tr>
 <tr class="memdesc:a5c0f0ef1ca28d073a64aad57a6f6aa93"><td class="mdescLeft">&#160;</td><td class="mdescRight">A hint used by the loadgen to pre-generate enough samples to meet the minimum test duration.  <a href="#a5c0f0ef1ca28d073a64aad57a6f6aa93">More...</a><br /></td></tr>
 <tr class="separator:a5c0f0ef1ca28d073a64aad57a6f6aa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926579c58fe4df0fbecd39138b941531"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a926579c58fe4df0fbecd39138b941531">single_stream_target_latency_percentile</a> = 0.90</td></tr>
+<tr class="memdesc:a926579c58fe4df0fbecd39138b941531"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latency percentile reported as the final result.  <a href="#a926579c58fe4df0fbecd39138b941531">More...</a><br /></td></tr>
+<tr class="separator:a926579c58fe4df0fbecd39138b941531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">MultiStream-specific</div></td></tr>
 <tr class="memitem:acb0c321e3442ee6bd241cf24f5088205"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#acb0c321e3442ee6bd241cf24f5088205">multi_stream_target_qps</a> = 10.0</td></tr>
-<tr class="memdesc:acb0c321e3442ee6bd241cf24f5088205"><td class="mdescLeft">&#160;</td><td class="mdescRight">The uniform rate at which queries are produced. Does not apply to the MultiStreamFree scenario.  <a href="#acb0c321e3442ee6bd241cf24f5088205">More...</a><br /></td></tr>
+<tr class="memdesc:acb0c321e3442ee6bd241cf24f5088205"><td class="mdescLeft">&#160;</td><td class="mdescRight">The uniform rate at which queries are produced. The latency constraint for the MultiStream scenario is equal to (multi_stream_max_async_queries / multi_stream_target_qps). This does not apply to the MultiStreamFree scenario, except as a hint for how many queries to pre-generate.  <a href="#acb0c321e3442ee6bd241cf24f5088205">More...</a><br /></td></tr>
 <tr class="separator:acb0c321e3442ee6bd241cf24f5088205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14cc63f023c5af26eb75c10fb82b4e47"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a14cc63f023c5af26eb75c10fb82b4e47">multi_stream_target_latency_ns</a> = 100000000</td></tr>
-<tr class="memdesc:a14cc63f023c5af26eb75c10fb82b4e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latency constraint for the MultiStream scenario.  <a href="#a14cc63f023c5af26eb75c10fb82b4e47">More...</a><br /></td></tr>
+<tr class="memdesc:a14cc63f023c5af26eb75c10fb82b4e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latency constraint for the MultiStreamFree scenario. Does not apply to the MultiStream scenario, whose target latency is a function of the QPS and max_async_queries.  <a href="#a14cc63f023c5af26eb75c10fb82b4e47">More...</a><br /></td></tr>
 <tr class="separator:a14cc63f023c5af26eb75c10fb82b4e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf2f8dd0ddb8302b3c75b5995375dd8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#aaaf2f8dd0ddb8302b3c75b5995375dd8">multi_stream_target_latency_percentile</a> = 0.9</td></tr>
+<tr class="memdesc:aaaf2f8dd0ddb8302b3c75b5995375dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latency percentile for multistream mode.  <a href="#aaaf2f8dd0ddb8302b3c75b5995375dd8">More...</a><br /></td></tr>
+<tr class="separator:aaaf2f8dd0ddb8302b3c75b5995375dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6f21cb8169bc0eb80214cfd9ac46663"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#aa6f21cb8169bc0eb80214cfd9ac46663">multi_stream_samples_per_query</a> = 4</td></tr>
 <tr class="memdesc:aa6f21cb8169bc0eb80214cfd9ac46663"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of samples in each query.  <a href="#aa6f21cb8169bc0eb80214cfd9ac46663">More...</a><br /></td></tr>
 <tr class="separator:aa6f21cb8169bc0eb80214cfd9ac46663"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,14 +132,26 @@ Public Attributes</h2></td></tr>
 <tr class="separator:adbdd98db3a881d3720623bfb03bd5bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Server-specific</div></td></tr>
 <tr class="memitem:a8998e8ac31f49bfe28448649c7a69505"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a8998e8ac31f49bfe28448649c7a69505">server_target_qps</a> = 1</td></tr>
-<tr class="memdesc:a8998e8ac31f49bfe28448649c7a69505"><td class="mdescLeft">&#160;</td><td class="mdescRight">The average QPS of the poisson distribution. Only used as a hint in SearchForPeakPerformance.  <a href="#a8998e8ac31f49bfe28448649c7a69505">More...</a><br /></td></tr>
+<tr class="memdesc:a8998e8ac31f49bfe28448649c7a69505"><td class="mdescLeft">&#160;</td><td class="mdescRight">The average QPS of the poisson distribution.  <a href="#a8998e8ac31f49bfe28448649c7a69505">More...</a><br /></td></tr>
 <tr class="separator:a8998e8ac31f49bfe28448649c7a69505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed28cce618cb926ca94971b4a9c0171"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#abed28cce618cb926ca94971b4a9c0171">server_target_latency_ns</a> = 100000000</td></tr>
 <tr class="memdesc:abed28cce618cb926ca94971b4a9c0171"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latency constraint for the Server scenario.  <a href="#abed28cce618cb926ca94971b4a9c0171">More...</a><br /></td></tr>
 <tr class="separator:abed28cce618cb926ca94971b4a9c0171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dbc8a6c523ede6a007b94263b99cfa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a88dbc8a6c523ede6a007b94263b99cfa">server_target_latency_percentile</a> = 0.99</td></tr>
+<tr class="memdesc:a88dbc8a6c523ede6a007b94263b99cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latency percentile for server mode. This value is combined with server_target_latency_ns to determine if a run is valid.  <a href="#a88dbc8a6c523ede6a007b94263b99cfa">More...</a><br /></td></tr>
+<tr class="separator:a88dbc8a6c523ede6a007b94263b99cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcf9b876f4325c786accc143c429ca29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#afcf9b876f4325c786accc143c429ca29">server_coalesce_queries</a> = false</td></tr>
-<tr class="memdesc:afcf9b876f4325c786accc143c429ca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: Implement this.  <a href="#afcf9b876f4325c786accc143c429ca29">More...</a><br /></td></tr>
+<tr class="memdesc:afcf9b876f4325c786accc143c429ca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: Implement this. Would combine samples from multiple queries into a single query if their scheduled issue times have passed.  <a href="#afcf9b876f4325c786accc143c429ca29">More...</a><br /></td></tr>
 <tr class="separator:afcf9b876f4325c786accc143c429ca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9e8c42716f36ba7f34f704f2d01ca2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#acf9e8c42716f36ba7f34f704f2d01ca2">server_find_peak_qps_decimals_of_precision</a> = 1</td></tr>
+<tr class="memdesc:acf9e8c42716f36ba7f34f704f2d01ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The decimal places of QPS precision used to terminate FindPeakPerformance mode.  <a href="#acf9e8c42716f36ba7f34f704f2d01ca2">More...</a><br /></td></tr>
+<tr class="separator:acf9e8c42716f36ba7f34f704f2d01ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e3a821b0e82c3037eb168a1fa417ab"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#ac7e3a821b0e82c3037eb168a1fa417ab">server_find_peak_qps_boundary_step_size</a> = 1</td></tr>
+<tr class="memdesc:ac7e3a821b0e82c3037eb168a1fa417ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">A step size (as a fraction of the QPS) used to widen the lower and upper bounds to find the initial boundaries of binary search.  <a href="#ac7e3a821b0e82c3037eb168a1fa417ab">More...</a><br /></td></tr>
+<tr class="separator:ac7e3a821b0e82c3037eb168a1fa417ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e66072fa4639951ff0237abac66f51d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a5e66072fa4639951ff0237abac66f51d">server_max_async_queries</a> = 0</td></tr>
+<tr class="memdesc:a5e66072fa4639951ff0237abac66f51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of outstanding queries to allow before earlying out from a performance run. Useful for performance tuning and speeding up the FindPeakPerformance mode.  <a href="#a5e66072fa4639951ff0237abac66f51d">More...</a><br /></td></tr>
+<tr class="separator:a5e66072fa4639951ff0237abac66f51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Offline-specific</div></td></tr>
 <tr class="memitem:a3db697292637f6c3594c3c8ed86d2f39"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a3db697292637f6c3594c3c8ed86d2f39">offline_expected_qps</a> = 1</td></tr>
 <tr class="memdesc:a3db697292637f6c3594c3c8ed86d2f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the QPS the SUT expects to hit for the offline load. The loadgen generates 10% more queries than it thinks it needs to meet the minimum test duration.  <a href="#a3db697292637f6c3594c3c8ed86d2f39">More...</a><br /></td></tr>
@@ -151,9 +171,29 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 <tr class="memitem:aa4b0909df23429d155b8e554b4b5c668"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#aa4b0909df23429d155b8e554b4b5c668">max_query_count</a> = 0</td></tr>
 <tr class="memdesc:aa4b0909df23429d155b8e554b4b5c668"><td class="mdescLeft">&#160;</td><td class="mdescRight">0: Infinity.  <a href="#aa4b0909df23429d155b8e554b4b5c668">More...</a><br /></td></tr>
 <tr class="separator:aa4b0909df23429d155b8e554b4b5c668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Random number generation</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>There are 3 separate seeds, so each dimension can be changed independently. </p>
+<tr><td colspan="2"><div class="groupHeader">Performance Sample modifiers</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>These settings can be used to Audit Performance mode runs. In order to detect sample caching by SUT, performance of runs when only unique queries (with non-repeated samples) are issued can be compared with that when the same query is repeatedly issued. </p>
 </div></td></tr>
+<tr class="memitem:a7c88324e009905be2a1f9f5fb4a7afbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a7c88324e009905be2a1f9f5fb4a7afbb">print_timestamps</a> = false</td></tr>
+<tr class="memdesc:a7c88324e009905be2a1f9f5fb4a7afbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints measurement interval start and stop timestamps to std::cout for the purpose of comparison against an external timer.  <a href="#a7c88324e009905be2a1f9f5fb4a7afbb">More...</a><br /></td></tr>
+<tr class="separator:a7c88324e009905be2a1f9f5fb4a7afbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc019ccbf4a25d42ac18fd63fc4009f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#afc019ccbf4a25d42ac18fd63fc4009f5">performance_issue_unique</a> = false</td></tr>
+<tr class="memdesc:afc019ccbf4a25d42ac18fd63fc4009f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows issuing only unique queries in Performance mode of any scenario.  <a href="#afc019ccbf4a25d42ac18fd63fc4009f5">More...</a><br /></td></tr>
+<tr class="separator:afc019ccbf4a25d42ac18fd63fc4009f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bb9de340aa0e829f1b9dfb5b6be2bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a93bb9de340aa0e829f1b9dfb5b6be2bf">performance_issue_same</a> = false</td></tr>
+<tr class="memdesc:a93bb9de340aa0e829f1b9dfb5b6be2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the same query is chosen repeatedley for Inference. In offline scenario, the query is filled with the same sample.  <a href="#a93bb9de340aa0e829f1b9dfb5b6be2bf">More...</a><br /></td></tr>
+<tr class="separator:a93bb9de340aa0e829f1b9dfb5b6be2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d747bd0566f53dfeedf14b59e11def2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a0d747bd0566f53dfeedf14b59e11def2">performance_issue_same_index</a> = 0</td></tr>
+<tr class="memdesc:a0d747bd0566f53dfeedf14b59e11def2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset to control which sample is repeated in performance_issue_same mode. Value should be within [0, performance_sample_count)  <a href="#a0d747bd0566f53dfeedf14b59e11def2">More...</a><br /></td></tr>
+<tr class="separator:a0d747bd0566f53dfeedf14b59e11def2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae039ca6e6245652a13667be92f7a39c7"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#ae039ca6e6245652a13667be92f7a39c7">performance_sample_count_override</a> = 0</td></tr>
+<tr class="memdesc:ae039ca6e6245652a13667be92f7a39c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides QSL-&gt;PerformanceSampleCount() when non-zero.  <a href="#ae039ca6e6245652a13667be92f7a39c7">More...</a><br /></td></tr>
+<tr class="separator:ae039ca6e6245652a13667be92f7a39c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Random number generation</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp9e5d9cca94c03e04e66d088f8628d19b"></a>There are 4 separate seeds, so each dimension can be changed independently. </p>
+</td></tr>
 <tr class="memitem:aea8a7a9458721ecb96a8cdd56e148a6e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#aea8a7a9458721ecb96a8cdd56e148a6e">qsl_rng_seed</a> = 0</td></tr>
 <tr class="memdesc:aea8a7a9458721ecb96a8cdd56e148a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affects which subset of samples from the QSL are chosen for the performance sample set and accuracy sample sets.  <a href="#aea8a7a9458721ecb96a8cdd56e148a6e">More...</a><br /></td></tr>
 <tr class="separator:aea8a7a9458721ecb96a8cdd56e148a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,13 +203,110 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 <tr class="memitem:a7f5428a2acebc1aab3afa7a033fcfabf"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#a7f5428a2acebc1aab3afa7a033fcfabf">schedule_rng_seed</a> = 0</td></tr>
 <tr class="memdesc:a7f5428a2acebc1aab3afa7a033fcfabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affects the poisson arrival process of the Server scenario.  <a href="#a7f5428a2acebc1aab3afa7a033fcfabf">More...</a><br /></td></tr>
 <tr class="separator:a7f5428a2acebc1aab3afa7a033fcfabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f4eb2fe9a71cffabb67b75e5b18a24"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#ae6f4eb2fe9a71cffabb67b75e5b18a24">accuracy_log_rng_seed</a> = 0</td></tr>
+<tr class="memdesc:ae6f4eb2fe9a71cffabb67b75e5b18a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affects which samples have their query returns logged to the accuracy log in performance mode.  <a href="#ae6f4eb2fe9a71cffabb67b75e5b18a24">More...</a><br /></td></tr>
+<tr class="separator:ae6f4eb2fe9a71cffabb67b75e5b18a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcaad9064a9c69fbc0355678155761e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#abcaad9064a9c69fbc0355678155761e0">accuracy_log_probability</a> = 0.0</td></tr>
+<tr class="memdesc:abcaad9064a9c69fbc0355678155761e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probability of the query response of a sample being logged to the accuracy log in performance mode.  <a href="#abcaad9064a9c69fbc0355678155761e0">More...</a><br /></td></tr>
+<tr class="separator:abcaad9064a9c69fbc0355678155761e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1ce39f2fc342ad8a5f9cbe85451f96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmlperf_1_1TestSettings.html#adb1ce39f2fc342ad8a5f9cbe85451f96">FromConfig</a> (const std::string &amp;path, const std::string &amp;model, const std::string &amp;scenario)</td></tr>
+<tr class="memdesc:adb1ce39f2fc342ad8a5f9cbe85451f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load mlperf parameter config from file.  <a href="#adb1ce39f2fc342ad8a5f9cbe85451f96">More...</a><br /></td></tr>
+<tr class="separator:adb1ce39f2fc342ad8a5f9cbe85451f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Top-level struct specifing the modes and parameters of the test. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Create TestSetting from a config file. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00132">132</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00145">145</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="adb1ce39f2fc342ad8a5f9cbe85451f96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb1ce39f2fc342ad8a5f9cbe85451f96">&#9670;&nbsp;</a></span>FromConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mlperf::TestSettings::FromConfig </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>scenario</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load mlperf parameter config from file. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>The <a class="el" href="structmlperf_1_1TestSettings.html#adb1ce39f2fc342ad8a5f9cbe85451f96" title="Load mlperf parameter config from file. ">TestSettings::FromConfig</a> definition belongs in a test_settings.cc file which doesn't yet exist. To avoid churn so close to the submission deadline, adding a test_settings.cc file has been deferred to v0.6. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="test__settings__internal_8cc_source.html#l00325">325</a> of file <a class="el" href="test__settings__internal_8cc_source.html">test_settings_internal.cc</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structmlperf_1_1TestSettings_adb1ce39f2fc342ad8a5f9cbe85451f96_icgraph.png" border="0" usemap="#structmlperf_1_1TestSettings_adb1ce39f2fc342ad8a5f9cbe85451f96_icgraph" alt=""/></div>
+<map name="structmlperf_1_1TestSettings_adb1ce39f2fc342ad8a5f9cbe85451f96_icgraph" id="structmlperf_1_1TestSettings_adb1ce39f2fc342ad8a5f9cbe85451f96_icgraph">
+<area shape="rect" id="node2" href="group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea" title="Starts the test against SUT with the specified settings. " alt="" coords="193,64,313,91"/>
+<area shape="rect" id="node3" href="group__LoadgenTestsPerformance.html#ga1cccd99a3ea0c9ffee63a8074a86131c" title="Runs single stream traffic. " alt="" coords="361,5,553,32"/>
+<area shape="rect" id="node4" href="group__LoadgenTestsPerformance.html#gadaca2a18c227ed1a0100f999c899ca4e" title="Tests server traffic using SystemUnderTestNullStdAsync. " alt="" coords="371,57,543,98"/>
+<area shape="rect" id="node5" href="group__LoadgenTestsPerformance.html#ga4a9e0474f76b9e5246ad5ad5620b4f53" title="Tests server traffic using SystemUnderTestNullPool. " alt="" coords="368,123,547,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abcaad9064a9c69fbc0355678155761e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcaad9064a9c69fbc0355678155761e0">&#9670;&nbsp;</a></span>accuracy_log_probability</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mlperf::TestSettings::accuracy_log_probability = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Probability of the query response of a sample being logged to the accuracy log in performance mode. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00257">257</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="ae6f4eb2fe9a71cffabb67b75e5b18a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f4eb2fe9a71cffabb67b75e5b18a24">&#9670;&nbsp;</a></span>accuracy_log_rng_seed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t mlperf::TestSettings::accuracy_log_rng_seed = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affects which samples have their query returns logged to the accuracy log in performance mode. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00253">253</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
 <a id="abcb885c31a03e69127b0940dae3e5795"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcb885c31a03e69127b0940dae3e5795">&#9670;&nbsp;</a></span>max_duration_ms</h2>
 
@@ -184,7 +321,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 
 <p>0: Infinity. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00187">187</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00231">231</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +339,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 
 <p>0: Infinity. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00189">189</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00233">233</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -220,7 +357,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 
 <p>The maximum number of queries, to which a SUT has not responded, before the loadgen will throttle issuance of new queries. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00156">156</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00181">181</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -237,8 +374,9 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 </div><div class="memdoc">
 
 <p>The number of samples in each query. </p>
+<p>note: This field is used as a FindPeakPerformance's lower bound. When you run FindPeakPerformanceMode, you should make sure that this value satisfies performance constraints. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00153">153</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00178">178</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -254,9 +392,27 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
       </table>
 </div><div class="memdoc">
 
-<p>The latency constraint for the MultiStream scenario. </p>
+<p>The latency constraint for the MultiStreamFree scenario. Does not apply to the MultiStream scenario, whose target latency is a function of the QPS and max_async_queries. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00151">151</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00171">171</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="aaaf2f8dd0ddb8302b3c75b5995375dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf2f8dd0ddb8302b3c75b5995375dd8">&#9670;&nbsp;</a></span>multi_stream_target_latency_percentile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mlperf::TestSettings::multi_stream_target_latency_percentile = 0.9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The latency percentile for multistream mode. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00173">173</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -272,9 +428,9 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
       </table>
 </div><div class="memdoc">
 
-<p>The uniform rate at which queries are produced. Does not apply to the MultiStreamFree scenario. </p>
+<p>The uniform rate at which queries are produced. The latency constraint for the MultiStream scenario is equal to (multi_stream_max_async_queries / multi_stream_target_qps). This does not apply to the MultiStreamFree scenario, except as a hint for how many queries to pre-generate. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00149">149</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00167">167</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +448,98 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 
 <p>Specifies the QPS the SUT expects to hit for the offline load. The loadgen generates 10% more queries than it thinks it needs to meet the minimum test duration. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00177">177</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00221">221</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="a93bb9de340aa0e829f1b9dfb5b6be2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93bb9de340aa0e829f1b9dfb5b6be2bf">&#9670;&nbsp;</a></span>performance_issue_same</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mlperf::TestSettings::performance_issue_same = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, the same query is chosen repeatedley for Inference. In offline scenario, the query is filled with the same sample. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00280">280</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="a0d747bd0566f53dfeedf14b59e11def2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d747bd0566f53dfeedf14b59e11def2">&#9670;&nbsp;</a></span>performance_issue_same_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t mlperf::TestSettings::performance_issue_same_index = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Offset to control which sample is repeated in performance_issue_same mode. Value should be within [0, performance_sample_count) </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00284">284</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="afc019ccbf4a25d42ac18fd63fc4009f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc019ccbf4a25d42ac18fd63fc4009f5">&#9670;&nbsp;</a></span>performance_issue_unique</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mlperf::TestSettings::performance_issue_unique = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows issuing only unique queries in Performance mode of any scenario. </p>
+<p>This can be used to send non-repeat &amp; hence unique samples to SUT </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00277">277</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="ae039ca6e6245652a13667be92f7a39c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae039ca6e6245652a13667be92f7a39c7">&#9670;&nbsp;</a></span>performance_sample_count_override</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t mlperf::TestSettings::performance_sample_count_override = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overrides QSL-&gt;PerformanceSampleCount() when non-zero. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00286">286</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="a7c88324e009905be2a1f9f5fb4a7afbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c88324e009905be2a1f9f5fb4a7afbb">&#9670;&nbsp;</a></span>print_timestamps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mlperf::TestSettings::print_timestamps = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints measurement interval start and stop timestamps to std::cout for the purpose of comparison against an external timer. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00273">273</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +557,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 
 <p>Affects which subset of samples from the QSL are chosen for the performance sample set and accuracy sample sets. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00199">199</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00243">243</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +575,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 
 <p>Affects the order in which samples from the performance set will be included in queries. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00202">202</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00246">246</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +594,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 <p>Affects the poisson arrival process of the Server scenario. </p>
 <p>Different seeds will appear to "jitter" the queries differently in time, but should not affect the average issued QPS. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00206">206</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00250">250</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -363,9 +610,64 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
       </table>
 </div><div class="memdoc">
 
-<p>TODO: Implement this. </p>
+<p>TODO: Implement this. Would combine samples from multiple queries into a single query if their scheduled issue times have passed. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00168">168</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00202">202</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="ac7e3a821b0e82c3037eb168a1fa417ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7e3a821b0e82c3037eb168a1fa417ab">&#9670;&nbsp;</a></span>server_find_peak_qps_boundary_step_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mlperf::TestSettings::server_find_peak_qps_boundary_step_size = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A step size (as a fraction of the QPS) used to widen the lower and upper bounds to find the initial boundaries of binary search. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00208">208</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="acf9e8c42716f36ba7f34f704f2d01ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf9e8c42716f36ba7f34f704f2d01ca2">&#9670;&nbsp;</a></span>server_find_peak_qps_decimals_of_precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mlperf::TestSettings::server_find_peak_qps_decimals_of_precision = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The decimal places of QPS precision used to terminate FindPeakPerformance mode. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00205">205</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="a5e66072fa4639951ff0237abac66f51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e66072fa4639951ff0237abac66f51d">&#9670;&nbsp;</a></span>server_max_async_queries</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t mlperf::TestSettings::server_max_async_queries = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum number of outstanding queries to allow before earlying out from a performance run. Useful for performance tuning and speeding up the FindPeakPerformance mode. </p>
+<p>0: Infinity. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00212">212</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -383,7 +685,26 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 
 <p>The latency constraint for the Server scenario. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00166">166</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00193">193</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<a id="a88dbc8a6c523ede6a007b94263b99cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dbc8a6c523ede6a007b94263b99cfa">&#9670;&nbsp;</a></span>server_target_latency_percentile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mlperf::TestSettings::server_target_latency_percentile = 0.99</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The latency percentile for server mode. This value is combined with server_target_latency_ns to determine if a run is valid. </p>
+<p>99% is the default value, which is correct for image models. GNMT should be set to 0.97 (97%) in v0.5.(As always, check the policy page for updated values for the benchmark you are running.) </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00199">199</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -399,9 +720,10 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
       </table>
 </div><div class="memdoc">
 
-<p>The average QPS of the poisson distribution. Only used as a hint in SearchForPeakPerformance. </p>
+<p>The average QPS of the poisson distribution. </p>
+<p>note: This field is used as a FindPeakPerformance's lower bound. When you run FindPeakPerformanceMode, you should make sure that this value satisfies performance constraints. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00164">164</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00191">191</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
@@ -419,12 +741,31 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_query_count</
 
 <p>A hint used by the loadgen to pre-generate enough samples to meet the minimum test duration. </p>
 
-<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00141">141</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00154">154</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a id="a926579c58fe4df0fbecd39138b941531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926579c58fe4df0fbecd39138b941531">&#9670;&nbsp;</a></span>single_stream_target_latency_percentile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mlperf::TestSettings::single_stream_target_latency_percentile = 0.90</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The latency percentile reported as the final result. </p>
+
+<p class="definition">Definition at line <a class="el" href="test__settings_8h_source.html#l00156">156</a> of file <a class="el" href="test__settings_8h_source.html">test_settings.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="test__settings_8h_source.html">test_settings.h</a></li>
+<li><a class="el" href="test__settings__internal_8cc_source.html">test_settings_internal.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

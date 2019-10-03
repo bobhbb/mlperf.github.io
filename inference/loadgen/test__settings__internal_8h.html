@@ -81,7 +81,8 @@ $(document).ready(function(){initNavTree('test__settings__internal_8h.html','');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">test_settings_internal.h File Reference</div>  </div>
 </div><!--header-->
@@ -90,7 +91,9 @@ $(document).ready(function(){initNavTree('test__settings__internal_8h.html','');
 <p>The internal representation of user-provided settings.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="logging_8h_source.html">logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="test__settings_8h_source.html">test_settings.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for test_settings_internal.h:</div>
@@ -99,7 +102,9 @@ $(document).ready(function(){initNavTree('test__settings__internal_8h.html','');
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test__settings__internal_8h__incl.png" border="0" usemap="#test__settings__internal_8h" alt=""/></div>
 <map name="test__settings__internal_8h" id="test__settings__internal_8h">
-<area shape="rect" id="node4" href="test__settings_8h.html" title="Provides ways for a client to change the behavior and constraints of the load generator. " alt="" coords="147,80,261,107"/>
+<area shape="rect" id="node5" href="logging_8h.html" title="Internal logging implementation details. " alt="" coords="751,80,825,107"/>
+<area shape="rect" id="node22" href="test__settings_8h.html" title="Provides ways for a client to change the behavior and constraints of the load generator. " alt="" coords="1410,80,1518,107"/>
+<area shape="rect" id="node19" href="query__sample_8h.html" title="Defines the structs involved in issuing a query and responding to a query. " alt="" coords="1199,155,1313,181"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -109,8 +114,8 @@ $(document).ready(function(){initNavTree('test__settings__internal_8h.html','');
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test__settings__internal_8h__dep__incl.png" border="0" usemap="#test__settings__internal_8hdep" alt=""/></div>
 <map name="test__settings__internal_8hdep" id="test__settings__internal_8hdep">
-<area shape="rect" id="node2" href="loadgen_8cc_source.html" title="loadgen.cc" alt="" coords="5,80,96,107"/>
-<area shape="rect" id="node3" href="test__settings__internal_8cc_source.html" title="test_settings_internal.cc" alt="" coords="121,80,295,107"/>
+<area shape="rect" id="node2" href="loadgen_8cc_source.html" title="loadgen.cc" alt="" coords="5,80,91,107"/>
+<area shape="rect" id="node3" href="test__settings__internal_8cc_source.html" title="test_settings_internal.cc" alt="" coords="115,80,279,107"/>
 </map>
 </div>
 </div>
@@ -133,6 +138,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacemlperf_1_1loadgen"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen.html">mlperf::loadgen</a></td></tr>
 <tr class="memdesc:namespacemlperf_1_1loadgen"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loadgen implementation details. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemlperf_1_1loadgen_1_1find__peak__performance"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemlperf_1_1loadgen_1_1find__peak__performance.html">mlperf::loadgen::find_peak_performance</a></td></tr>
+<tr class="memdesc:namespacemlperf_1_1loadgen_1_1find__peak__performance"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace of collections of FindPeakPerformance helper functions, mainly about binary search. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -148,6 +156,27 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::loadge
 <tr class="memitem:a4816cec38fe059256a396e7f60d3a425"><td class="memItemLeft" align="right" valign="top"><a id="a4816cec38fe059256a396e7f60d3a425"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::loadgen::ToString</b> (TestMode mode)</td></tr>
 <tr class="separator:a4816cec38fe059256a396e7f60d3a425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95b5b3fdec0bf357e9705bbc71fd909"><td class="memTemplParams" colspan="2"><a id="ad95b5b3fdec0bf357e9705bbc71fd909"></a>
+template&lt;TestScenario scenario&gt; </td></tr>
+<tr class="memitem:ad95b5b3fdec0bf357e9705bbc71fd909"><td class="memTemplItemLeft" align="right" valign="top">TestSettingsInternal&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mlperf::loadgen::find_peak_performance::MidOfBoundaries</b> (const TestSettingsInternal &amp;lower_bound_settings, const TestSettingsInternal &amp;upper_bound_settings)</td></tr>
+<tr class="separator:ad95b5b3fdec0bf357e9705bbc71fd909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4ec04d847e55440267c8298974cb8e"><td class="memTemplParams" colspan="2"><a id="a1c4ec04d847e55440267c8298974cb8e"></a>
+template&lt;TestScenario scenario&gt; </td></tr>
+<tr class="memitem:a1c4ec04d847e55440267c8298974cb8e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mlperf::loadgen::find_peak_performance::IsFinished</b> (const TestSettingsInternal &amp;lower_bound_settings, const TestSettingsInternal &amp;upper_bound_settings)</td></tr>
+<tr class="separator:a1c4ec04d847e55440267c8298974cb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055167ab49cac3f7c575bc0b52155fbe"><td class="memTemplParams" colspan="2"><a id="a055167ab49cac3f7c575bc0b52155fbe"></a>
+template&lt;TestScenario scenario&gt; </td></tr>
+<tr class="memitem:a055167ab49cac3f7c575bc0b52155fbe"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mlperf::loadgen::find_peak_performance::ToStringPerformanceField</b> (const TestSettingsInternal &amp;settings)</td></tr>
+<tr class="separator:a055167ab49cac3f7c575bc0b52155fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9ce43cfd9bbc70cebac6185e3956e0"><td class="memTemplParams" colspan="2"><a id="ada9ce43cfd9bbc70cebac6185e3956e0"></a>
+template&lt;TestScenario scenario&gt; </td></tr>
+<tr class="memitem:ada9ce43cfd9bbc70cebac6185e3956e0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mlperf::loadgen::find_peak_performance::WidenPerformanceField</b> (TestSettingsInternal *settings)</td></tr>
+<tr class="separator:ada9ce43cfd9bbc70cebac6185e3956e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a20253f0a9ced34e96e747c3ed106c683"><td class="memItemLeft" align="right" valign="top">constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><b>mlperf::loadgen::find_peak_performance::kNotSupportedMsg</b></td></tr>
+<tr class="separator:a20253f0a9ced34e96e747c3ed106c683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The internal representation of user-provided settings. </p>

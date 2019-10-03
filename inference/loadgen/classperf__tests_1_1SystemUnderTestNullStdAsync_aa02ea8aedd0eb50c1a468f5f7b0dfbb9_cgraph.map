@@ -1,3 +1,3 @@
 <map id="perf_tests::SystemUnderTestNullStdAsync::IssueQuery" name="perf_tests::SystemUnderTestNullStdAsync::IssueQuery">
-<area shape="rect" id="node2" href="$group__LoadgenAPI.html#ga667014f68fd93de2ea485cd18c0b12f8" title="SUT calls this to notify loadgen of completed samples. " alt="" coords="257,13,476,39"/>
+<area shape="rect" id="node2" href="$group__LoadgenAPI.html#ga667014f68fd93de2ea485cd18c0b12f8" title="SUT calls this to notify loadgen of completed samples. " alt="" coords="248,13,456,39"/>
 </map>

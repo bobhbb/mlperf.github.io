@@ -1,4 +1,4 @@
 <map id="testing::Test::test_fails" name="testing::Test::test_fails">
-<area shape="rect" id="node2" href="$classtesting_1_1Test.html#a2ede9a3743a841cee30f96352baa9cfc" title="Runs all currently registered tests that match the given filter. " alt="" coords="201,5,330,32"/>
-<area shape="rect" id="node3" href="$classtesting_1_1Test.html#a3705fc786c7d91582c11a0e9da75eab5" title="Used by test macros to flag test failure. " alt="" coords="180,56,351,83"/>
+<area shape="rect" id="node2" href="$classtesting_1_1Test.html#a2ede9a3743a841cee30f96352baa9cfc" title="Runs all currently registered tests that match the given filter. " alt="" coords="198,5,325,32"/>
+<area shape="rect" id="node3" href="$classtesting_1_1Test.html#a3705fc786c7d91582c11a0e9da75eab5" title="Used by test macros to flag test failure. " alt="" coords="179,56,344,83"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="mlperf::TestSettings::FromConfig" name="mlperf::TestSettings::FromConfig">
+<area shape="rect" id="node2" href="$group__LoadgenAPI.html#ga87595ea769914ba5bf37e401410ebfea" title="Starts the test against SUT with the specified settings. " alt="" coords="193,64,313,91"/>
+<area shape="rect" id="node3" href="$group__LoadgenTestsPerformance.html#ga1cccd99a3ea0c9ffee63a8074a86131c" title="Runs single stream traffic. " alt="" coords="361,5,553,32"/>
+<area shape="rect" id="node4" href="$group__LoadgenTestsPerformance.html#gadaca2a18c227ed1a0100f999c899ca4e" title="Tests server traffic using SystemUnderTestNullStdAsync. " alt="" coords="371,57,543,98"/>
+<area shape="rect" id="node5" href="$group__LoadgenTestsPerformance.html#ga4a9e0474f76b9e5246ad5ad5620b4f53" title="Tests server traffic using SystemUnderTestNullPool. " alt="" coords="368,123,547,149"/>
+</map>

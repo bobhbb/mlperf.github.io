@@ -1,4 +1,0 @@
-<map id="mlperf::loadgen::FindPeakPerformanceMode" name="mlperf::loadgen::FindPeakPerformanceMode">
-<area shape="rect" id="node2" href="$classmlperf_1_1SystemUnderTest.html#ad20aa0a23ea630d130e32564099d2974" title="A human&#45;readable string for logging purposes. " alt="" coords="243,5,423,47"/>
-<area shape="rect" id="node3" href="$classmlperf_1_1QuerySampleLibrary.html#a3951160324d868a01b6335523bcd1ea8" title="Unloads the requested query samples from memory. " alt="" coords="236,71,431,112"/>
-</map>

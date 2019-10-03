@@ -1,4 +1,4 @@
 <map id="tests/loadgen_test.h" name="tests/loadgen_test.h">
-<area shape="rect" id="node2" href="$basic_8cc.html" title="Basic functionality unit tests. " alt="" coords="5,87,111,114"/>
-<area shape="rect" id="node3" href="$loadgen__test__main_8cc.html" title="A main entry point a test binary can use if it just wants to execute Test::Run on all statically regi..." alt="" coords="135,80,274,121"/>
+<area shape="rect" id="node2" href="$basic_8cc.html" title="Basic functionality unit tests. " alt="" coords="5,87,109,114"/>
+<area shape="rect" id="node3" href="$loadgen__test__main_8cc.html" title="A main entry point a test binary can use if it just wants to execute Test::Run on all statically regi..." alt="" coords="134,80,263,121"/>
 </map>

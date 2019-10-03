@@ -1,6 +1,6 @@
 <map id="mlperf::loadgen::PerformanceSummary" name="mlperf::loadgen::PerformanceSummary">
-<area shape="rect" id="node2" href="$structmlperf_1_1loadgen_1_1PerformanceSummary_1_1PercentileEntry.html" title="The latency at a given percentile. " alt="" coords="5,849,211,956"/>
-<area shape="rect" id="node3" href="$structmlperf_1_1loadgen_1_1TestSettingsInternal.html" title="takes the user&#45;friendly TestSettings and normalizes it for consumption by the loadgen. " alt="" coords="235,732,437,1073"/>
-<area shape="rect" id="node4" href="$structmlperf_1_1TestSettings.html" title="Top&#45;level struct specifing the modes and parameters of the test. " alt="" coords="238,5,434,669"/>
-<area shape="rect" id="node5" href="$structmlperf_1_1loadgen_1_1PerformanceResult.html" title="Provides performance results that are independent of scenario and other context. " alt="" coords="461,813,672,993"/>
+<area shape="rect" id="node2" href="$structmlperf_1_1loadgen_1_1PerformanceSummary_1_1PercentileEntry.html" title="The latency at a given percentile. " alt="" coords="5,1333,199,1469"/>
+<area shape="rect" id="node3" href="$structmlperf_1_1loadgen_1_1TestSettingsInternal.html" title="takes the user&#45;friendly TestSettings and normalizes it for consumption by the loadgen. " alt="" coords="223,1260,416,1543"/>
+<area shape="rect" id="node4" href="$structmlperf_1_1TestSettings.html" title="Top&#45;level struct specifing the modes and parameters of the test. " alt="" coords="223,5,416,1197"/>
+<area shape="rect" id="node5" href="$structmlperf_1_1loadgen_1_1PerformanceResult.html" title="Provides performance results that are independent of scenario and other context. " alt="" coords="441,1297,635,1506"/>
 </map>
